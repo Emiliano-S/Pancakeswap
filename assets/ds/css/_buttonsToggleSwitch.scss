@@ -1,0 +1,124 @@
+@use '_colors.scss' as *;
+
+.container-toggle-switch{
+  min-width: 200px;
+  min-height: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.toggle-switch{
+    width: 56px;
+    height: 33px;
+    cursor: pointer;
+
+    input[type="checkbox"]{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        position: absolute;
+      }
+
+    .toggle-switch-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-top-left-radius: 33px;
+        border-bottom-left-radius: 33px;
+        border-top-right-radius: 33px;
+        border-bottom-right-radius: 33px;
+
+        .icon-toggle-switch{
+          position: absolute;
+          top: 7px;
+          &.sun{
+            left: 5px;
+          }
+          &.moon{
+            right: 5px;
+          }
+        }
+
+        .toggle-slider{
+            width: 27px;
+            height: 27px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            right: 0;
+            bottom: 3px;
+            border-radius: 50%;
+            box-sizing: initial;
+            transition: transform 0.4s;
+          }
+      }
+
+      &:hover > * .toggle-slider{
+        box-shadow: $purple-2 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+      }
+
+      input[type="checkbox"]:checked{
+        & + .toggle-switch-container{
+            background-color: $b-ToggleSwitch-active;
+            .toggle-slider{
+                transform: translateX(26px);
+                right: 3px;
+                left: 0;
+            }
+        }
+      }
+
+      &.light{
+        &.darkmode{
+          input[type="checkbox"]:checked{
+            & + .toggle-switch-container{
+                background-color: $b-ToggleSwitch-darkmode-active;
+                .toggle-slider{
+                    transform: translateX(26px);
+                    right: 3px;
+                    left: 0;
+                    background: url("../img/icons/moon.svg") center no-repeat, $b-ToggleSwitch-dark-ball;
+                    background-size: auto;
+                }
+                .icon-toggle-switch{
+                  svg {
+                    path{
+                      fill: $b-ToggleSwitch-dark-ball;
+                    }
+                  }
+                }
+            }
+          }
+          .toggle-slider{
+            background: url("../img/icons/sun.svg") center no-repeat, $b-ToggleSwitch-dark-ball;
+            background-size: auto;
+          }
+
+          .icon-toggle-switch{
+            svg {
+              path{
+                fill: $white-1;
+              }
+            }
+          }
+        }
+        .toggle-switch-container{
+            background-color: $b-ToggleSwitch-light-bg;
+            .toggle-slider{
+                background-color: $b-ToggleSwitch-light-ball;
+            }
+        }
+      }
+      &.dark{
+        .toggle-switch-container{
+            background-color: $b-ToggleSwitch-dark-bg;
+            .toggle-slider{
+                background-color: $b-ToggleSwitch-dark-ball;
+            }
+        }
+      }
+  }
