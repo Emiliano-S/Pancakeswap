@@ -1,20 +1,11 @@
 @use '_colors.scss' as *;
 
-.container-toggle-switch{
-  min-width: 200px;
-  min-height: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-}
 
 .toggle-switch{
     width: 56px;
     height: 33px;
     cursor: pointer;
+    display: inline-block;
 
     input[type="checkbox"]{
         height: 0;
