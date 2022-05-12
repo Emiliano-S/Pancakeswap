@@ -22,6 +22,17 @@
   box-sizing: border-box;
 }
 
+.container-toggle-switch {
+  min-width: 200px;
+  min-height: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .toggle-switch {
   width: 56px;
   height: 33px;
@@ -42,6 +53,16 @@
   border-top-right-radius: 33px;
   border-bottom-right-radius: 33px;
 }
+.toggle-switch .toggle-switch-container .icon-toggle-switch {
+  position: absolute;
+  top: 7px;
+}
+.toggle-switch .toggle-switch-container .icon-toggle-switch.sun {
+  left: 5px;
+}
+.toggle-switch .toggle-switch-container .icon-toggle-switch.moon {
+  right: 5px;
+}
 .toggle-switch .toggle-switch-container .toggle-slider {
   width: 27px;
   height: 27px;
@@ -50,7 +71,6 @@
   left: 3px;
   right: 0;
   bottom: 3px;
-  background-color: white;
   border-radius: 50%;
   box-sizing: initial;
   transition: transform 0.4s;
@@ -65,6 +85,26 @@
   transform: translateX(26px);
   right: 3px;
   left: 0;
+}
+.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container {
+  background-color: #666171;
+}
+.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container .toggle-slider {
+  transform: translateX(26px);
+  right: 3px;
+  left: 0;
+  background: url("../img/icons/moon.svg") center no-repeat, #27262C;
+  background-size: auto;
+}
+.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container .icon-toggle-switch svg path {
+  fill: #27262C;
+}
+.toggle-switch.light.darkmode .toggle-slider {
+  background: url("../img/icons/sun.svg") center no-repeat, #27262C;
+  background-size: auto;
+}
+.toggle-switch.light.darkmode .icon-toggle-switch svg path {
+  fill: #ffffff;
 }
 .toggle-switch.light .toggle-switch-container {
   background-color: #EEEAF4;

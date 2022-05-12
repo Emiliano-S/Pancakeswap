@@ -1,4 +1,14 @@
 @use '_colors.scss' as *;
+.container-toggle-switch{
+  min-width: 200px;
+  min-height: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .toggle-switch{
     width: 56px;
@@ -21,6 +31,17 @@
         border-top-right-radius: 33px;
         border-bottom-right-radius: 33px;
 
+        .icon-toggle-switch{
+          position: absolute;
+          top: 7px;
+          &.sun{
+            left: 5px;
+          }
+          &.moon{
+            right: 5px;
+          }
+        }
+
         .toggle-slider{
             width: 27px;
             height: 27px;
@@ -29,7 +50,6 @@
             left: 3px;
             right: 0;
             bottom: 3px;
-            background-color: #ffff;
             border-radius: 50%;
             box-sizing: initial;
             transition: transform 0.4s;
@@ -52,6 +72,39 @@
       }
 
       &.light{
+        &.darkmode{
+          input[type="checkbox"]:checked{
+            & + .toggle-switch-container{
+                background-color: #666171;
+                .toggle-slider{
+                    transform: translateX(26px);
+                    right: 3px;
+                    left: 0;
+                    background: url("../img/icons/moon.svg") center no-repeat, $b-ToggleSwitch-dark-ball;
+                    background-size: auto;
+                }
+                .icon-toggle-switch{
+                  svg {
+                    path{
+                      fill: $b-ToggleSwitch-dark-ball;
+                    }
+                  }
+                }
+            }
+          }
+          .toggle-slider{
+            background: url("../img/icons/sun.svg") center no-repeat, $b-ToggleSwitch-dark-ball;
+            background-size: auto;
+          }
+
+          .icon-toggle-switch{
+            svg {
+              path{
+                fill: $white-1;
+              }
+            }
+          }
+        }
         .toggle-switch-container{
             background-color: $b-ToggleSwitch-light-bg;
             .toggle-slider{
