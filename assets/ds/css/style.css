@@ -76,7 +76,7 @@
   transition: transform 0.4s;
 }
 .toggle-switch:hover > * .toggle-slider {
-  box-shadow: rgb(118, 69, 217) 0px 0px 0px 1px, rgba(118, 69, 217, 0.6) 0px 0px 0px 4px;
+  box-shadow: #7645d9 0px 0px 0px 1px, rgba(118, 69, 217, 0.6) 0px 0px 0px 4px;
 }
 .toggle-switch input[type=checkbox]:checked + .toggle-switch-container {
   background-color: #31D0AA;

@@ -1,4 +1,5 @@
 @use '_colors.scss' as *;
+
 .container-toggle-switch{
   min-width: 200px;
   min-height: 10px;
@@ -57,12 +58,12 @@
       }
 
       &:hover > * .toggle-slider{
-        box-shadow: rgb(118 69 217) 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+        box-shadow: $purple-2 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
       }
 
       input[type="checkbox"]:checked{
         & + .toggle-switch-container{
-            background-color: #31D0AA;
+            background-color: $b-ToggleSwitch-active;
             .toggle-slider{
                 transform: translateX(26px);
                 right: 3px;
@@ -75,7 +76,7 @@
         &.darkmode{
           input[type="checkbox"]:checked{
             & + .toggle-switch-container{
-                background-color: #666171;
+                background-color: $b-ToggleSwitch-darkmode-active;
                 .toggle-slider{
                     transform: translateX(26px);
                     right: 3px;
