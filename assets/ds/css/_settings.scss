@@ -152,20 +152,25 @@
                         justify-content: center;
                         background-color: $b-ToggleSwitch-light-bg;
                         .type-button-text {
-                            margin-top:4px;
                             justify-content: center;
                             color:$purple-3;
-                            
                             .input-text {
-                                width:40%;
+                                width:100%;
                                 border: 0px;
-                                left:50%;
                                 background-color: $b-ToggleSwitch-light-bg;
                                 color:$purple-3;
                                 font-family: Kanit Regular;
                                 font-size: 16px;
-
+                                border-radius: 33px;
+                                height: 31px;
+                                padding: 0px 16px 0px 16px;
+                                
                             }
+                            .input-text:focus{
+                                outline: 4px solid $purple-2;
+                              }
+                            
+
                         }
                     }
                 

@@ -319,18 +319,22 @@
   background-color: #EEEAF4;
 }
 .container-positioner .container .padded-white-container .settings-buttons-menu .settings-bar .type-button .type-button-text {
-  margin-top: 4px;
   justify-content: center;
   color: #280d5f;
 }
 .container-positioner .container .padded-white-container .settings-buttons-menu .settings-bar .type-button .type-button-text .input-text {
-  width: 40%;
+  width: 100%;
   border: 0px;
-  left: 50%;
   background-color: #EEEAF4;
   color: #280d5f;
   font-family: Kanit Regular;
   font-size: 16px;
+  border-radius: 33px;
+  height: 31px;
+  padding: 0px 16px 0px 16px;
+}
+.container-positioner .container .padded-white-container .settings-buttons-menu .settings-bar .type-button .type-button-text .input-text:focus {
+  outline: 4px solid #7645d9;
 }
 
 /*# sourceMappingURL=designsystem.css.map */
