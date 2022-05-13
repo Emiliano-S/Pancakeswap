@@ -1,0 +1,19 @@
+@use 'colors';
+@use 'root';
+
+/* STRUTTURA PAGINA DS */
+
+body{
+    height: 100vh;
+}
+
+.container {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1,h2,h3,h4 {
+    color: colors.$purple-2;
+}
