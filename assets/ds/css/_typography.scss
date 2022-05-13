@@ -3,7 +3,7 @@
 
 /* STRUTTURA PAGINA DS */
 
-body{
+body {
     height: 100vh;
 }
 
@@ -14,6 +14,46 @@ body{
     gap: 20px;
 }
 
-h1,h2,h3,h4 {
+.title {
+    span {
+        font-size: 16px;
+    }
+}
+
+
+span {
+    font-family: Kanit Regular;
+    font-size: 14px;
+    color: colors.$purple-3;
+}
+
+
+h1 {
+    font-size: 64px;
+    font-family: Kanit Bold;
+    color: colors.$purple-2;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Kanit Bold;
+    color: colors.$purple-2;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: Kanit Bold;
+    color: colors.$purple-2;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: Kanit Bold;
+    color: colors.$purple-2;
+}
+
+p {
+    font-size: 16px;
+    font-family: Kanit Regular;
     color: colors.$purple-2;
 }
