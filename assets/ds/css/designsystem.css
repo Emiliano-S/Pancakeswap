@@ -65,7 +65,7 @@
   box-sizing: initial;
   transition: transform 0.4s;
 }
-.toggle-switch:hover > * .toggle-slider {
+.toggle-switch input[type=checkbox]:focus ~ * .toggle-slider {
   box-shadow: #7645d9 0px 0px 0px 1px, rgba(118, 69, 217, 0.6) 0px 0px 0px 4px;
 }
 .toggle-switch input[type=checkbox]:checked + .toggle-switch-container {
@@ -256,6 +256,78 @@
   color: #280d5f;
   font-family: Kanit Regular;
   font-size: 16px;
+}
+.toggle-switch.button-pancake .toggle-switch-container .toggle-slider {
+  width: 24px;
+  height: 24px;
+  box-shadow: rgb(189, 194, 196) 0px 1.5px 0px 1.5px;
+}
+.toggle-switch.button-pancake .toggle-switch-container .toggle-slider .pancake {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  background: rgb(226, 124, 49) none repeat scroll 0% 0%;
+  box-shadow: rgb(251, 190, 124) 0px 1.5px 0px 1.5px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.toggle-switch.button-pancake .toggle-switch-container .toggle-slider .pancake:nth-child(1) {
+  transition: all 0.2s ease 0.2s;
+  -webkit-transition: all 0.2s ease 0.2s;
+  -moz-transition: all 0.2s ease 0.2s;
+  -ms-transition: all 0.2s ease 0.2s;
+  -o-transition: all 0.2s ease 0.2s;
+}
+.toggle-switch.button-pancake .toggle-switch-container .toggle-slider .pancake:nth-child(2) {
+  top: -2px;
+  left: -5px;
+  transition: all 0.3s ease 0.2s;
+  -webkit-transition: all 0.3s ease 0.2s;
+  -moz-transition: all 0.3s ease 0.2s;
+  -ms-transition: all 0.3s ease 0.2s;
+  -o-transition: all 0.3s ease 0.2s;
+}
+.toggle-switch.button-pancake .toggle-switch-container .toggle-slider .pancake:nth-child(3) {
+  right: -3px;
+  top: -8px;
+  transition: all 0.5s ease 0.2s;
+  -webkit-transition: all 0.5s ease 0.2s;
+  -moz-transition: all 0.5s ease 0.2s;
+  -ms-transition: all 0.5s ease 0.2s;
+  -o-transition: all 0.5s ease 0.2s;
+}
+.toggle-switch.button-pancake .toggle-switch-container .toggle-slider .butter {
+  width: 10px;
+  height: 8px;
+  background: rgb(251, 219, 96) none repeat scroll 0% 0%;
+  top: 4px;
+  left: 13px;
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: rgb(214, 120, 35) 0px 0.75px 0px 0.75px;
+  transform: scale(0);
+  transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -ms-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+}
+.toggle-switch.button-pancake input[type=checkbox]:focus + .toggle-switch-container {
+  box-shadow: #7645d9 0px 0px 0px 1px, rgba(118, 69, 217, 0.6) 0px 0px 0px 4px;
+}
+.toggle-switch.button-pancake input[type=checkbox]:focus + .toggle-switch-container .toggle-slider {
+  box-shadow: rgb(189, 194, 196) 0px 1.5px 0px 1.5px;
+}
+.toggle-switch.button-pancake input[type=checkbox]:checked + .toggle-switch-container .toggle-slider .pancake, .toggle-switch.button-pancake input[type=checkbox]:checked + .toggle-switch-container .toggle-slider .butter {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 /*# sourceMappingURL=designsystem.css.map */
