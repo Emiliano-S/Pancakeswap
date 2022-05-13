@@ -132,6 +132,9 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    font-family: Kanit Regular;
+                    font-size: 16px;
+                    color: $purple-3;
                     
                     .settings-bar-text-and-question-icon {
                         display: flex;
@@ -165,6 +168,7 @@
                             }
                         }
                     }
+                
                 }
             }
         }
