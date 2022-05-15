@@ -1,4 +1,4 @@
-/* Collors Var */
+/* Colors Var */
 /*Background colors*/
 /*Text Var*/
 /*Components var*/
@@ -19,6 +19,138 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.btn-container-general {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.btn-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 30px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-01:hover {
+  opacity: 0.5;
+}
+.btn-01:active {
+  transform: translateY(1px);
+}
+
+.btn-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-02:hover {
+  opacity: 0.5;
+}
+.btn-02:active {
+  transform: translateY(1px);
+}
+.btn-02 span {
+  margin-right: 0.5rem;
+}
+.btn-02 svg {
+  fill: #ffffff;
+}
+
+.btn-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-03:hover {
+  opacity: 0.5;
+}
+.btn-03:active {
+  transform: translateY(1px);
+}
+
+.btn-04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1fc7d4;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: transparent;
+  color: #1fc7d4;
+}
+.btn-04:hover {
+  opacity: 0.5;
+}
+.btn-04:active {
+  transform: translateY(1px);
+}
+
+.btn-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 30px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+  background-color: #eff4f5;
+  box-shadow: none;
+  color: #1fc7d4;
+}
+.btn-settings:hover {
+  opacity: 0.5;
+}
+.btn-settings:active {
+  transform: translateY(1px);
 }
 
 /*# sourceMappingURL=designsystem.css.map */
