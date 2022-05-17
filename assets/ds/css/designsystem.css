@@ -297,6 +297,11 @@
 .container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .btn-01, .container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .btn-settings {
   font-family: Kanit Regular;
 }
+.container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .settings-percentage-symble {
+  font-family: Kanit Bold;
+  color: #1fc7d4;
+  padding-top: 3px;
+}
 .container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .type-button {
   width: 76px;
   height: 33px;
