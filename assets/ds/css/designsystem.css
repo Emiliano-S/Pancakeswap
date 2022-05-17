@@ -21,7 +21,6 @@
   box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 /* STRUTTURA PAGINA DS */
 body {
   height: 100vh;
@@ -201,7 +200,7 @@ p {
   font-size: 16px;
   font-family: Kanit Regular;
   color: #7645d9;
-=======
+}
 html,
 body {
   margin: 0;
@@ -272,7 +271,6 @@ body {
   padding: 3.5em 0;
   font-weight: 600;
   line-height: 1.3;
->>>>>>> develop
 }
 
 /*# sourceMappingURL=designsystem.css.map */
