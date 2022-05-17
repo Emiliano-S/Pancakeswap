@@ -1,12 +1,17 @@
 @use '_colors.scss' as *;
 @use '_root.scss';
 
+.question-mark-icon {
+    width: 16px;
+    height: 16px;
+    margin-bottom:10px;
+}
 .container-positioner {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .container {
+    .container-settings {
         height: 100vh;
         width: 420px;
         /*  width: auto;
