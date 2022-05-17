@@ -79,7 +79,7 @@
                     }
 
                     .settings-bar-text {
-                        margin-bottom: 24px;
+                        margin-bottom: 0px;
                     }
 
                 }
@@ -87,6 +87,10 @@
                 .settings-choice {
                     display: flex;
                     flex-wrap: wrap;
+                    gap:2px;
+                    .btn-01 , .btn-settings{
+                        font-family: Kanit Regular;
+                    }
 
                 }
             }
@@ -120,6 +124,46 @@
                     display: flex;
                     flex-wrap: wrap;
                     margin-bottom:24px;
+                    gap: 4px;
+                    .btn-01 , .btn-settings{
+                        font-family: Kanit Regular;
+                    }
+
+                    
+
+
+                    .type-button {
+                        width: 76px;
+                        height: 33px;
+                        display: inline-block;
+                        border-radius:33px;
+                        border: 1px solid $pink;
+                        text-align: center;
+                        justify-content: center;
+                        background-color: $b-ToggleSwitch-light-bg;
+                        .type-button-text {
+                            justify-content: center;
+                            color:$purple-3;
+                            width: 74px;
+                            .input-text {
+                                width:100%;
+                                border: 0px;
+                                background-color: $b-ToggleSwitch-light-bg;
+                                color:$purple-3;
+                                font-family: Kanit Regular;
+                                font-size: 16px;
+                                border-radius: 16px;
+                                height: 31px;
+                                padding: 0px 16px 0px 16px;
+                                
+                            }
+                            .input-text:focus{
+                                outline: 4px solid $purple-2;
+                              }
+                            
+
+                        }
+                    }
 
                 }
 

@@ -254,11 +254,15 @@
   gap: 4px;
 }
 .container-positioner .container .padded-white-container .settings-global .settings-bar .settings-bar-text {
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 .container-positioner .container .padded-white-container .settings-global .settings-choice {
   display: flex;
   flex-wrap: wrap;
+  gap: 2px;
+}
+.container-positioner .container .padded-white-container .settings-global .settings-choice .btn-01, .container-positioner .container .padded-white-container .settings-global .settings-choice .btn-settings {
+  font-family: Kanit Regular;
 }
 .container-positioner .container .padded-white-container .swaps-and-liquidity {
   padding-top: 24px;
@@ -288,6 +292,39 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 24px;
+  gap: 4px;
+}
+.container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .btn-01, .container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .btn-settings {
+  font-family: Kanit Regular;
+}
+.container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .type-button {
+  width: 76px;
+  height: 33px;
+  display: inline-block;
+  border-radius: 33px;
+  border: 1px solid #ed4b9e;
+  text-align: center;
+  justify-content: center;
+  background-color: #EEEAF4;
+}
+.container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .type-button .type-button-text {
+  justify-content: center;
+  color: #280d5f;
+  width: 74px;
+}
+.container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .type-button .type-button-text .input-text {
+  width: 100%;
+  border: 0px;
+  background-color: #EEEAF4;
+  color: #280d5f;
+  font-family: Kanit Regular;
+  font-size: 16px;
+  border-radius: 16px;
+  height: 31px;
+  padding: 0px 16px 0px 16px;
+}
+.container-positioner .container .padded-white-container .swaps-and-liquidity .settings-choice .type-button .type-button-text .input-text:focus {
+  outline: 4px solid #7645d9;
 }
 .container-positioner .container .padded-white-container .settings-buttons-menu {
   display: flex;
