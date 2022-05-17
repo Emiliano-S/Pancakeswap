@@ -39,6 +39,8 @@
   margin: 5rem 0;
   padding: 1px 1px 2px 1px;
   border-radius: 24px;
+  display: flex;
+  justify-content: center;
 }
 .containerCards .smallerC .sCard {
   width: calc(100% - 2px);
@@ -88,6 +90,8 @@
   padding: 1px 1px 4px 1px;
   background-color: #ffb237;
   border-radius: 24px;
+  display: flex;
+  justify-content: center;
 }
 .containerCards .biggerC .bCard {
   width: calc(100% - 2px);
