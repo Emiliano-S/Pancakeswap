@@ -180,5 +180,387 @@
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
+.btn-container-general {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.btn-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 30px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-01:hover {
+  opacity: 0.5;
+}
+.btn-01:active {
+  transform: translateY(1px);
+}
+
+.btn-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-02:hover {
+  opacity: 0.5;
+}
+.btn-02:active {
+  transform: translateY(1px);
+}
+.btn-02 span {
+  margin-right: 0.5rem;
+}
+.btn-02 svg {
+  fill: #ffffff;
+}
+
+.btn-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-03:hover {
+  opacity: 0.5;
+}
+.btn-03:active {
+  transform: translateY(1px);
+}
+
+.btn-04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1fc7d4;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: transparent;
+  color: #1fc7d4;
+}
+.btn-04:hover {
+  opacity: 0.5;
+}
+.btn-04:active {
+  transform: translateY(1px);
+}
+
+.btn-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 30px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+  background-color: #eff4f5;
+  box-shadow: none;
+  color: #1fc7d4;
+}
+.btn-settings:hover {
+  opacity: 0.5;
+}
+.btn-settings:active {
+  transform: translateY(1px);
+}
+/* STRUTTURA PAGINA DS */
+body {
+  height: 100vh;
+}
+
+.iconsContainer {
+  height: 300px;
+  margin: 10px;
+}
+
+.headerIcons {
+  width: 100%;
+}
+
+.mainIcons {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-content: space-between;
+}
+
+.hoverIcons {
+  height: 100%;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerPreviewIcon {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.staticIcons {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcons {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.titleIcons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialContainerIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ICONE DA QUI IN POI */
+.containerIcons {
+  width: 40px;
+  height: 40px;
+}
+
+.icons {
+  align-self: center;
+  margin-right: 0.5rem;
+  fill: #7a6eaa;
+  width: 100%;
+  height: 100%;
+}
+
+.iconsHover {
+  cursor: pointer;
+}
+.iconsHover :hover {
+  opacity: 0.65;
+}
+
+.close {
+  fill: #1fc7d4;
+}
+
+.back {
+  fill: #1fc7d4;
+}
+
+.users {
+  fill: #7645d9;
+}
+
+.trades {
+  fill: #1fc7d4;
+}
+
+.stacked {
+  fill: #ed4b9e;
+}
+
+.prediction {
+  fill: #000000;
+}
+
+.lottery {
+  fill: #9F9C9C;
+}
+
+.quit {
+  fill: #000000;
+}
+
+.alert {
+  fill: #ffb237;
+}
+
+.social {
+  cursor: pointer;
+  fill: #b8add2;
+}
+
+/* STRUTTURA PAGINA DS */
+body {
+  height: 100vh;
+}
+
+.container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title span {
+  font-size: 16px;
+}
+
+span {
+  font-family: Kanit Regular;
+  font-size: 14px;
+  color: #280d5f;
+}
+
+/* STILI HEADER E PARAGRAPH */
+h1 {
+  font-size: 64px;
+  font-family: Kanit Bold;
+  color: #7645d9;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: Kanit Bold;
+  color: #7645d9;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: Kanit Bold;
+  color: #7645d9;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: Kanit Bold;
+  color: #7645d9;
+}
+
+p {
+  font-size: 16px;
+  font-family: Kanit Regular;
+  color: #7645d9;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+}
+.container h1 {
+  color: #7645d9;
+}
+.container .subtitle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  font-weight: bolder;
+}
+.container .subtitle span {
+  padding: 0 1em 1em 0;
+  margin-right: 21em;
+}
+.container .grid-container {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.container .grid-container .grid1,
+.container .grid-container .grid2 {
+  display: grid;
+  flex-direction: none;
+  width: 100%;
+  height: 65%;
+  padding: 0;
+  gap: 1em;
+  margin-right: 5em;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.container .grid-container .grid1 .block,
+.container .grid-container .grid2 .block {
+  display: flex;
+  flex-direction: column;
+  width: 6.5em;
+  height: 3em;
+  padding: 0;
+  border: 2px solid black;
+}
+.container .grid-container .grid1 .block .color,
+.container .grid-container .grid2 .block .color {
+  padding: 3.5em 0;
+  font-weight: 600;
+  line-height: 1.3;
+}
 
 /*# sourceMappingURL=designsystem.css.map */
