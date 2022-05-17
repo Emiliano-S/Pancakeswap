@@ -22,146 +22,6 @@
   box-sizing: border-box;
 }
 
-.containerCards {
-  width: 100vw;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.containerCards .smallerC {
-  background-color: #e7e3eb;
-  width: 282px;
-  height: 285px;
-  margin: 5rem 0;
-  padding: 1px 1px 2px 1px;
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-}
-.containerCards .smallerC .sCard {
-  width: calc(100% - 2px);
-  height: calc(100% - 5px);
-  border-radius: 24px;
-  background-color: #ffffff;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.containerCards .smallerC .sCard .sLogo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.containerCards .smallerC .sCard .sLogo #icona1 {
-  fill: #7645d9;
-}
-.containerCards .smallerC .sCard .stext {
-  margin-top: 64px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.containerCards .smallerC .sCard .stext #firsth2 {
-  height: 44px;
-  font-family: "kanit SemiBold";
-  color: #280d5f;
-  font-size: 40px;
-}
-.containerCards .smallerC .sCard .stext #secondh2 {
-  height: 44px;
-  font-family: "kanit SemiBold";
-  color: #7645d9;
-  font-size: 40px;
-  margin-bottom: 24px;
-}
-.containerCards .smallerC .sCard .stext .parag {
-  font-family: "Kanit Regular";
-  color: #7a6eaa;
-  font-size: 16px;
-}
-.containerCards .biggerC {
-  width: 291px;
-  height: 366px;
-  padding: 1px 1px 4px 1px;
-  background-color: #ffb237;
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-}
-.containerCards .biggerC .bCard {
-  width: calc(100% - 2px);
-  height: calc(100% - 5px);
-  background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
-  padding: 24px;
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.containerCards .biggerC .bCard .bLogo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.containerCards .biggerC .bCard .bText {
-  display: flex;
-  flex-direction: column;
-}
-.containerCards .biggerC .bCard .bText .Littletitle {
-  height: 24px;
-  color: #280d5f;
-  font-family: "kanit SemiBold";
-  font-size: 16px;
-}
-.containerCards .biggerC .bCard .bText #BCh2 {
-  height: 35px;
-  color: #280d5f;
-  font-family: "kanit SemiBold";
-  font-size: 32px;
-  margin: 8px 0;
-}
-.containerCards .biggerC .bCard .bText .Littletitle2 {
-  height: 24px;
-  color: #280d5f;
-  font-family: "kanit SemiBold";
-  font-size: 16px;
-  margin-bottom: 24px;
-}
-.containerCards .biggerC .bCard .bText .paraghBC {
-  height: 48px;
-  color: #280d5f;
-  font-family: "kanit Regular";
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-.containerCards .biggerC .bCard #btnBcard {
-  position: relative;
-  -webkit-box-align: center;
-  align-items: center;
-  border: 0px;
-  border-radius: 16px;
-  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
-  display: inline-flex;
-  font-family: "Kanit Semibold";
-  font-size: 16px;
-  font-weight: 600;
-  -webkit-box-pack: center;
-  justify-content: center;
-  height: 48px;
-  padding: 0px 24px;
-  background-color: #1fc7d4;
-  color: #ffffff;
-  width: 100%;
-}
-.containerCards .biggerC .bCard #btnBcard .arrow {
-  fill: #ffffff;
-}
-
 .question-mark-icon {
   width: 16px;
   height: 16px;
@@ -498,6 +358,147 @@
 }
 .btn-settings:active {
   transform: translateY(1px);
+}
+
+.containerCards {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 10px;
+}
+.containerCards .smallerC {
+  background-color: #e7e3eb;
+  width: 282px;
+  height: 285px;
+  padding: 1px 1px 2px 1px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+}
+.containerCards .smallerC .sCard {
+  width: calc(100% - 2px);
+  height: calc(100% - 5px);
+  border-radius: 24px;
+  background-color: #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.containerCards .smallerC .sCard .sLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.containerCards .smallerC .sCard .sLogo #icona1 {
+  fill: #7645d9;
+}
+.containerCards .smallerC .sCard .stext {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.containerCards .smallerC .sCard .stext #firsth2 {
+  height: 44px;
+  font-family: "kanit SemiBold";
+  color: #280d5f;
+  font-size: 40px;
+}
+.containerCards .smallerC .sCard .stext #secondh2 {
+  height: 44px;
+  font-family: "kanit SemiBold";
+  color: #7645d9;
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.containerCards .smallerC .sCard .stext .parag {
+  font-family: "Kanit Regular";
+  color: #7a6eaa;
+  font-size: 16px;
+}
+.containerCards .biggerC {
+  width: 291px;
+  height: 366px;
+  padding: 1px 1px 4px 1px;
+  background-color: #ffb237;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+}
+.containerCards .biggerC .bCard {
+  width: calc(100% - 2px);
+  height: calc(100% - 5px);
+  background: linear-gradient(rgb(255, 178, 55) 0%, rgb(255, 205, 81) 51.17%, rgb(255, 231, 106) 100%);
+  padding: 24px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.containerCards .biggerC .bCard .bLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.containerCards .biggerC .bCard .bText {
+  display: flex;
+  flex-direction: column;
+}
+.containerCards .biggerC .bCard .bText .Littletitle {
+  height: 24px;
+  color: #280d5f;
+  font-family: "kanit SemiBold";
+  font-size: 16px;
+}
+.containerCards .biggerC .bCard .bText #BCh2 {
+  height: 35px;
+  color: #280d5f;
+  font-family: "kanit SemiBold";
+  font-size: 32px;
+  margin: 8px 0;
+}
+.containerCards .biggerC .bCard .bText .Littletitle2 {
+  height: 24px;
+  color: #280d5f;
+  font-family: "kanit SemiBold";
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.containerCards .biggerC .bCard .bText .paraghBC {
+  height: 48px;
+  color: #280d5f;
+  font-family: "kanit Regular";
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.containerCards .biggerC .bCard #btnBcard {
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  border-radius: 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  display: inline-flex;
+  font-family: "Kanit Semibold";
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0px 24px;
+  background-color: #1fc7d4;
+  color: #ffffff;
+  width: 100%;
+}
+.containerCards .biggerC .bCard #btnBcard .arrow {
+  fill: #ffffff;
 }
 
 .toggle-switch {
