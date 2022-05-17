@@ -46,7 +46,7 @@ li {
   height: 50%;
   transform-origin: 0% 100%;
   font-size: 24px;
-  color: lightgray;
+  color: rgb(120, 26, 26);
   text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 

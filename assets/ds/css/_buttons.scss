@@ -6,10 +6,12 @@
 .btn-container-general {
     margin:auto;
     display:flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: center;
     margin-top:50px;
     width:80%;
+    gap:30px;
 }
 
 
