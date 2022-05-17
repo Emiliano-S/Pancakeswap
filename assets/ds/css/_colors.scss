@@ -41,7 +41,25 @@ $buttons-color: #1fc7d4;
 $card-background: #ffffff;
 $icons-color: #7a6eaa;
 $icons-social-color: #b8add2;
+$icons-grey: #9F9C9C;
 
 /*Popup title background colors*/
 $settings-card-title-bg: rgba(0, 0, 0, 0) linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
 $connectWallet-card-title-bg: rgba(0, 0, 0, 0) linear-gradient(139.73deg, rgb(229, 253, 255) 0%, rgb(243, 239, 255) 100%) repeat scroll 0% 0%;
+
+
+/*Buttons Toggle Switch colors*/
+$b-ToggleSwitch-active:#31D0AA;
+
+$b-ToggleSwitch-light-bg: #EEEAF4;
+$b-ToggleSwitch-light-ball: #ffffff;
+
+$b-ToggleSwitch-dark-bg: #372F47;
+$b-ToggleSwitch-dark-ball: #27262C;
+
+$b-ToggleSwitch-darkmode-active: #666171;
+
+$b-ToggleSwitch-pancake-bg: #e27c31;
+$b-ToggleSwitch-pancake-shadow: #fbbe7c;
+$b-ToggleSwitch-butter-bg: #fbdb60;
+$b-ToggleSwitch-butter-shadow: #d67823;
