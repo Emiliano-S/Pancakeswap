@@ -7,20 +7,20 @@ body {
     height: 100vh;
 }
 
-.container {
+.typographyContainer {
     margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.title {
-    span {
+.typographyTitle {
+    .typographySpan {
         font-size: 16px;
     }
 }
 
-span {
+.typographySpan {
     font-family: Kanit Regular;
     font-size: 14px;
     color: colors.$color-1-dark;
