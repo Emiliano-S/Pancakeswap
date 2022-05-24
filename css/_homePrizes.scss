@@ -1,0 +1,82 @@
+@use "../assets/ds/css/colors" as *;
+
+@mixin flx ($flx-direction,$flx-jc,$flx-ai,$flx-gap) {
+    display: flex;
+    flex-direction: $flx-direction;
+    justify-content: $flx-jc;
+    align-items: $flx-ai;
+    gap: $flx-gap
+}
+
+.section-prizes{
+    width: 100%;
+    min-height: 200px;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%) repeat scroll 0% 0%;
+    @include flx(row,center,center,0);
+    .prizes-container{
+        min-width: 100px;
+        min-height: 100px;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
+        border-radius: 72px;
+        -webkit-border-radius: 72px;
+        -moz-border-radius: 72px;
+        -ms-border-radius: 72px;
+        -o-border-radius: 72px;
+        @include flx(column,center,center,10px);
+
+        .prizes-description-container{
+            @include flx(column,center,center,24px);
+            .prizes-title-container{
+                text-align: center;
+                .hStyle{
+                    h2{
+                        font-family: "Kanit SemiBold";
+                        font-weight: 600;
+                        span{
+                            color: $title-color;
+                            font-size: 40px;
+                            font-family: "kanit SemiBold";
+                        }
+                    }
+                }
+            }
+            .prizes-text-container{
+                @include flx(column, center, center,0);
+                .prizes-text{
+                    span{
+                        color: $text-color;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .prizes-cards-container{
+            @include flx(row,center,center,20px);
+            .containerCards{
+                width: auto;
+                &:first-of-type{
+                    transform: rotate(-1.43deg);
+                    -webkit-transform: rotate(-1.43deg);
+                    -moz-transform: rotate(-1.43deg);
+                    -ms-transform: rotate(-1.43deg);
+                    -o-transform: rotate(-1.43deg);
+                }
+                &:last-of-type{
+                    transform: rotate(1.43deg);
+                    -webkit-transform: rotate(1.43deg);
+                    -moz-transform: rotate(1.43deg);
+                    -ms-transform: rotate(1.43deg);
+                    -o-transform: rotate(1.43deg);
+                    .biggerC{
+                        .bCard{
+                            background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

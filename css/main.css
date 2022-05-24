@@ -917,7 +917,85 @@ body {
   width: 100%;
   min-height: 200px;
   padding: 40px 0;
-  background-color: rgba(0, 0, 0, 0) linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%) repeat scroll 0% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-prizes .prizes-container {
+  min-width: 100px;
+  min-height: 100px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
+  border-radius: 72px;
+  -webkit-border-radius: 72px;
+  -moz-border-radius: 72px;
+  -ms-border-radius: 72px;
+  -o-border-radius: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.section-prizes .prizes-container .prizes-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.section-prizes .prizes-container .prizes-description-container .prizes-title-container {
+  text-align: center;
+}
+.section-prizes .prizes-container .prizes-description-container .prizes-title-container .hStyle h2 {
+  font-family: "Kanit SemiBold";
+  font-weight: 600;
+}
+.section-prizes .prizes-container .prizes-description-container .prizes-title-container .hStyle h2 span {
+  color: #280d5f;
+  font-size: 40px;
+  font-family: "kanit SemiBold";
+}
+.section-prizes .prizes-container .prizes-description-container .prizes-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-prizes .prizes-container .prizes-description-container .prizes-text-container .prizes-text span {
+  color: #7a6eaa;
+  font-size: 16px;
+}
+.section-prizes .prizes-container .prizes-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section-prizes .prizes-container .prizes-cards-container .containerCards {
+  width: auto;
+}
+.section-prizes .prizes-container .prizes-cards-container .containerCards:first-of-type {
+  transform: rotate(-1.43deg);
+  -webkit-transform: rotate(-1.43deg);
+  -moz-transform: rotate(-1.43deg);
+  -ms-transform: rotate(-1.43deg);
+  -o-transform: rotate(-1.43deg);
+}
+.section-prizes .prizes-container .prizes-cards-container .containerCards:last-of-type {
+  transform: rotate(1.43deg);
+  -webkit-transform: rotate(1.43deg);
+  -moz-transform: rotate(1.43deg);
+  -ms-transform: rotate(1.43deg);
+  -o-transform: rotate(1.43deg);
+}
+.section-prizes .prizes-container .prizes-cards-container .containerCards:last-of-type .biggerC .bCard {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
 }
 
 /*# sourceMappingURL=main.css.map */
