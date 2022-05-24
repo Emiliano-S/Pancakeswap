@@ -943,8 +943,43 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0;
+  position: relative;
 }
-.section-prizes .container-prizes {
+.section-prizes .img-float {
+  width: 512px;
+  height: 512px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.section-prizes .img-float img {
+  animation: float 2s ease-in-out infinite;
+  -webkit-animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.section-prizes .center-prizes {
   min-width: 100px;
   min-height: 100px;
   padding: 40px;
@@ -960,61 +995,61 @@ body {
   align-items: center;
   gap: 10px;
 }
-.section-prizes .container-prizes .prizes-description-container {
+.section-prizes .center-prizes .prizes-description-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-.section-prizes .container-prizes .prizes-description-container .prizes-title-container {
+.section-prizes .center-prizes .prizes-description-container .prizes-title-container {
   text-align: center;
 }
-.section-prizes .container-prizes .prizes-description-container .prizes-title-container .hStyle h2 {
+.section-prizes .center-prizes .prizes-description-container .prizes-title-container .hStyle h2 {
   font-family: "Kanit SemiBold";
   font-weight: 600;
 }
-.section-prizes .container-prizes .prizes-description-container .prizes-title-container .hStyle h2 span {
+.section-prizes .center-prizes .prizes-description-container .prizes-title-container .hStyle h2 span {
   color: #280d5f;
   font-size: 40px;
   font-family: "kanit SemiBold";
 }
-.section-prizes .container-prizes .prizes-description-container .prizes-text-container {
+.section-prizes .center-prizes .prizes-description-container .prizes-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
 }
-.section-prizes .container-prizes .prizes-description-container .prizes-text-container .prizes-text span {
+.section-prizes .center-prizes .prizes-description-container .prizes-text-container .prizes-text span {
   color: #7a6eaa;
   font-size: 16px;
 }
-.section-prizes .container-prizes .prizes-cards-container {
+.section-prizes .center-prizes .prizes-cards-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.section-prizes .container-prizes .prizes-cards-container .containerCards {
+.section-prizes .center-prizes .prizes-cards-container .containerCards {
   width: auto;
 }
-.section-prizes .container-prizes .prizes-cards-container .containerCards:first-of-type {
+.section-prizes .center-prizes .prizes-cards-container .containerCards:first-of-type {
   transform: rotate(-1.43deg);
   -webkit-transform: rotate(-1.43deg);
   -moz-transform: rotate(-1.43deg);
   -ms-transform: rotate(-1.43deg);
   -o-transform: rotate(-1.43deg);
 }
-.section-prizes .container-prizes .prizes-cards-container .containerCards:last-of-type {
+.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type {
   transform: rotate(1.43deg);
   -webkit-transform: rotate(1.43deg);
   -moz-transform: rotate(1.43deg);
   -ms-transform: rotate(1.43deg);
   -o-transform: rotate(1.43deg);
 }
-.section-prizes .container-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard {
+.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard {
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
 }
 
@@ -1055,7 +1090,7 @@ body main div {
     padding: 48px 24px;
   }
 }
-@media screen and (max-width: 967px) {
+@media screen and (min-width: 967px) {
   body main div .section-1200, body main div .section-968 {
     width: 100%;
     padding: 32px 24px;
