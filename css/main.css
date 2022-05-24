@@ -937,7 +937,6 @@ body {
 .section-prizes {
   width: 100%;
   min-height: 200px;
-  padding: 40px 0;
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%) repeat scroll 0% 0%;
   display: flex;
   flex-direction: row;
