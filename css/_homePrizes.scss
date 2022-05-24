@@ -21,9 +21,14 @@
         position: absolute;
         width: 512px;
         height: 521px;
-        left: 0;
-        bottom: -64px;
-        background-color: red;
+        &:nth-child(1){
+            left: 0;
+            bottom: -64px;
+        }
+        &:nth-child(2){
+            right: 0;
+            top: -64px;
+        }
         .prizes-img-container{
             width: 100%;
             height: 100%;

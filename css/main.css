@@ -950,9 +950,14 @@ body {
   position: absolute;
   width: 512px;
   height: 521px;
+}
+.section-prizes .prizes-img-positioner:nth-child(1) {
   left: 0;
   bottom: -64px;
-  background-color: red;
+}
+.section-prizes .prizes-img-positioner:nth-child(2) {
+  right: 0;
+  top: -64px;
 }
 .section-prizes .prizes-img-positioner .prizes-img-container {
   width: 100%;
