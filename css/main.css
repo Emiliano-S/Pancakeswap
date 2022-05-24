@@ -1073,7 +1073,7 @@ body main {
   justify-content: center;
   align-items: center;
 }
-body main div {
+body main .section-banner, body main .section-stats, body main .section-trade, body main .section-earn, body main .section-prizes, body main .section-cake, body main .section-wallet {
   width: 100%;
   height: auto;
   display: flex;
@@ -1081,23 +1081,28 @@ body main div {
   align-items: center;
 }
 @media screen and (min-width: 1200px) {
-  body main div .section-1200 {
+  body main .section-banner .section-1200, body main .section-stats .section-1200, body main .section-trade .section-1200, body main .section-earn .section-1200, body main .section-prizes .section-1200, body main .section-cake .section-1200, body main .section-wallet .section-1200 {
     max-width: 1200px;
     padding: 48px 24px;
   }
-  body main div .section-968 {
+  body main .section-banner .section-968, body main .section-stats .section-968, body main .section-trade .section-968, body main .section-earn .section-968, body main .section-prizes .section-968, body main .section-cake .section-968, body main .section-wallet .section-968 {
     max-width: 968px;
     padding: 48px 24px;
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 967px) {
   body main div .section-1200, body main div .section-968 {
+=======
+@media screen and (max-width: 967px) {
+  body main .section-banner .section-1200, body main .section-banner .section-968, body main .section-stats .section-1200, body main .section-stats .section-968, body main .section-trade .section-1200, body main .section-trade .section-968, body main .section-earn .section-1200, body main .section-earn .section-968, body main .section-prizes .section-1200, body main .section-prizes .section-968, body main .section-cake .section-1200, body main .section-cake .section-968, body main .section-wallet .section-1200, body main .section-wallet .section-968 {
+>>>>>>> develop
     width: 100%;
     padding: 32px 24px;
   }
 }
 @media screen and (max-width: 570px) {
-  body main div .section-1200, body main div .section-968 {
+  body main .section-banner .section-1200, body main .section-banner .section-968, body main .section-stats .section-1200, body main .section-stats .section-968, body main .section-trade .section-1200, body main .section-trade .section-968, body main .section-earn .section-1200, body main .section-earn .section-968, body main .section-prizes .section-1200, body main .section-prizes .section-968, body main .section-cake .section-1200, body main .section-cake .section-968, body main .section-wallet .section-1200, body main .section-wallet .section-968 {
     width: 100%;
     padding: 16px 24px;
   }
