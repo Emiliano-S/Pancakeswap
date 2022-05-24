@@ -48,7 +48,7 @@
       }
 
       input[type="checkbox"]:focus ~* .toggle-slider{
-        box-shadow: $purple-2 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+        box-shadow: $color-1-light 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
       }
 
       input[type="checkbox"]:checked{
@@ -91,7 +91,7 @@
           .icon-toggle-switch{
             svg {
               path{
-                fill: $white-1;
+                fill: $white-light;
               }
             }
           }
@@ -177,7 +177,7 @@
       }
       input[type="checkbox"]:focus{
         & + .toggle-switch-container{
-          box-shadow: $purple-2 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
+          box-shadow: $color-1-light 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;
           .toggle-slider{
             box-shadow: #bdc2c4 0px 1.5px 0px 1.5px;
           }

@@ -146,7 +146,7 @@
 }
 .container-positioner .container-settings .padded-white-container .swaps-and-liquidity .settings-choice .settings-percentage-symble {
   font-family: Kanit Bold;
-  color: #1fc7d4;
+  color: #6cdae2;
   padding-top: 3px;
 }
 .container-positioner .container-settings .padded-white-container .swaps-and-liquidity .settings-choice .type-button {
@@ -245,6 +245,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -259,6 +260,9 @@
 .btn-01:active {
   transform: translateY(1px);
 }
+.btn-01 p.btn {
+  color: #eff4f5;
+}
 
 .btn-02 {
   display: flex;
@@ -268,6 +272,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -282,11 +287,12 @@
 .btn-02:active {
   transform: translateY(1px);
 }
-.btn-02 span {
-  margin-right: 0.5rem;
+.btn-02 p.btn {
+  color: #eff4f5;
 }
 .btn-02 svg {
   fill: #ffffff;
+  margin-left: 0.5rem;
 }
 
 .btn-03 {
@@ -297,6 +303,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -311,6 +318,9 @@
 .btn-03:active {
   transform: translateY(1px);
 }
+.btn-03 p.btn {
+  color: #eff4f5;
+}
 
 .btn-04 {
   display: flex;
@@ -319,6 +329,7 @@
   border: 2px solid #1fc7d4;
   border-radius: 15px;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -333,6 +344,9 @@
 .btn-04:active {
   transform: translateY(1px);
 }
+.btn-04 p.btn {
+  color: #1fc7d4;
+}
 
 .btn-settings {
   display: flex;
@@ -342,6 +356,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -358,6 +373,12 @@
 }
 .btn-settings:active {
   transform: translateY(1px);
+}
+.btn-settings p.btn {
+  color: #eff4f5;
+}
+.btn-settings p.btn {
+  color: #1fc7d4;
 }
 
 .containerCards {
@@ -748,11 +769,11 @@ body {
 }
 
 .close {
-  fill: #1fc7d4;
+  fill: #6cdae2;
 }
 
 .back {
-  fill: #1fc7d4;
+  fill: #6cdae2;
 }
 
 .users {
@@ -760,7 +781,7 @@ body {
 }
 
 .trades {
-  fill: #1fc7d4;
+  fill: #6cdae2;
 }
 
 .stacked {
@@ -793,18 +814,18 @@ body {
   height: 100vh;
 }
 
-.container {
+.typographyContainer {
   margin: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.title span {
+.typographyTitle .typographySpan {
   font-size: 16px;
 }
 
-span {
+.typographySpan {
   font-family: Kanit Regular;
   font-size: 14px;
   color: #280d5f;

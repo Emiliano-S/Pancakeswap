@@ -19,7 +19,7 @@
         min-width: 320px;
         z-index: 100; */
         overflow: hidden;
-        background-color: $white-1;
+        background-color: $white-light;
         border-radius: 32px;
         border: 1px solid rgb(231, 227, 235);
         display: flex;
@@ -37,7 +37,7 @@
             height: 72px;
             align-items: center;
             font-family: Kanit SemiBold;
-            color: $purple-3;
+            color: $color-1-dark;
         }
 
         .whitecontainer {
@@ -60,7 +60,7 @@
                 .settings-subtitle {
                     margin-bottom: 24px;
                     font-weight: 600;
-                    color: $purple-2;
+                    color: $color-1-light;
                     font-size: 12px;
                     line-height: 1.5;
                     text-transform: uppercase;
@@ -72,7 +72,7 @@
                     flex-direction: row;
                     font-family: Kanit Regular;
                     font-size: 16px;
-                    color: $purple-3;
+                    color: $color-1-dark;
 
                     &:nth-child(2) {
                         justify-content: space-between;
@@ -109,7 +109,7 @@
                 .settings-subtitle {
                     margin-bottom: 24px;
                     font-weight: 600;
-                    color: $purple-2;
+                    color: $color-1-light;
                     font-size: 12px;
                     line-height: 1.5;
                     text-transform: uppercase;
@@ -121,7 +121,7 @@
                     flex-direction: row;
                     font-family: Kanit Regular;
                     font-size: 16px;
-                    color: $purple-3;
+                    color: $color-1-dark;
                     gap:4px;
                     margin-bottom:12px;
                 }
@@ -135,7 +135,7 @@
                     }
                     .settings-percentage-symble {
                         font-family: Kanit Bold;
-                        color: $lightBlue-2;
+                        color: $color-2-light;
                         padding-top: 3px;
                        
                     }
@@ -148,19 +148,19 @@
                         height: 33px;
                         display: inline-block;
                         border-radius:33px;
-                        border: 1px solid $pink;
+                        border: 1px solid $color-4;
                         text-align: center;
                         justify-content: center;
                         background-color: $b-ToggleSwitch-light-bg;
                         .type-button-text {
                             justify-content: center;
-                            color:$purple-3;
+                            color: $color-1-dark;
                             width: 74px;
                             .input-text {
                                 width:100%;
                                 border: 0px;
                                 background-color: $b-ToggleSwitch-light-bg;
-                                color:$purple-3;
+                                color: $color-1-dark;
                                 font-family: Kanit Regular;
                                 font-size: 16px;
                                 border-radius: 16px;
@@ -169,7 +169,7 @@
                                 
                             }
                             .input-text:focus{
-                                outline: 4px solid $purple-2;
+                                outline: 4px solid $color-1-light;
                               }
                             
 
@@ -189,7 +189,7 @@
                     justify-content: space-between;
                     font-family: Kanit Regular;
                     font-size: 16px;
-                    color: $purple-3;
+                    color: $color-1-dark;
                     
                     .settings-bar-text-and-question-icon {
                         display: flex;
@@ -202,18 +202,18 @@
                         height: 33px;
                         display: inline-block;
                         border-radius:33px;
-                        border: 1px solid $pink;
+                        border: 1px solid $color-4;
                         text-align: center;
                         justify-content: center;
                         background-color: $b-ToggleSwitch-light-bg;
                         .type-button-text {
                             justify-content: center;
-                            color:$purple-3;
+                            color: $color-1-dark;
                             .input-text {
                                 width:100%;
                                 border: 0px;
                                 background-color: $b-ToggleSwitch-light-bg;
-                                color:$purple-3;
+                                color: $color-1-dark;
                                 font-family: Kanit Regular;
                                 font-size: 16px;
                                 border-radius: 33px;
@@ -222,7 +222,7 @@
                                 
                             }
                             .input-text:focus{
-                                outline: 4px solid $purple-2;
+                                outline: 4px solid $color-1-light;
                               }
                             
 

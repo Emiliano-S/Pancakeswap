@@ -24,6 +24,7 @@
     border-radius: $radius-btn;
     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
     cursor: pointer;
+    font-family: Kanit Regular;
     font-size: 1rem;
     font-weight: 600;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -39,6 +40,10 @@
         &:active {
             transform: translateY(1px);
         }
+
+        p.btn {
+            color:$white;
+        }
 }
 
 
@@ -48,12 +53,9 @@
 
 .btn-02 {
     @include btn (50px, 15px);
-        span {
-            margin-right:0.5rem;
-        }
-
         svg {
-            fill:$white-1;
+            fill:$white-light;
+            margin-left:0.5rem;
         }
 }
 
@@ -68,6 +70,7 @@
     border: 2px solid $buttons-color;
     border-radius: 15px;
     cursor: pointer;
+    font-family: Kanit Regular;
     font-size: 1rem;
     font-weight: 600;
     transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -83,13 +86,19 @@
     &:active {
         transform: translateY(1px);
     }
+    p.btn {
+        color:$color-2;
+    }
 }
 
 .btn-settings {
     @include btn (30px, 15px);
-    background-color: $white-2;
+    background-color: $white;
     box-shadow: none;
-    color:$lightBlue-2;
+    color:$color-2;
+    p.btn {
+        color:$color-2;
+    }
 }
 
 

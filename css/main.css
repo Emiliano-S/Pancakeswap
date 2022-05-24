@@ -146,7 +146,7 @@
 }
 .container-positioner .container-settings .padded-white-container .swaps-and-liquidity .settings-choice .settings-percentage-symble {
   font-family: Kanit Bold;
-  color: #1fc7d4;
+  color: #6cdae2;
   padding-top: 3px;
 }
 .container-positioner .container-settings .padded-white-container .swaps-and-liquidity .settings-choice .type-button {
@@ -245,6 +245,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -259,6 +260,9 @@
 .btn-01:active {
   transform: translateY(1px);
 }
+.btn-01 p.btn {
+  color: #eff4f5;
+}
 
 .btn-02 {
   display: flex;
@@ -268,6 +272,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -282,11 +287,12 @@
 .btn-02:active {
   transform: translateY(1px);
 }
-.btn-02 span {
-  margin-right: 0.5rem;
+.btn-02 p.btn {
+  color: #eff4f5;
 }
 .btn-02 svg {
   fill: #ffffff;
+  margin-left: 0.5rem;
 }
 
 .btn-03 {
@@ -297,6 +303,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -311,6 +318,9 @@
 .btn-03:active {
   transform: translateY(1px);
 }
+.btn-03 p.btn {
+  color: #eff4f5;
+}
 
 .btn-04 {
   display: flex;
@@ -319,6 +329,7 @@
   border: 2px solid #1fc7d4;
   border-radius: 15px;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -333,6 +344,9 @@
 .btn-04:active {
   transform: translateY(1px);
 }
+.btn-04 p.btn {
+  color: #1fc7d4;
+}
 
 .btn-settings {
   display: flex;
@@ -342,6 +356,7 @@
   border-radius: 15px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   cursor: pointer;
+  font-family: Kanit Regular;
   font-size: 1rem;
   font-weight: 600;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
@@ -358,6 +373,12 @@
 }
 .btn-settings:active {
   transform: translateY(1px);
+}
+.btn-settings p.btn {
+  color: #eff4f5;
+}
+.btn-settings p.btn {
+  color: #1fc7d4;
 }
 
 .containerCards {
@@ -748,11 +769,11 @@ body {
 }
 
 .close {
-  fill: #1fc7d4;
+  fill: #6cdae2;
 }
 
 .back {
-  fill: #1fc7d4;
+  fill: #6cdae2;
 }
 
 .users {
@@ -760,7 +781,7 @@ body {
 }
 
 .trades {
-  fill: #1fc7d4;
+  fill: #6cdae2;
 }
 
 .stacked {
@@ -793,18 +814,18 @@ body {
   height: 100vh;
 }
 
-.container {
+.typographyContainer {
   margin: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.title span {
+.typographyTitle .typographySpan {
   font-size: 16px;
 }
 
-span {
+.typographySpan {
   font-family: Kanit Regular;
   font-size: 14px;
   color: #280d5f;
@@ -924,7 +945,7 @@ body {
   align-items: center;
   gap: 0;
 }
-.section-prizes .prizes-container {
+.section-prizes .container-prizes {
   min-width: 100px;
   min-height: 100px;
   padding: 40px;
@@ -940,62 +961,112 @@ body {
   align-items: center;
   gap: 10px;
 }
-.section-prizes .prizes-container .prizes-description-container {
+.section-prizes .container-prizes .prizes-description-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 24px;
 }
-.section-prizes .prizes-container .prizes-description-container .prizes-title-container {
+.section-prizes .container-prizes .prizes-description-container .prizes-title-container {
   text-align: center;
 }
-.section-prizes .prizes-container .prizes-description-container .prizes-title-container .hStyle h2 {
+.section-prizes .container-prizes .prizes-description-container .prizes-title-container .hStyle h2 {
   font-family: "Kanit SemiBold";
   font-weight: 600;
 }
-.section-prizes .prizes-container .prizes-description-container .prizes-title-container .hStyle h2 span {
+.section-prizes .container-prizes .prizes-description-container .prizes-title-container .hStyle h2 span {
   color: #280d5f;
   font-size: 40px;
   font-family: "kanit SemiBold";
 }
-.section-prizes .prizes-container .prizes-description-container .prizes-text-container {
+.section-prizes .container-prizes .prizes-description-container .prizes-text-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
 }
-.section-prizes .prizes-container .prizes-description-container .prizes-text-container .prizes-text span {
+.section-prizes .container-prizes .prizes-description-container .prizes-text-container .prizes-text span {
   color: #7a6eaa;
   font-size: 16px;
 }
-.section-prizes .prizes-container .prizes-cards-container {
+.section-prizes .container-prizes .prizes-cards-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.section-prizes .prizes-container .prizes-cards-container .containerCards {
+.section-prizes .container-prizes .prizes-cards-container .containerCards {
   width: auto;
 }
-.section-prizes .prizes-container .prizes-cards-container .containerCards:first-of-type {
+.section-prizes .container-prizes .prizes-cards-container .containerCards:first-of-type {
   transform: rotate(-1.43deg);
   -webkit-transform: rotate(-1.43deg);
   -moz-transform: rotate(-1.43deg);
   -ms-transform: rotate(-1.43deg);
   -o-transform: rotate(-1.43deg);
 }
-.section-prizes .prizes-container .prizes-cards-container .containerCards:last-of-type {
+.section-prizes .container-prizes .prizes-cards-container .containerCards:last-of-type {
   transform: rotate(1.43deg);
   -webkit-transform: rotate(1.43deg);
   -moz-transform: rotate(1.43deg);
   -ms-transform: rotate(1.43deg);
   -o-transform: rotate(1.43deg);
 }
-.section-prizes .prizes-container .prizes-cards-container .containerCards:last-of-type .biggerC .bCard {
+.section-prizes .container-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard {
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
+}
+
+body {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .section-nav {
+  width: 100%;
+  height: auto;
+}
+body main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  body main div .section-1200 {
+    max-width: 1200px;
+    padding: 48px 24px;
+  }
+  body main div .section-968 {
+    max-width: 968px;
+    padding: 48px 24px;
+  }
+}
+@media screen and (max-width: 967px) {
+  body main div .section-1200, body main div .section-968 {
+    width: 100%;
+    padding: 32px 24px;
+  }
+}
+@media screen and (max-width: 570px) {
+  body main div .section-1200, body main div .section-968 {
+    width: 100%;
+    padding: 16px 24px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
