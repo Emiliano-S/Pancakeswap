@@ -1,6 +1,6 @@
 @mixin floatAnimation ($xDir, $yDir, $speed){
-    animation: float $speed ease-in-out infinite;
-    -webkit-animation: float $speed ease-in-out infinite;
+    animation: float $speed ease-in-out 0.66s infinite normal none running ;
+    -webkit-animation: float $speed ease-in-out 0.66s infinite normal none running ;
 
     @keyframes float {
         0% {
