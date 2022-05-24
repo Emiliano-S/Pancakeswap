@@ -1,0 +1,54 @@
+@use '/assets/ds/css/style.scss';
+.buy-cake-and-starts-in-seconds {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    .buy-cake-container{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        background-color: white;
+        padding: 48px 0px;
+        width: 100%;
+        .small-buy-cake-container{
+            width: 100%;
+            max-width: 968px;
+            margin: 0px;
+            .buy-cake-text-and-svg{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                .small-buy-cake-text-and-svg{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    .buy-cake-text {
+                        display: flex;
+                        flex-direction: column;
+                        align-self: center;
+                        flex: 1 1 0%;
+                        margin-right: 64px;
+                        width: 50%;
+                        .buy-cake-h2-text {
+                            font-size: 40px;
+                        }
+                        .buy-cake-p-text{
+                            font-size: 16px;
+                        }
+                        .buy-cake-buttons{
+                            display: flex;
+                            flex-direction: row;
+                        }
+                    }
+                    .buy-cake.svg {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
