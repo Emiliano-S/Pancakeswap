@@ -15,6 +15,27 @@
     background: rgba(0, 0, 0, 0) linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%) repeat scroll 0% 0%;
     @include flx(row,center,center,0);
     position: relative;
+    overflow: hidden;
+
+    .prizes-img-positioner{
+        position: absolute;
+        width: 512px;
+        height: 521px;
+        left: 0;
+        bottom: -64px;
+        background-color: red;
+        .prizes-img-container{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .prizes-img{
+                position: absolute;
+                @include floatAnimation(-10px, -20px, 3s);
+            }
+        }
+    }
+
+
     .center-prizes{
         position: relative;
         min-width: 100px;
