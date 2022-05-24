@@ -15,20 +15,12 @@
     background: rgba(0, 0, 0, 0) linear-gradient(rgb(111, 182, 241) 0%, rgb(234, 242, 246) 100%) repeat scroll 0% 0%;
     @include flx(row,center,center,0);
     position: relative;
-    .img-float{
-        width: 512px;
-        height: 512px;
-        position:absolute;
-        bottom: 0;
-        left: 0;
-        img{
-            @include floatAnimation(-10px, -20px, 2s);
-        }
-    }
     .center-prizes{
+        position: relative;
         min-width: 100px;
         min-height: 100px;
         padding: 40px;
+        margin: 48px 0px;
         background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
         border-radius: 72px;
         -webkit-border-radius: 72px;
@@ -48,7 +40,7 @@
                         span{
                             color: $title-color;
                             font-size: 40px;
-                            font-family: "kanit SemiBold";
+                            font-family: "Kanit SemiBold";
                         }
                     }
                 }
@@ -59,15 +51,30 @@
                     span{
                         color: $text-color;
                         font-size: 16px;
+                        font-family: "Kanit Regular";
                     }
                 }
             }
         }
 
         .prizes-cards-container{
-            @include flx(row,center,center,20px);
+            @media screen and (min-width: 850px) {
+                @include flx(row,center,center,20px);
+            }
+            @include flx(column,center,center,20px);
             .containerCards{
                 width: auto;
+                .biggerC{
+                    .bText{
+                        h2{
+                            height: auto;
+                            margin: 0;
+                            font-size: 32px;
+                            color: $color-1-dark;
+                        }
+                    }
+                }
+                @media screen and (min-width: 850px){
                 &:first-of-type{
                     transform: rotate(-1.43deg);
                     -webkit-transform: rotate(-1.43deg);
@@ -81,9 +88,29 @@
                     -moz-transform: rotate(1.43deg);
                     -ms-transform: rotate(1.43deg);
                     -o-transform: rotate(1.43deg);
+                    }
+                }
+                &:last-of-type{
                     .biggerC{
+                        background-color: #3c1786;
                         .bCard{
                             background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
+                            .bLogo{
+                                .containerIcons{
+                                    .icons.lottery{
+                                        fill: $white;
+                                    }
+                                }
+                            }
+                            .bText{
+                                .Littletitle, .Littletitle2, .paraghBC{
+                                    color: $white;
+                                }
+                                h2{
+                                    background: rgba(0, 0, 0, 0) linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) repeat scroll 0% 0% padding-box text;
+                                    -webkit-text-fill-color: transparent;
+                                }
+                            }
                         }
                     }
                 }

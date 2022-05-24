@@ -945,44 +945,12 @@ body {
   gap: 0;
   position: relative;
 }
-.section-prizes .img-float {
-  width: 512px;
-  height: 512px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.section-prizes .img-float img {
-  animation: float 2s ease-in-out infinite;
-  -webkit-animation: float 2s ease-in-out infinite;
-}
-@keyframes float {
-  0% {
-    transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-  }
-  50% {
-    transform: translate(-10px, -20px);
-    -webkit-transform: translate(-10px, -20px);
-    -moz-transform: translate(-10px, -20px);
-    -ms-transform: translate(-10px, -20px);
-    -o-transform: translate(-10px, -20px);
-  }
-  100% {
-    transform: translate(0px, 0px);
-    -webkit-transform: translate(0px, 0px);
-    -moz-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
-  }
-}
 .section-prizes .center-prizes {
+  position: relative;
   min-width: 100px;
   min-height: 100px;
   padding: 40px;
+  margin: 48px 0px;
   background: rgba(255, 255, 255, 0.6) none repeat scroll 0% 0%;
   border-radius: 72px;
   -webkit-border-radius: 72px;
@@ -1012,7 +980,7 @@ body {
 .section-prizes .center-prizes .prizes-description-container .prizes-title-container .hStyle h2 span {
   color: #280d5f;
   font-size: 40px;
-  font-family: "kanit SemiBold";
+  font-family: "Kanit SemiBold";
 }
 .section-prizes .center-prizes .prizes-description-container .prizes-text-container {
   display: flex;
@@ -1024,33 +992,64 @@ body {
 .section-prizes .center-prizes .prizes-description-container .prizes-text-container .prizes-text span {
   color: #7a6eaa;
   font-size: 16px;
+  font-family: "Kanit Regular";
 }
 .section-prizes .center-prizes .prizes-cards-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+@media screen and (min-width: 850px) {
+  .section-prizes .center-prizes .prizes-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .section-prizes .center-prizes .prizes-cards-container .containerCards {
   width: auto;
 }
-.section-prizes .center-prizes .prizes-cards-container .containerCards:first-of-type {
-  transform: rotate(-1.43deg);
-  -webkit-transform: rotate(-1.43deg);
-  -moz-transform: rotate(-1.43deg);
-  -ms-transform: rotate(-1.43deg);
-  -o-transform: rotate(-1.43deg);
+.section-prizes .center-prizes .prizes-cards-container .containerCards .biggerC .bText h2 {
+  height: auto;
+  margin: 0;
+  font-size: 32px;
+  color: #280d5f;
 }
-.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type {
-  transform: rotate(1.43deg);
-  -webkit-transform: rotate(1.43deg);
-  -moz-transform: rotate(1.43deg);
-  -ms-transform: rotate(1.43deg);
-  -o-transform: rotate(1.43deg);
+@media screen and (min-width: 850px) {
+  .section-prizes .center-prizes .prizes-cards-container .containerCards:first-of-type {
+    transform: rotate(-1.43deg);
+    -webkit-transform: rotate(-1.43deg);
+    -moz-transform: rotate(-1.43deg);
+    -ms-transform: rotate(-1.43deg);
+    -o-transform: rotate(-1.43deg);
+  }
+  .section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type {
+    transform: rotate(1.43deg);
+    -webkit-transform: rotate(1.43deg);
+    -moz-transform: rotate(1.43deg);
+    -ms-transform: rotate(1.43deg);
+    -o-transform: rotate(1.43deg);
+  }
+}
+.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC {
+  background-color: #3c1786;
 }
 .section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard {
   background: rgba(0, 0, 0, 0) linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%) repeat scroll 0% 0%;
+}
+.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard .bLogo .containerIcons .icons.lottery {
+  fill: #eff4f5;
+}
+.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard .bText .Littletitle, .section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard .bText .Littletitle2, .section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard .bText .paraghBC {
+  color: #eff4f5;
+}
+.section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard .bText h2 {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) repeat scroll 0% 0% padding-box text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
