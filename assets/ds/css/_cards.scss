@@ -13,10 +13,8 @@
     gap:3rem;
     padding-top:10px;
 
-    
-
     .smallerC {
-        background-color: $white-3;
+        background-color: $white-dark;
         width: 282px;
         height: 285px;
         padding: 1px 1px 2px 1px;
@@ -78,11 +76,11 @@
         width: 291px;
         height: 366px;
         padding: 1px 1px 4px 1px;
-        background-color: $orange;
+        background-color: $color-5;
         border-radius: 24px;
         display: flex;
         justify-content: center;
-            
+
         .bCard {
             width: calc(100% - 2px);
             height: calc(100% - 5px);
@@ -97,12 +95,12 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-end;
-            }       
+            }
 
             .bText {
                 display: flex;
                 flex-direction: column;
-                    
+
                 .Littletitle {
                     height: 24px;
                     color: $title-color;
@@ -151,11 +149,11 @@
                 height: 48px;
                 padding: 0px 24px;
                 background-color: $buttons-color;
-                color: $white-1;
+                color: $white-light;
                 width: 100%;                
 
                 .arrow {
-                    fill: $white-1;
+                    fill: $white-light;
                 }
                 
             }
