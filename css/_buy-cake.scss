@@ -1,3 +1,5 @@
+@use '../assets/ds/css/colors' as *;
+
 .buy-cake-and-starts-in-seconds {
     display: flex;
     flex-direction: column;
@@ -8,7 +10,7 @@
         flex-direction: column;
         align-items: center;
         z-index: 1;
-        background-color: white;
+        background-color: color rgba(250,249,250);
         padding: 48px 0px;
         width: 100%;
         .small-buy-cake-container{
@@ -32,18 +34,34 @@
                         flex: 1 1 0%;
                         margin-right: 64px;
                         width: 50%;
+                        
                         .buy-cake-h2-text {
-                            font-size: 40px;
+                            width: 100%;
+                            h2 {font-size: 40px;
+                            font-family: Kanit Bold ;
+                            color: $black-1;
+                            line-height: 1.1;
+                            margin-bottom:24px;
+                            }
+                            span {
+                                font-size: 40px;
+                                font-family: Kanit Bold;
+                            }
                         }
                         .buy-cake-p-text{
                             font-size: 16px;
+                            font-family: Kanit Regular;
+                            color: rgb(122, 110, 170);
                         }
                         .buy-cake-buttons{
                             display: flex;
                             flex-direction: row;
+                            gap: 16px;
+                            justify-content: start;
+                            width:30%;
                         }
                     }
-                    .buy-cake.svg {
+                    .buy-cake-svg {
                         width: 50%;
                     }
                 }
