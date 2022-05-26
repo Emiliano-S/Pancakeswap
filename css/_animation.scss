@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 @mixin floatAnimation ($xDir, $yDir, $speed){
     animation: float $speed ease-in-out 0.66s infinite normal none running ;
     -webkit-animation: float $speed ease-in-out 0.66s infinite normal none running ;
     @keyframes float {
+=======
+@mixin floatAnimation ($animationName, $xDir, $yDir, $speed, $delay){
+    animation: $animationName $speed ease-in-out $delay infinite normal none running ;
+    -webkit-animation: $animationName $speed ease-in-out $delay infinite normal none running ;
+
+    @keyframes #{$animationName} {
+>>>>>>> develop
         0% {
             transform: translate(0px, 0px);
             -webkit-transform: translate(0px, 0px);

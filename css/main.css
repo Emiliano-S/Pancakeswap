@@ -1,9 +1,10 @@
-/* Error: Undefined mixin.
+/* Error: expected "}".
  *    ,
- * 83 |                             @include floatAnimation2(3px, 15px, 3s);
- *    |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ * 35 | }
+ *    |  ^
  *    '
- *   _buy-cake.scss 83:29  @use
+ *   _animation.scss 35:2  @use
+ *   _buy-cake.scss 2:1    @use
  *   main.scss 3:1         root stylesheet */
 
 body::before {
@@ -14,5 +15,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 83 \2502                              @include floatAnimation2(3px, 15px, 3s);\d\a    \2502                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   _buy-cake.scss 83:29  @use\a   main.scss 3:1         root stylesheet";
+  content: 'Error: expected "}".\a    \2577 \a 35 \2502  }\a    \2502   ^\a    \2575 \a   _animation.scss 35:2  @use\a   _buy-cake.scss 2:1    @use\a   main.scss 3:1         root stylesheet';
 }
