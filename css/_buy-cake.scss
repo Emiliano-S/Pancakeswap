@@ -1,5 +1,5 @@
 @use '../assets/ds/css/colors' as *;
-
+@use 'animation.scss' as *;
 .buy-cake-and-starts-in-seconds {
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@
                 .small-buy-cake-text-and-svg{
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
+                   // align-items: center;
                     justify-content: center;
                     width: 100%;
                     .buy-cake-text {
@@ -34,7 +34,6 @@
                         flex: 1 1 0%;
                         margin-right: 64px;
                         width: 50%;
-                        
                         .buy-cake-h2-text {
                             width: 100%;
                             h2 {font-size: 40px;
@@ -52,20 +51,59 @@
                             font-size: 16px;
                             font-family: Kanit Regular;
                             color: rgb(122, 110, 170);
+                            margin-bottom: 24px;
                         }
                         .buy-cake-buttons{
                             display: flex;
                             flex-direction: row;
                             gap: 16px;
                             justify-content: start;
-                            width:30%;
+                            width: 40%;
+                            align-items: center;
+                            p {
+                                color: $color-2-light;
+                                font-family: Kanit SemiBold;
+                            }
                         }
                     }
                     .buy-cake-svg {
                         width: 50%;
+                        position: relative;
+                        flex: 1 1 0%;
+                        box-sizing: border-box;
+                        img{
+                            position: absolute;
+                            top: -50px;
+                            left: 0px;
+                            width: 90%;
+                        &:nth-child(1) {
+                            @include floatAnimation(5px, 10px, 3s);
+                        }
+                        &:nth-child(2) {
+                            @include floatAnimation(3px, 15px, 3s);
+                        }
+                        &:nth-child(3) {
+                            @include floatAnimation (6px, 5px, 3s);
+                        }
+                        &:nth-child(4) {
+                            @include floatAnimation (5px ,10px, 3s);
+                        }
+                        }
+                       /* img:nth-child(1){
+                            @include floatAnimation(5px, 10px, 3s);
+                        }
+                        img:nth-child(2){
+                            @include floatAnimation(3px, 15px, 3s);
+                        }
+                        img:nth-child(3){
+                            @include floatAnimation(6px, 5px, 3s);
+                        }
+                        img:nth-child(4){
+                            @include floatAnimation(5px, 10px, 3s);
+                        } */
                     }
-                }
             }
         }
+    }
     }
 }

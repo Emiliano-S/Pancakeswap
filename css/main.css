@@ -962,7 +962,6 @@ body {
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   width: 100%;
 }
@@ -992,16 +991,151 @@ body {
   font-size: 16px;
   font-family: Kanit Regular;
   color: rgb(122, 110, 170);
+  margin-bottom: 24px;
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-buttons {
   display: flex;
   flex-direction: row;
   gap: 16px;
   justify-content: start;
-  width: 30%;
+  width: 40%;
+  align-items: center;
+}
+.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-buttons p {
+  color: #6cdae2;
+  font-family: Kanit SemiBold;
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg {
   width: 50%;
+  position: relative;
+  flex: 1 1 0%;
+  box-sizing: border-box;
+  /* img:nth-child(1){
+       @include floatAnimation(5px, 10px, 3s);
+   }
+   img:nth-child(2){
+       @include floatAnimation(3px, 15px, 3s);
+   }
+   img:nth-child(3){
+       @include floatAnimation(6px, 5px, 3s);
+   }
+   img:nth-child(4){
+       @include floatAnimation(5px, 10px, 3s);
+   } */
+}
+.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+  width: 90%;
+}
+.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img:nth-child(1) {
+  animation: float 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+    -webkit-transform: translate(5px, 10px);
+    -moz-transform: translate(5px, 10px);
+    -ms-transform: translate(5px, 10px);
+    -o-transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img:nth-child(2) {
+  animation: float 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(3px, 15px);
+    -webkit-transform: translate(3px, 15px);
+    -moz-transform: translate(3px, 15px);
+    -ms-transform: translate(3px, 15px);
+    -o-transform: translate(3px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img:nth-child(3) {
+  animation: float 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(6px, 5px);
+    -webkit-transform: translate(6px, 5px);
+    -moz-transform: translate(6px, 5px);
+    -ms-transform: translate(6px, 5px);
+    -o-transform: translate(6px, 5px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img:nth-child(4) {
+  animation: float 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+    -webkit-transform: translate(5px, 10px);
+    -moz-transform: translate(5px, 10px);
+    -ms-transform: translate(5px, 10px);
+    -o-transform: translate(5px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
 }
 
 body {
