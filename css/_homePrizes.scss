@@ -40,19 +40,19 @@
             .prizes-img{
                 position: absolute;
                 &:nth-child(1){
-                    @include floatAnimation(-10px, -20px, 3s, 1s);
+                    @include floatAnimation(prizesAnimation,-10px, -20px, 3s, 1s);
                 }
                 &:nth-child(2){
-                    @include floatAnimation(-10px, -20px, 3s, 0.66s);
+                    @include floatAnimation(prizesAnimation,-10px, -20px, 3s, 0.66s);
                 }
                 &:nth-child(3){
-                    @include floatAnimation(-10px, -20px, 3s, 0.33s);
+                    @include floatAnimation(prizesAnimation,-10px, -20px, 3s, 0.33s);
                 }
                 &:nth-child(4){
-                    @include floatAnimation(-10px, -20px, 3s, 0s);
+                    @include floatAnimation(prizesAnimation,-10px, -20px, 3s, 0s);
                 }
                 &:nth-child(5){
-                    @include floatAnimation(-10px, -20px, 3s, 0s);
+                    @include floatAnimation(prizesAnimation,-10px, -20px, 3s, 0s);
                 }
                 img{
                     width: 100%;
