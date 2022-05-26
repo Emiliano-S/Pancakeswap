@@ -80,13 +80,13 @@
                             @include floatAnimation(5px, 10px, 3s);
                         }
                         &:nth-child(2) {
-                            @include floatAnimation(3px, 15px, 3s);
+                            @include floatAnimation2(3px, 15px, 3s);
                         }
                         &:nth-child(3) {
-                            @include floatAnimation (6px, 5px, 3s);
+                            @include floatAnimation(6px, 5px, 3s);
                         }
                         &:nth-child(4) {
-                            @include floatAnimation (5px ,10px, 3s);
+                            @include floatAnimation(5px ,10px, 3s);
                         }
                         }
                        /* img:nth-child(1){
