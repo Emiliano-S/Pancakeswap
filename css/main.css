@@ -974,10 +974,10 @@ body {
   position: absolute;
 }
 .section-prizes .prizes-img-positioner .prizes-img-container .prizes-img:nth-child(1) {
-  animation: float 3s ease-in-out 1s infinite normal none running;
-  -webkit-animation: float 3s ease-in-out 1s infinite normal none running;
+  animation: prizesAnimation 3s ease-in-out 1s infinite normal none running;
+  -webkit-animation: prizesAnimation 3s ease-in-out 1s infinite normal none running;
 }
-@keyframes float {
+@keyframes prizesAnimation {
   0% {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
@@ -1001,10 +1001,10 @@ body {
   }
 }
 .section-prizes .prizes-img-positioner .prizes-img-container .prizes-img:nth-child(2) {
-  animation: float 3s ease-in-out 0.66s infinite normal none running;
-  -webkit-animation: float 3s ease-in-out 0.66s infinite normal none running;
+  animation: prizesAnimation 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: prizesAnimation 3s ease-in-out 0.66s infinite normal none running;
 }
-@keyframes float {
+@keyframes prizesAnimation {
   0% {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
@@ -1028,10 +1028,10 @@ body {
   }
 }
 .section-prizes .prizes-img-positioner .prizes-img-container .prizes-img:nth-child(3) {
-  animation: float 3s ease-in-out 0.33s infinite normal none running;
-  -webkit-animation: float 3s ease-in-out 0.33s infinite normal none running;
+  animation: prizesAnimation 3s ease-in-out 0.33s infinite normal none running;
+  -webkit-animation: prizesAnimation 3s ease-in-out 0.33s infinite normal none running;
 }
-@keyframes float {
+@keyframes prizesAnimation {
   0% {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
@@ -1055,10 +1055,10 @@ body {
   }
 }
 .section-prizes .prizes-img-positioner .prizes-img-container .prizes-img:nth-child(4) {
-  animation: float 3s ease-in-out 0s infinite normal none running;
-  -webkit-animation: float 3s ease-in-out 0s infinite normal none running;
+  animation: prizesAnimation 3s ease-in-out 0s infinite normal none running;
+  -webkit-animation: prizesAnimation 3s ease-in-out 0s infinite normal none running;
 }
-@keyframes float {
+@keyframes prizesAnimation {
   0% {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
@@ -1082,10 +1082,10 @@ body {
   }
 }
 .section-prizes .prizes-img-positioner .prizes-img-container .prizes-img:nth-child(5) {
-  animation: float 3s ease-in-out 0s infinite normal none running;
-  -webkit-animation: float 3s ease-in-out 0s infinite normal none running;
+  animation: prizesAnimation 3s ease-in-out 0s infinite normal none running;
+  -webkit-animation: prizesAnimation 3s ease-in-out 0s infinite normal none running;
 }
-@keyframes float {
+@keyframes prizesAnimation {
   0% {
     transform: translate(0px, 0px);
     -webkit-transform: translate(0px, 0px);
@@ -1162,6 +1162,7 @@ body {
   font-family: "Kanit Regular";
 }
 .section-prizes .center-prizes .prizes-cards-container {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1183,8 +1184,10 @@ body {
 .section-prizes .center-prizes .prizes-cards-container .containerCards .biggerC .bText h2 {
   height: auto;
   margin: 0;
-  font-size: 32px;
+  font-size: 40px;
   color: #280d5f;
+  font-weight: 60;
+  font-family: "Kanit SemiBold";
 }
 @media screen and (min-width: 850px) {
   .section-prizes .center-prizes .prizes-cards-container .containerCards:first-of-type {
@@ -1215,7 +1218,8 @@ body {
   color: #eff4f5;
 }
 .section-prizes .center-prizes .prizes-cards-container .containerCards:last-of-type .biggerC .bCard .bText h2 {
-  background: rgba(0, 0, 0, 0) linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) repeat scroll 0% 0% padding-box text;
+  background: -webkit-linear-gradient(rgb(255, 216, 0), rgb(253, 171, 50));
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

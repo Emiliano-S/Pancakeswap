@@ -106,6 +106,8 @@
         }
 
         .prizes-cards-container{
+            margin-top: 30px;
+
             @media screen and (min-width: 850px) {
                 @include flx(row,center,center,20px);
             }
@@ -117,8 +119,10 @@
                         h2{
                             height: auto;
                             margin: 0;
-                            font-size: 32px;
+                            font-size: 40px;
                             color: $color-1-dark;
+                            font-weight: 60;
+                            font-family: "Kanit SemiBold";
                         }
                     }
                 }
@@ -155,7 +159,8 @@
                                     color: $white;
                                 }
                                 h2{
-                                    background: rgba(0, 0, 0, 0) linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%) repeat scroll 0% 0% padding-box text;
+                                    background: -webkit-linear-gradient(rgb(255, 216, 0),rgb(253, 171, 50));
+                                    -webkit-background-clip: text;
                                     -webkit-text-fill-color: transparent;
                                 }
                             }
