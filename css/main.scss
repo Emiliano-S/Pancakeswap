@@ -1,6 +1,7 @@
 // Collegare qui dentro i singoli moduli riferiti alle section della homepage
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
 @use '_buy-cake.scss';
+@use '_animation.scss'; 
 body{
     width: 100%;
     min-height: 200px;
