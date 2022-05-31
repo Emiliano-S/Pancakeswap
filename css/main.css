@@ -501,7 +501,6 @@
 }
 .containerCards .biggerC .bCard #btnBcard {
   position: relative;
-  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -510,7 +509,6 @@
   font-family: "Kanit Semibold";
   font-size: 16px;
   font-weight: 600;
-  -webkit-box-pack: center;
   justify-content: center;
   height: 48px;
   padding: 0px 24px;
@@ -939,7 +937,6 @@ body {
   min-height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 body .section-nav {
@@ -964,10 +961,12 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
 @media screen and (min-width: 1200px) {
   body main .section-banner .section-1200, body main .section-stats .section-1200, body main .section-trade .section-1200, body main .section-earn .section-1200, body main .section-prizes .section-1200, body main .section-cake .section-1200, body main .section-wallet .section-1200 {
     max-width: 1200px;
+    width: 100%;
     padding: 48px 24px;
   }
   body main .section-banner .section-968, body main .section-stats .section-968, body main .section-trade .section-968, body main .section-earn .section-968, body main .section-prizes .section-968, body main .section-cake .section-968, body main .section-wallet .section-968 {
     max-width: 968px;
+    width: 100%;
     padding: 48px 24px;
   }
 }
@@ -982,6 +981,4 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
     width: 100%;
     padding: 16px 24px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
