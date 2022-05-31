@@ -141,7 +141,24 @@
     padding-bottom:48px;
     .start-in-seconds-svg {
       width: 20%;
+      position: relative;
+      box-sizing: border-box;
+      img {
+        width: 130%;
+        position: absolute;
+        left: -120px;
+        top: -50px;
+        &:nth-child(1) {
+          @include floatAnimation(float-pancake-4, 10px, 15px, 3s, 0.66s);
+        }
+        &:nth-child(2) {
+          @include floatAnimation(float-pancake-5, 11px, 10px, 3s, 0.66s);
+        }
+        &:nth-child(3) {
+          @include floatAnimation(float-pancake-6, 8px, 20px, 3s, 1s);
+      }
     }
+  }
     .start-in-seconds-text-container {
       width: 60%;
       text-align: center;
@@ -172,6 +189,25 @@
     }
     .start-in-seconds-svg2 {
       width: 20%;
+      position: relative;
+      box-sizing: border-box;
+      img {
+        width: 130%;
+        position: absolute;
+        left: 60px;
+        bottom: -90px;
+        &:nth-child(1) {
+          @include floatAnimation(float-pancake2, 8px, 20px, 3s, 1s);
+        }
+        &:nth-child(2) {
+          @include floatAnimation(float-pancake1, 10px, 15px, 3s, 0.66s);
+        }
+        &:nth-child(3) {
+          @include floatAnimation(float-pancake3, 11px, 10px, 3s, 0.33s);
+          top: 60px;
+          right: 25px;
+      }
     }
   }
+}
 }

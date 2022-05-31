@@ -501,6 +501,7 @@
 }
 .containerCards .biggerC .bCard #btnBcard {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -509,6 +510,7 @@
   font-family: "Kanit Semibold";
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   height: 48px;
   padding: 0px 24px;
@@ -1171,6 +1173,95 @@ body {
 }
 .buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg {
   width: 20%;
+  position: relative;
+  box-sizing: border-box;
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img {
+  width: 130%;
+  position: absolute;
+  left: -120px;
+  top: -50px;
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img:nth-child(1) {
+  animation: float-pancake-4 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float-pancake-4 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float-pancake-4 {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, 15px);
+    -webkit-transform: translate(10px, 15px);
+    -moz-transform: translate(10px, 15px);
+    -ms-transform: translate(10px, 15px);
+    -o-transform: translate(10px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img:nth-child(2) {
+  animation: float-pancake-5 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float-pancake-5 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float-pancake-5 {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(11px, 10px);
+    -webkit-transform: translate(11px, 10px);
+    -moz-transform: translate(11px, 10px);
+    -ms-transform: translate(11px, 10px);
+    -o-transform: translate(11px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img:nth-child(3) {
+  animation: float-pancake-6 3s ease-in-out 1s infinite normal none running;
+  -webkit-animation: float-pancake-6 3s ease-in-out 1s infinite normal none running;
+}
+@keyframes float-pancake-6 {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(8px, 20px);
+    -webkit-transform: translate(8px, 20px);
+    -moz-transform: translate(8px, 20px);
+    -ms-transform: translate(8px, 20px);
+    -o-transform: translate(8px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
 }
 .buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container {
   width: 60%;
@@ -1198,6 +1289,97 @@ body {
 }
 .buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 {
   width: 20%;
+  position: relative;
+  box-sizing: border-box;
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img {
+  width: 130%;
+  position: absolute;
+  left: 60px;
+  bottom: -90px;
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img:nth-child(1) {
+  animation: float-pancake2 3s ease-in-out 1s infinite normal none running;
+  -webkit-animation: float-pancake2 3s ease-in-out 1s infinite normal none running;
+}
+@keyframes float-pancake2 {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(8px, 20px);
+    -webkit-transform: translate(8px, 20px);
+    -moz-transform: translate(8px, 20px);
+    -ms-transform: translate(8px, 20px);
+    -o-transform: translate(8px, 20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img:nth-child(2) {
+  animation: float-pancake1 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: float-pancake1 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes float-pancake1 {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, 15px);
+    -webkit-transform: translate(10px, 15px);
+    -moz-transform: translate(10px, 15px);
+    -ms-transform: translate(10px, 15px);
+    -o-transform: translate(10px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img:nth-child(3) {
+  animation: float-pancake3 3s ease-in-out 0.33s infinite normal none running;
+  -webkit-animation: float-pancake3 3s ease-in-out 0.33s infinite normal none running;
+  top: 60px;
+  right: 25px;
+}
+@keyframes float-pancake3 {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(11px, 10px);
+    -webkit-transform: translate(11px, 10px);
+    -moz-transform: translate(11px, 10px);
+    -ms-transform: translate(11px, 10px);
+    -o-transform: translate(11px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
 }
 
 body {
@@ -1249,4 +1431,6 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
     width: 100%;
     padding: 16px 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
