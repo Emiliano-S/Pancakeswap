@@ -46,7 +46,7 @@ li {
   height: 50%;
   transform-origin: 0% 100%;
   font-size: 24px;
-  color: rgb(120, 26, 26);
+  color: lightgray;
   text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
@@ -193,6 +193,4 @@ li:nth-child(7) .text:hover {
   position: hidden;
   width: 70%;
   height: 70%;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
