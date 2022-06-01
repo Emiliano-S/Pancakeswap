@@ -2,6 +2,10 @@
 @use "./_animation.scss" as *;
 @use "../assets/ds/css/buttons";
 
+.section-trade{
+    background-color: white;
+}
+
 .tradeColumn {
     display: flex;
     flex-direction: column;
@@ -23,6 +27,7 @@
 
                 h2 {
                     color: colors.$color-1-dark;
+                    line-height: 1;
 
                     span {
                         color: colors.$color-1-light;
