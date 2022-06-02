@@ -7,7 +7,6 @@ body{
     min-height: 200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     .section-nav{
         width: 100%;
@@ -30,10 +29,12 @@ body{
                 .section-1200{
                     max-width: 1200px;
                     padding: 48px 24px;
+                    width:100%;
                 }
                 .section-968{
                     max-width: 968px;
                     padding: 48px 24px;
+                    width:100%;
                 }
             }
             @media screen and (max-width: 967px){
