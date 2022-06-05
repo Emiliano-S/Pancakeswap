@@ -1,3 +1,6 @@
+
+// Funzione per aumentare i numeri nella card section-prizes
+
 function changeNumberPromise(){
     return new Promise((resolve, reject) =>{
         setTimeout(() =>{
@@ -9,7 +12,6 @@ function changeNumberPromise(){
         },100);
     })
 }
-
 
 async function changeNumber(){
     const numberToChange = document.querySelector(".numberChanger");
