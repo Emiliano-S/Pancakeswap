@@ -8,7 +8,7 @@ let lotteryValueAmount = 130043;
 function displayCardValues(value){
     const lotteryValue = document.getElementById("lotteryValue");
     value = String(value);
-    value = value.split(" ",3);
+    value = value.slice(0,3) + "," + value.slice(3);
 
     lotteryValue.textContent = value;
 }
@@ -33,6 +33,6 @@ function promiseChangeCardValue(){
     })
 }
 
-setInterval(changeCardValues,1000);
+setInterval(changeCardValues,30000);
 window.addEventListener("DOMContentLoaded", displayCardValues(lotteryValueAmount));
 
