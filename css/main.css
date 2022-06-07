@@ -34,6 +34,15 @@ body {
     flex-direction: column;
     background-color: rgb(39, 38, 44);
 }
+.footer-title{
+    color: rgb(154, 106, 255);;
+}
+.contact-link{
+    color: rgb(255, 178, 55);
+}
+.footer-list-item{
+    color: rgb(244, 238, 255);
+}
 .list-container{
     display: flex;
     flex-direction: row;
@@ -62,6 +71,58 @@ ul {
     padding-bottom: 32px;
     margin-bottom: 32px;
     border-bottom:1px solid rgb(56, 50, 65);
+}
+.svg-container svg{
+    fill: rgb(184, 173, 210);
+}
+.telegram-dropdown{
+    --swiper-theme-color: #007aff;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: baseline;
+    position: relative;
+}
+.telegram-dropdown:hover + .language-menu{
+    opacity: 1;
+    max-height: 400px;
+    overflow-y: auto;
+    transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
+    pointer-events: auto;
+}
+.telegram-svg{
+    margin-right: 24px;
+}
+.language-menu{
+    position: absolute;
+    vertical-align: baseline;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, 0px);
+    left: 50%;
+    bottom: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px, rgba(25, 19, 38, 0.05) 0px 1px 1px;
+    padding: 16px;
+    max-height: 0px;
+    z-index: 10;
+    border-radius: 4px;
+    opacity: 0;
+    transition: max-height 0s ease 0.3s, opacity 0.3s ease-in-out 0s;
+    will-change: opacity;
+    pointer-events: none;
+}
+.language-menu-element {
+    
+    text-decoration: none;
+    color: rgb(122, 110, 170);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: fit-content;
 }
 .svg-container a{
     display: flex;
@@ -97,15 +158,27 @@ ul {
     flex-direction: row;
     order: 2;
 }
-.money-icon{
-    margin-right: 20px
+.bunny-money-block{
+    display:flex;
+    margin-right: 8px;
 }
-.money-link{
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    text-decoration: none; 
+.bunny-money-block a{
+    text-decoration: none;
 }
+.bunny-svg{
+    margin-right: 8px;
+}
+.bunny-svg:hover{
+    transition: transform 0.3s ease 0s;
+}
+.money-value{
+    vertical-align: baseline;
+    color: rgb(184, 173, 210);
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
 .buy-cake{
     position: relative;
     -webkit-box-align: center;
@@ -138,3 +211,4 @@ ul {
     filter: brightness(85%);
     -webkit-filter: brightness(85%);
 }
+
