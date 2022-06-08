@@ -1,25 +1,20 @@
 @use "../assets/ds/css/colors" as *;
 @use "./animation" as *;
 
-@mixin section($color, $border-color, $padding, $font-size: 1rem) {
-  color: $color;
-  border: $border-color;
-  font-size: $font-size;
-  padding: $padding;
+@mixin flex($display, $flx-direc, $width, $height) {
+  $display: display;
+  $flx-direct: flex-direction;
+  $width:width;
+  $height:height;
 }
 * {
   text-decoration: none;
   font-family: kanit;
 }
 .flex-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
+  @include flex(flex, row, 100%, auto);
   padding: 56px 40px 32px;
-  margin-bottom: 0px;
   background-color: rgb(39, 38, 44);
-  -webkit-box-pack: center;
   justify-content: center;
 }
 .small-container {
@@ -32,12 +27,7 @@
 .footer-title {
   color: rgb(154, 106, 255);
 }
-.contact-link {
-  color: rgb(255, 178, 55);
-}
-.footer-list-item {
-  color: rgb(244, 238, 255);
-}
+
 .list-container {
   display: flex;
   flex-direction: row;
@@ -46,6 +36,13 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 36px;
+  a{
+    color:rgb(244, 238, 255);
+  }
+  .contact-link {
+    color: rgb(255, 178, 55);
+  }
+  
 }
 li {
   font-weight: 400;
@@ -164,7 +161,6 @@ ul {
     height: 48px;
     padding: 0px 24px;
     background-color: transparent;
-    color: rgb(31, 199, 212);
     box-shadow: none;
     :nth-child(1) {
     fill: rgb(184, 173, 210);
@@ -244,6 +240,16 @@ ul {
         height: auto;
     }
 }
+.language-change-selector{
+  button:hover{
+    opacity: 0.65;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    -webkit-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    -moz-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    -ms-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    -o-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+}
 :hover.eng-svg-button .world-svg-icon{
         opacity: 0.65;
 }
@@ -272,25 +278,27 @@ ul {
   a{
     text-decoration: none;
   }
-  .bunny-link{
-    svg{
-    transition: transform 0.3s ease 0s;
-    }
-  }
 }
+
 .bunny-svg {
   margin-right: 8px;
 }
 .bunny-link{
     display: flex;
 }
-.bunny-link:hover svg{
-  transition: transform 0.3s ease 0s;
-    transform: scale(1.5);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+.bunny-link:hover{
+  svg{
+    transition: transform 0.3s ease 0s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transition: transform 0.3s ease 0s;
+    -moz-transition: transform 0.3s ease 0s;
+    -ms-transition: transform 0.3s ease 0s;
+    -o-transition: transform 0.3s ease 0s;
+}
 }
 
 .money-value {
@@ -329,4 +337,5 @@ ul {
 }
 .buy-cake:hover {
     opacity: 0.65;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
