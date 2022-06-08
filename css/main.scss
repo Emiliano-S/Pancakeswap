@@ -2,6 +2,7 @@
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
 @use './homePrizes';
 @use '../assets/ds/css/colors' as *;
+@use './mediaquerry' as *;
 body{
     width: 100%;
     min-height: 200px;
@@ -37,13 +38,13 @@ body{
                     padding: 48px 24px;
                 }
             }
-            @media screen and (min-width: 967px){
+            @include breakpoint("tablet"){
                 .section-1200, .section-968{
                     width: 100%;
                     padding: 32px 24px;
                 }
             }
-            @media screen and (max-width: 570px){
+            @include breakpoint("mobile"){
                 .section-1200, .section-968{
                     width: 100%;
                     padding: 16px 24px;
