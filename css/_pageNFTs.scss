@@ -1,0 +1,11 @@
+@use "../assets/ds/css/colors" as *;
+@use './animation' as *;
+@use './mediaquerry' as *;
+
+@mixin flx ($flx-direction,$flx-jc,$flx-ai,$flx-gap) {
+    display: flex;
+    flex-direction: $flx-direction;
+    justify-content: $flx-jc;
+    align-items: $flx-ai;
+    gap: $flx-gap
+}
