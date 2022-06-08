@@ -91,8 +91,8 @@
             flex: 1 1 0%;
             box-sizing: border-box;
             @media screen and (max-width: 688px) {
-              width: 100%;    
-              height:200px;          
+              width: 100%;
+              height:200px;
             }
             img {
               position: absolute;
@@ -100,7 +100,7 @@
               left: 0px;
               width: 90%;
               @media screen and (max-width:688px) {
-                left: 250px;
+                left: 140px;
                 top:-120px;
                 width:220px;
               }
