@@ -938,7 +938,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  margin-bottom: 24px;
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container {
   position: relative;
@@ -965,6 +966,11 @@ body {
   justify-content: center;
   width: 100%;
 }
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg {
+    flex-direction: column-reverse;
+  }
+}
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text {
   display: flex;
   flex-direction: column;
@@ -972,6 +978,13 @@ body {
   flex: 1 1 0%;
   margin-right: 64px;
   width: 50%;
+}
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text {
+    width: 100%;
+    padding-top: 90px;
+    margin: auto;
+  }
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-h2-text {
   width: 100%;
@@ -1001,6 +1014,11 @@ body {
   width: 40%;
   align-items: center;
 }
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-buttons {
+    width: 60%;
+  }
+}
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-buttons p {
   cursor: pointer;
   color: #1fc7d4;
@@ -1015,11 +1033,24 @@ body {
   flex: 1 1 0%;
   box-sizing: border-box;
 }
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg {
+    width: 100%;
+    height: 200px;
+  }
+}
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img {
   position: absolute;
   top: -50px;
   left: 0px;
   width: 90%;
+}
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img {
+    left: 150px;
+    top: -120px;
+    width: 60%;
+  }
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-svg img:nth-child(1) {
   animation: float1 3s ease-in-out 0.66s infinite normal none running;
@@ -1135,11 +1166,29 @@ body {
   margin-top: 84px;
   gap: 30px;
 }
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats {
+    flex-direction: row;
+    gap: 0px;
+  }
+}
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: flex-start;
+}
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row:nth-child(2) .buy-cake-numbers-square {
+    border-left: #e7e3eb 1px solid;
+    padding-left: 16px;
+  }
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square {
   width: 33.3%;
@@ -1147,13 +1196,23 @@ body {
   flex-direction: column;
   gap: 2px;
 }
-.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square:nth-child(2) {
-  border-left: #e7e3eb 1px solid;
-  padding-left: 16px;
+@media screen and (max-width: 688px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
-.buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square:nth-child(3) {
-  border-left: #e7e3eb 1px solid;
-  padding-left: 16px;
+@media screen and (min-width: 689px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square:nth-child(2) {
+    border-left: #e7e3eb 1px solid;
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 689px) {
+  .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square:nth-child(3) {
+    border-left: #e7e3eb 1px solid;
+    padding-left: 16px;
+  }
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square p {
   color: rgb(122, 110, 170);
@@ -1161,8 +1220,14 @@ body {
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-numbers-stats .buy-cake-numbers-row .buy-cake-numbers-square h3 {
   color: #280d5f;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds {
-  background-color: purple;
+
+.section-wallet {
+  background: purple url("../img/Background-purple.png") no-repeat center;
+}
+.section-wallet .container-wallet {
+  width: 100%;
+}
+.section-wallet .container-wallet .start-in-seconds {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -1170,19 +1235,30 @@ body {
   margin-top: 24px;
   padding-top: 48px;
   padding-bottom: 48px;
+  position: relative;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg {
+@media screen and (max-width: 968px) {
+  .section-wallet .container-wallet .start-in-seconds {
+    justify-content: center;
+  }
+}
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg {
   width: 20%;
   position: relative;
   box-sizing: border-box;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img {
-  width: 130%;
+@media screen and (max-width: 968px) {
+  .section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg {
+    display: none;
+  }
+}
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg img {
+  width: 110%;
   position: absolute;
   left: -120px;
-  top: -50px;
+  top: -120px;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img:nth-child(1) {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg img:nth-child(1) {
   animation: float-pancake-4 3s ease-in-out 0.66s infinite normal none running;
   -webkit-animation: float-pancake-4 3s ease-in-out 0.66s infinite normal none running;
 }
@@ -1209,7 +1285,7 @@ body {
     -o-transform: translate(0px, 0px);
   }
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img:nth-child(2) {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg img:nth-child(2) {
   animation: float-pancake-5 3s ease-in-out 0.66s infinite normal none running;
   -webkit-animation: float-pancake-5 3s ease-in-out 0.66s infinite normal none running;
 }
@@ -1236,7 +1312,7 @@ body {
     -o-transform: translate(0px, 0px);
   }
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg img:nth-child(3) {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg img:nth-child(3) {
   animation: float-pancake-6 3s ease-in-out 1s infinite normal none running;
   -webkit-animation: float-pancake-6 3s ease-in-out 1s infinite normal none running;
 }
@@ -1263,42 +1339,52 @@ body {
     -o-transform: translate(0px, 0px);
   }
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container {
   width: 60%;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text p {
+@media screen and (max-width: 968px) {
+  .section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container {
+    width: 100%;
+  }
+}
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text p {
   color: #ffffff;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text h2 {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text h2 {
   color: #ffffff;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text:nth-child(3) p {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text:nth-child(3) p {
   font-family: Kanit SemiBold;
   color: #1fc7d4;
   cursor: pointer;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text:nth-child(3) p a:hover {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container .start-in-seconds-text:nth-child(3) p a:hover {
   text-decoration: #1fc7d4 underline;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-text-container button {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-text-container button {
   margin: auto;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg2 {
   width: 20%;
   position: relative;
   box-sizing: border-box;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img {
-  width: 130%;
+@media screen and (max-width: 968px) {
+  .section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg2 {
+    display: none;
+  }
+}
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg2 img {
+  width: 110%;
   position: absolute;
   left: 60px;
   bottom: -90px;
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img:nth-child(1) {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg2 img:nth-child(1) {
   animation: float-pancake2 3s ease-in-out 1s infinite normal none running;
   -webkit-animation: float-pancake2 3s ease-in-out 1s infinite normal none running;
 }
@@ -1325,7 +1411,7 @@ body {
     -o-transform: translate(0px, 0px);
   }
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img:nth-child(2) {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg2 img:nth-child(2) {
   animation: float-pancake1 3s ease-in-out 0.66s infinite normal none running;
   -webkit-animation: float-pancake1 3s ease-in-out 0.66s infinite normal none running;
 }
@@ -1352,7 +1438,7 @@ body {
     -o-transform: translate(0px, 0px);
   }
 }
-.buy-cake-and-starts-in-seconds .start-in-seconds .start-in-seconds-svg2 img:nth-child(3) {
+.section-wallet .container-wallet .start-in-seconds .start-in-seconds-svg2 img:nth-child(3) {
   animation: float-pancake3 3s ease-in-out 0.33s infinite normal none running;
   -webkit-animation: float-pancake3 3s ease-in-out 0.33s infinite normal none running;
   top: 60px;
@@ -1379,6 +1465,12 @@ body {
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
     -o-transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .section-cake {
+    padding-top: 50px;
   }
 }
 
