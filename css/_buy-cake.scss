@@ -100,9 +100,9 @@
               left: 0px;
               width: 90%;
               @media screen and (max-width:688px) {
-                left:150px;
+                left: 250px;
                 top:-120px;
-                width:60%;
+                width:220px;
               }
               &:nth-child(1) {
                 @include floatAnimation(float1, 10px, 15px, 3s, 0.66s);
