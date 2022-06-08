@@ -1,5 +1,6 @@
 // Collegare qui dentro i singoli moduli riferiti alle section della homepage
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
+@use '../css/navbar.scss'; 
 body{
     width: 100%;
     min-height: 200px;
