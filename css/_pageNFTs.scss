@@ -9,3 +9,10 @@
     align-items: $flx-ai;
     gap: $flx-gap
 }
+
+.section-nfts-menu{
+    width: 100%;
+    height: 42px;
+    @include flx(row, center, center, 0);
+    background-color: $white;
+}
