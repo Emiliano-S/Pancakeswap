@@ -501,6 +501,7 @@
 }
 .containerCards .biggerC .bCard #btnBcard {
   position: relative;
+  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
@@ -509,6 +510,7 @@
   font-family: "Kanit Semibold";
   font-size: 16px;
   font-weight: 600;
+  -webkit-box-pack: center;
   justify-content: center;
   height: 48px;
   padding: 0px 24px;
@@ -981,4 +983,6 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
     width: 100%;
     padding: 16px 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
