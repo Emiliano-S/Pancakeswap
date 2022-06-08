@@ -3,7 +3,7 @@ $tablet-container-width: 967px;
 $mobile-container-width: 570px;
 
 @mixin breakpoint($point) {
-    @if $point=="table" {
+    @if $point=="tablet" {
       @media only screen and (max-width: $desktop-container-width) {
         @content;
       }
