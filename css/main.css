@@ -1102,6 +1102,128 @@ e poi dentro la classe che dovete fare responsive
   align-items: center;
   gap: 40px;
 }
+.section-nfts-newest-collections .container-nfts-newest-collections .nfts-newest-collections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+.container-coin-card-back {
+  width: 371px;
+  height: 201px;
+  background: rgb(231, 227, 235);
+  padding: 1px 1px 3px;
+  border-radius: 8px 8px 8px 56px;
+  -webkit-border-radius: 8px 8px 8px 56px;
+  -moz-border-radius: 8px 8px 8px 56px;
+  -ms-border-radius: 8px 8px 8px 56px;
+  -o-border-radius: 8px 8px 8px 56px;
+}
+.container-coin-card-back .container-coin-card-front {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e7e3eb;
+  border-radius: 8px 8px 8px 56px;
+  -webkit-border-radius: 8px 8px 8px 56px;
+  -moz-border-radius: 8px 8px 8px 56px;
+  -ms-border-radius: 8px 8px 8px 56px;
+  -o-border-radius: 8px 8px 8px 56px;
+}
+.container-coin-card-back .container-coin-card-front a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 8px;
+  text-decoration: none;
+  color: #280d5f;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card {
+  width: 100%;
+  height: 100%;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-banner {
+  width: 100%;
+  height: 65%;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-banner img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-avatar {
+  width: 96px;
+  height: 96px;
+  margin-top: -25px;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-avatar img {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #ffffff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-name {
+  width: 100%;
+  height: auto;
+  text-align: right;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-name h4 {
+  color: #280d5f;
+  font-family: "Kanit SemiBold";
+  font-weight: 60;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume .coin-card-volume-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #948bbb;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume .coin-card-volume-coin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume .coin-card-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #280d5f;
+}
 
 body {
   width: 100%;
