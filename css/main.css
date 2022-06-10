@@ -1048,6 +1048,61 @@ e poi dentro la classe che dovete fare responsive
   box-shadow: 0px 0px 0px 4px #A78AE8;
 }
 
+.nfts-subsection-titles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+}
+.nfts-subsection-titles h3 {
+  color: #280d5f;
+  font-family: "Kanit SemiBold";
+  font-weight: 60;
+}
+.nfts-subsection-titles a {
+  text-decoration: none;
+}
+.nfts-subsection-titles a .nfts-subsection-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  height: 32px;
+  padding: 0px 20px;
+  background-color: #ffffff;
+  color: #1fc7d4;
+  font-size: 16px;
+  font-family: "Kanit SemiBold";
+  font-weight: 60;
+  border: 2px solid #1fc7d4;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.section-nfts-newest-collections {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-newest-collections .container-nfts-newest-collections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
 body {
   width: 100%;
   min-height: 200px;

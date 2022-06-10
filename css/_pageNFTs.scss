@@ -91,3 +91,43 @@
         }
     }
 }
+
+.nfts-subsection-titles{
+    @include flx(row, space-between, center, 0);
+    width: 100%;
+    h3{
+        color: $color-1-dark;
+        font-family: "Kanit SemiBold";
+        font-weight: 60;
+    }
+    a{
+        text-decoration: none;
+        .nfts-subsection-button{
+            @include flx(row,center,center,10px);
+            cursor: pointer;
+            height: 32px;
+            padding: 0px 20px;
+            background-color: $white-light;
+            color: $color-2;
+            font-size: 16px;
+            font-family: "Kanit SemiBold";
+            font-weight: 60;
+            border: 2px solid $color-2;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+}
+    }
+}
+
+
+.section-nfts-newest-collections{
+    width: 100%;
+    background-color: $white-light;
+    @include flx(column,center,center,0);
+    .container-nfts-newest-collections{
+        @include flx(column, center, center, 40px);
+    }
+}
