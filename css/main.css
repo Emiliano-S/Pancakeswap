@@ -946,7 +946,6 @@ e poi dentro la classe che dovete fare responsive
 */
 .section-nfts-menu {
   width: 100%;
-  height: 42px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -960,6 +959,9 @@ e poi dentro la classe che dovete fare responsive
   justify-content: center;
   align-items: center;
   gap: 0;
+}
+.section-nfts-menu .container-nfts-menu.section-1200 {
+  padding: 0;
 }
 .section-nfts-menu .container-nfts-menu .nfts-menu {
   display: flex;
@@ -992,6 +994,58 @@ e poi dentro la classe che dovete fare responsive
   color: #7645d9;
   font-weight: 600;
   border-bottom: 4px solid #1fc7d4;
+}
+
+.section-nfts-title {
+  width: 100%;
+  background-color: #ecf6ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-title .container-nfts-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-title .container-nfts-title .nfts-title-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 0;
+}
+.section-nfts-title .container-nfts-title .nfts-title-left h1 {
+  font-family: "Kanit SemiBold";
+  font-weight: 60;
+}
+.section-nfts-title .container-nfts-title .nfts-title-left h3 {
+  color: #280d5f;
+  font-family: "Kanit SemiBold";
+  font-weight: 60;
+}
+.section-nfts-title .container-nfts-title .nfts-title-right .nfts-search #searchNfts {
+  height: 40px;
+  width: 251px;
+  padding: 0px 20px;
+  color: #a297b5;
+  background-color: #eeeaf4;
+  border: 1px solid #d7caec;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+}
+.section-nfts-title .container-nfts-title .nfts-title-right .nfts-search #searchNfts:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 4px #A78AE8;
 }
 
 body {
