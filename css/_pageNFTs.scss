@@ -14,5 +14,34 @@
     width: 100%;
     height: 42px;
     @include flx(row, center, center, 0);
-    background-color: $white;
+    background-color: $white-light;
+    .container-nfts-menu{
+        @include flx(row, center, center, 0);
+        .nfts-menu{
+            @include flx(row,center,center, 20px);
+            .nfts-menu-links{
+                list-style: none;
+                a{
+                    @include flx(row, center, center, 0);
+                    font-family: "Kanit regular";
+                    text-decoration: none;
+                    height: 38px;
+                    color: $color-1;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 0px  5px;
+                    &:hover{
+                        background-color: $white;
+                    }
+                }
+                &.active{
+                    a{
+                        color: $color-1-light;
+                        font-weight: 600;
+                        border-bottom: 4px solid #1fc7d4;
+                    }
+                }
+            }
+        }
+    }
 }

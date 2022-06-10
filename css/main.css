@@ -952,7 +952,46 @@ e poi dentro la classe che dovete fare responsive
   justify-content: center;
   align-items: center;
   gap: 0;
+  background-color: #ffffff;
+}
+.section-nfts-menu .container-nfts-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-menu .container-nfts-menu .nfts-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.section-nfts-menu .container-nfts-menu .nfts-menu .nfts-menu-links {
+  list-style: none;
+}
+.section-nfts-menu .container-nfts-menu .nfts-menu .nfts-menu-links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-family: "Kanit regular";
+  text-decoration: none;
+  height: 38px;
+  color: #7a6eaa;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 5px;
+}
+.section-nfts-menu .container-nfts-menu .nfts-menu .nfts-menu-links a:hover {
   background-color: #eff4f5;
+}
+.section-nfts-menu .container-nfts-menu .nfts-menu .nfts-menu-links.active a {
+  color: #7645d9;
+  font-weight: 600;
+  border-bottom: 4px solid #1fc7d4;
 }
 
 body {
