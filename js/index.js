@@ -1,7 +1,11 @@
-import {arrayCoins} from './modules/arrayCoinsNFTs.js';
-import {createCoinPresentation} from './modules/coinsCardCreatorNFTs.js';
+import {arrayCoinsPresentation, arrayCoinsCard} from './modules/arrayCoinsNFTs.js';
+import {createCoinPresentation, createCoinCard} from './modules/coinsCardCreatorNFTs.js';
 
-arrayCoins.forEach(presentation => {
+arrayCoinsPresentation.forEach(presentation => {
     createCoinPresentation(presentation, "nftsNewCollections");
     createCoinPresentation(presentation, "nftsHotCollections");
+});
+
+arrayCoinsCard.forEach(coin =>{
+    createCoinCard(coin, "nftsNewestArrivals");
 });

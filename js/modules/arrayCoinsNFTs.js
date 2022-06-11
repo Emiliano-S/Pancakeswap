@@ -1,4 +1,4 @@
-export const arrayCoins =
+export const arrayCoinsPresentation =
 [
     {
         name: "Baked Potatoes",
@@ -48,4 +48,152 @@ export const arrayCoins =
         imgBackground: "./img/NFTs/collections/liquid-monsters-banner.webp",
         link: "https://pancakeswap.finance/nfts/collections/0x0D464bDde2301C30871bB4C29bB7DD935f5a985C"
     }
+]
+
+export const arrayCoinsCard =
+[
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
+    {
+        name: "Savannah #925",
+        id: "savannah#925",
+        link: "https://pancakeswap.finance/nfts/collections/0x52697F1c359908964817161E8fe2b817A2C76f3D/925",
+        img: "./img/NFTs/nft/savannah-925-1000.png",
+        description: "Kittens meow meow",
+        dollarValue: "31,94",
+        value: "0,112"
+    },
 ]

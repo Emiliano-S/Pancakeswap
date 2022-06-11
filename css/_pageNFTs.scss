@@ -161,7 +161,7 @@
     .container-nfts-newest-arrivals{
         @include flx(column, center, center, 40px);
         .nfts-newest-arrivals{
-            @include flx(row, center, center, 19px);
+            @include flx(row, center, center, 16px);
             flex-wrap: wrap;
         }
     }
