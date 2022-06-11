@@ -951,7 +951,7 @@ e poi dentro la classe che dovete fare responsive
   justify-content: center;
   align-items: center;
   gap: 0;
-  background-color: #ffffff;
+  background-color: #faf9fa;
 }
 .section-nfts-menu .container-nfts-menu {
   display: flex;
@@ -1094,7 +1094,7 @@ e poi dentro la classe che dovete fare responsive
 
 .section-nfts-newest-collections {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #faf9fa;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1119,7 +1119,7 @@ e poi dentro la classe che dovete fare responsive
 
 .section-nfts-hot-collections {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #faf9fa;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1144,7 +1144,7 @@ e poi dentro la classe che dovete fare responsive
 
 .section-nfts-newest-arrivals {
   width: 100%;
-  background-color: #ffffff;
+  background-color: #faf9fa;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1377,6 +1377,23 @@ e poi dentro la classe che dovete fare responsive
   font-size: 16px;
   font-weight: 600;
   color: #280d5f;
+}
+
+.section-nfts-faqs {
+  width: 100%;
+  background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-faqs .container-faqs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 body {

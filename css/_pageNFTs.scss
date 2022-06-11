@@ -13,7 +13,7 @@
 .section-nfts-menu{
     width: 100%;
     @include flx(row, center, center, 0);
-    background-color: $white-light;
+    background-color: #faf9fa;
     .container-nfts-menu{
         &.section-1200{
             padding: 0;
@@ -130,7 +130,7 @@
 
 .section-nfts-newest-collections{
     width: 100%;
-    background-color: $white-light;
+    background-color: #faf9fa;
     @include flx(column,center,center,0);
     .container-nfts-newest-collections{
         @include flx(column, center, center, 40px);
@@ -143,7 +143,7 @@
 
 .section-nfts-hot-collections{
     width: 100%;
-    background-color: $white-light;
+    background-color: #faf9fa;
     @include flx(column,center,center,0);
     .container-nfts-hot-collections{
         @include flx(column, center, center, 40px);
@@ -156,7 +156,7 @@
 
 .section-nfts-newest-arrivals{
     width: 100%;
-    background-color: $white-light;
+    background-color: #faf9fa;
     @include flx(column,center,center,0);
     .container-nfts-newest-arrivals{
         @include flx(column, center, center, 40px);
@@ -341,5 +341,14 @@
                 }
             }
         }
+    }
+}
+
+.section-nfts-faqs{
+    width: 100%;
+    background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+    @include flx(row, center, center, 0);
+    .container-faqs{
+        @include flx(row, center, center, 0);
     }
 }
