@@ -47,6 +47,30 @@ export const arrayCoinsPresentation =
         imgProfile: "./img/NFTs/collections/liquid-monsters-avatar.png",
         imgBackground: "./img/NFTs/collections/liquid-monsters-banner.webp",
         link: "https://pancakeswap.finance/nfts/collections/0x0D464bDde2301C30871bB4C29bB7DD935f5a985C"
+    },
+    {
+        name: "WolfiLeague",
+        id: "wolfiLeagueCard",
+        value: "144,7827",
+        imgProfile: "./img/NFTs/collections/wolfileague-avatar.png",
+        imgBackground: "./img/NFTs/collections/wolfileague-banner.webp",
+        link: "https://pancakeswap.finance/nfts/collections/0x3347e7AD69068E5D931B8De98fFc6e536cdf10eA"
+    },
+    {
+        name: "Lil Bulls",
+        id: "lilBullsCard",
+        value: "305,87264",
+        imgProfile: "./img/NFTs/collections/lil-bulls-avatar.png",
+        imgBackground: "./img/NFTs/collections/lil-bulls-banner.webp",
+        link: "https://pancakeswap.finance/nfts/collections/0xA2460F62E91FE752308FF70f12F9c127F6294481"
+    },
+    {
+        name: "BornBadBoys",
+        id: "bornBadBoysCard",
+        value: "1.159,55724",
+        imgProfile: "./img/NFTs/collections/bornbadboys-avatar.png",
+        imgBackground: "./img/NFTs/collections/bornbadboys-banner.webp",
+        link: "https://pancakeswap.finance/nfts/collections/0x44d85770aEa263F9463418708125Cd95e308299B"
     }
 ]
 
