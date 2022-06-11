@@ -351,7 +351,7 @@
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
     @include flx(row, center, center, 0);
     .container-faqs{
-        @include flx(row, center, center, 0);
+        @include flx(column, center, center, 10px);
         .container-faqs-back{
             width: 100%;
             max-width: 886px;
@@ -450,6 +450,21 @@
                             border-top: 1px solid #d7caec;
                         }
                     }
+                }
+            }
+        }
+        .faqs-marketplace{
+            width: 100%;
+            @include flx(column, center, center, 0);
+            a{
+                width: 100%;
+                @include flx(row, center, center, 5px);
+                color: $color-2;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 16px;
+                &:hover{
+                    text-decoration: underline;
                 }
             }
         }
