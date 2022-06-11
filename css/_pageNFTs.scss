@@ -317,7 +317,8 @@
             }
             h4{
                 color: $color-1-dark;
-                font-weight: 600px;
+                font-family: "Kanit Regular";
+                font-weight: 600;
                 font-size: 16px;
             }
             hr{
@@ -346,9 +347,111 @@
 
 .section-nfts-faqs{
     width: 100%;
+    font-family: "Kanit Regular";
     background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
     @include flx(row, center, center, 0);
     .container-faqs{
         @include flx(row, center, center, 0);
+        .container-faqs-back{
+            width: 100%;
+            max-width: 886px;
+            min-height: 100px;
+            background-color: $white-dark;
+            padding: 1px 1px 3px;
+            border-radius: 24px;
+            -webkit-border-radius: 24px;
+            -moz-border-radius: 24px;
+            -ms-border-radius: 24px;
+            -o-border-radius: 24px;
+            .container-faqs-front{
+                width: 100%;
+                height: 100%;
+                @include flx(column, center, center, 0);
+                background-color: $white-light;
+                border-radius: 24px;
+                -webkit-border-radius: 24px;
+                -moz-border-radius: 24px;
+                -ms-border-radius: 24px;
+                -o-border-radius: 24px;
+                .faqs-title{
+                    width: 100%;
+                    padding: 24px;
+                    background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
+                    border-radius: 24px 24px 0px 0px;
+                    -webkit-border-radius: 24px 24px 0px 0px;
+                    -moz-border-radius: 24px 24px 0px 0px;
+                    -ms-border-radius: 24px 24px 0px 0px;
+                    -o-border-radius: 24px 24px 0px 0px;
+                    h3{
+                        font-family: "Kanit SemiBold";
+                        font-weight: 600;
+                    }
+                }
+                .container-faqs-content{
+                    width: 100%;
+                    padding: 24px;
+                    .faqs-nft{
+                        width: 100%;
+                        margin-bottom: 24px;
+                        @include flx(column, center, center, 0);
+                        .container-faqs-question{
+                            width: 100%;
+                            padding-bottom: 16px;
+                            cursor: pointer;
+                            @include flx(row, space-between,center,0);
+                            span{
+                                color: $color-1-dark;
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+
+                            button{
+                                @include flx(row, space-between, center, 10px);
+                                height: 48px;
+                                border: none;
+                                padding: 0 24px;
+                                background: transparent;
+                                font-family: "Kanit SemiBold";
+                                font-size: 16px;
+                                font-weight: 400;
+                                color: $color-2;
+                                cursor: pointer;
+                            }
+                        }
+                        .container-faqs-answer{
+                            &.visible{
+                                @include flx(column, center, center, 0);
+                            }
+                            width: 100%;
+                            display: none;
+                            padding-bottom: 16px;
+                            p{
+                                width: 100%;
+                                color: $color-1;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 1.5;
+                                a{
+                                    width: 100%;
+                                    @include flx(row, start, center, 5px);
+                                    color: $color-2;
+                                    text-decoration: none;
+                                    font-weight: 600;
+                                    font-size: 16px;
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                        hr{
+                            width: 100%;
+                            border: none;
+                            border-top: 1px solid #d7caec;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
