@@ -1178,6 +1178,9 @@ e poi dentro la classe che dovete fare responsive
   -ms-border-radius: 8px 8px 8px 56px;
   -o-border-radius: 8px 8px 8px 56px;
 }
+.container-coin-presentation-back:hover {
+  opacity: 0.6;
+}
 .container-coin-presentation-back .container-coin-presentation-front {
   width: 100%;
   height: 100%;
@@ -1291,6 +1294,9 @@ e poi dentro la classe che dovete fare responsive
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+.container-coin-card-back:hover {
+  opacity: 0.6;
 }
 .container-coin-card-back .container-coin-card-front {
   width: 100%;

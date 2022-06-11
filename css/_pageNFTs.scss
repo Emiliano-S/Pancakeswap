@@ -177,6 +177,9 @@
     -moz-border-radius: 8px 8px 8px 56px;
     -ms-border-radius: 8px 8px 8px 56px;
     -o-border-radius: 8px 8px 8px 56px;
+    &:hover{
+        opacity: 0.6
+    }
     .container-coin-presentation-front{
         width: 100%;
         height: 100%;
@@ -276,6 +279,9 @@
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    &:hover{
+        opacity: 0.6
+    }
     .container-coin-card-front{
         width: 100%;
         height: 100%;
