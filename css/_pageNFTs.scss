@@ -54,6 +54,7 @@
     @include flx(column, center, center,0);
     .container-nfts-title{
         @include flx(row, space-between, center,0);
+        flex-wrap: wrap;
         .nfts-title-left{
             @include flx(column, start, start, 0);
             h1{
@@ -127,7 +128,6 @@
     }
 }
 
-
 .section-nfts-newest-collections{
     width: 100%;
     background-color: $white-light;
@@ -135,7 +135,7 @@
     .container-nfts-newest-collections{
         @include flx(column, center, center, 40px);
         .nfts-newest-collections{
-            @include flx(row, center, center, 19px);
+            @include flx(row, start, center, 19px);
             flex-wrap: wrap;
         }
     }
@@ -148,7 +148,7 @@
     .container-nfts-hot-collections{
         @include flx(column, center, center, 40px);
         .nfts-hot-collections{
-            @include flx(row, center, center, 19px);
+            @include flx(row, start, center, 19px);
             flex-wrap: wrap;
         }
     }
@@ -161,13 +161,11 @@
     .container-nfts-newest-arrivals{
         @include flx(column, center, center, 40px);
         .nfts-newest-arrivals{
-            @include flx(row, center, center, 16px);
+            @include flx(row, start, center, 16px);
             flex-wrap: wrap;
         }
     }
 }
-
-
 
 .container-coin-presentation-back{
     max-width: 371px;

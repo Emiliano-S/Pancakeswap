@@ -1011,6 +1011,7 @@ e poi dentro la classe che dovete fare responsive
   justify-content: space-between;
   align-items: center;
   gap: 0;
+  flex-wrap: wrap;
 }
 .section-nfts-title .container-nfts-title .nfts-title-left {
   display: flex;
@@ -1110,7 +1111,7 @@ e poi dentro la classe che dovete fare responsive
 .section-nfts-newest-collections .container-nfts-newest-collections .nfts-newest-collections {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 19px;
   flex-wrap: wrap;
@@ -1135,7 +1136,7 @@ e poi dentro la classe che dovete fare responsive
 .section-nfts-hot-collections .container-nfts-hot-collections .nfts-hot-collections {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 19px;
   flex-wrap: wrap;
@@ -1160,7 +1161,7 @@ e poi dentro la classe che dovete fare responsive
 .section-nfts-newest-arrivals .container-nfts-newest-arrivals .nfts-newest-arrivals {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
