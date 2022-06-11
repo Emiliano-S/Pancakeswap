@@ -169,7 +169,7 @@
 
 
 
-.container-coin-card-back{
+.container-coin-presentation-back{
     max-width: 371px;
     height: 201px;
     background: rgb(231, 227, 235);
@@ -179,7 +179,7 @@
     -moz-border-radius: 8px 8px 8px 56px;
     -ms-border-radius: 8px 8px 8px 56px;
     -o-border-radius: 8px 8px 8px 56px;
-    .container-coin-card-front{
+    .container-coin-presentation-front{
         width: 100%;
         height: 100%;
         background-color: #ffffff;
@@ -196,10 +196,10 @@
             padding: 8px;
             text-decoration: none;
             color: #280d5f;
-            .container-coin-card{
+            .container-coin-presentation{
                 width: 100%;
                 height: 100%;
-                .coin-card-banner{
+                .coin-presentation-banner{
                     width: 100%;
                     height: 65%;
                     img{
@@ -212,11 +212,11 @@
                         -o-border-radius: 5px;
                     }
                 }
-                .coin-card-content{
+                .coin-presentation-content{
                     width: 100%;
                     height: 35%;
                     @include flx(row, space-between, center, 0);
-                    .coin-card-avatar{
+                    .coin-presentation-avatar{
                         width: 96px;
                         height: 96px;
                         margin-top: -25px;
@@ -231,9 +231,9 @@
                             -o-border-radius: 100%;
                         }
                     }
-                    .coin-card-description{
+                    .coin-presentation-description{
                         @include flx(column, center, end, 10px);
-                        .coin-card-name{
+                        .coin-presentation-name{
                             width: 100%;
                             height: auto;
                             text-align: right;
@@ -243,18 +243,18 @@
                                 font-weight: 60;
                             }
                         }
-                        .coin-card-volume{
+                        .coin-presentation-volume{
                             @include flx(row, center, center, 5px);
-                            .coin-card-volume-text{
+                            .coin-presentation-volume-text{
                                 font-size: 12px;
                                 font-weight: 400;
                                 line-height: 1.5;
                                 color: #948bbb;
                             }
-                            .coin-card-volume-coin{
+                            .coin-presentation-volume-coin{
                                 @include flx(row, center, center, 0px);
                             }
-                            .coin-card-value{
+                            .coin-presentation-value{
                                 font-size: 16px;
                                 font-weight: 600;
                                 color: $color-1-dark;
@@ -264,6 +264,76 @@
                 }
             }
 
+        }
+    }
+}
+
+.container-coin-card-back{
+    width: 276px;
+    height: 377px;
+    background-color: $white-dark;
+    padding: 1px 1px 3px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    .container-coin-card-front{
+        width: 100%;
+        height: 100%;
+        @include flx(column, center, center, 10px);
+        background-color: $white-light;
+        padding: 8px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        .coin-card-img{
+            width: 100%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                -ms-border-radius: 8px;
+                -o-border-radius: 8px;
+            }
+        }
+        .coin-card-description{
+            width: 100%;
+            font-family: "Kanit Regular";
+            @include flx(column, center, start, 5px);
+            span{
+                font-size: 12px;
+                color: $color-1;
+                font-weight: 400;
+            }
+            h4{
+                color: $color-1-dark;
+                font-weight: 600px;
+                font-size: 16px;
+            }
+            hr{
+                width: 100%;
+            }
+            .coin-card-footer{
+                width: 100%;
+                @include flx(row, space-between, center, 0px);
+                .coin-card-price{
+                    @include flx(row, center, center, 5px);
+                    .coin-card-price-coin{
+                        @include flx(row, center, center, 0);
+                    }
+                    .coin-card-value{
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $color-1-dark;
+                    }
+                }
+            }
         }
     }
 }

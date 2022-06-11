@@ -1166,7 +1166,7 @@ e poi dentro la classe che dovete fare responsive
   flex-wrap: wrap;
 }
 
-.container-coin-card-back {
+.container-coin-presentation-back {
   max-width: 371px;
   height: 201px;
   background: rgb(231, 227, 235);
@@ -1177,7 +1177,7 @@ e poi dentro la classe che dovete fare responsive
   -ms-border-radius: 8px 8px 8px 56px;
   -o-border-radius: 8px 8px 8px 56px;
 }
-.container-coin-card-back .container-coin-card-front {
+.container-coin-presentation-back .container-coin-presentation-front {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -1188,7 +1188,7 @@ e poi dentro la classe che dovete fare responsive
   -ms-border-radius: 8px 8px 8px 56px;
   -o-border-radius: 8px 8px 8px 56px;
 }
-.container-coin-card-back .container-coin-card-front a {
+.container-coin-presentation-back .container-coin-presentation-front a {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -1196,15 +1196,15 @@ e poi dentro la classe che dovete fare responsive
   text-decoration: none;
   color: #280d5f;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation {
   width: 100%;
   height: 100%;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-banner {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-banner {
   width: 100%;
   height: 65%;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-banner img {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-banner img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -1213,7 +1213,7 @@ e poi dentro la classe che dovete fare responsive
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content {
   width: 100%;
   height: 35%;
   display: flex;
@@ -1222,12 +1222,12 @@ e poi dentro la classe che dovete fare responsive
   align-items: center;
   gap: 0;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-avatar {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-avatar {
   width: 96px;
   height: 96px;
   margin-top: -25px;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-avatar img {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-avatar img {
   width: 100%;
   height: 100%;
   border: 4px solid #ffffff;
@@ -1237,44 +1237,134 @@ e poi dentro la classe che dovete fare responsive
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   gap: 10px;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-name {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description .coin-presentation-name {
   width: 100%;
   height: auto;
   text-align: right;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-name h4 {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description .coin-presentation-name h4 {
   color: #280d5f;
   font-family: "Kanit SemiBold";
   font-weight: 60;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description .coin-presentation-volume {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume .coin-card-volume-text {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description .coin-presentation-volume .coin-presentation-volume-text {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
   color: #948bbb;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume .coin-card-volume-coin {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description .coin-presentation-volume .coin-presentation-volume-coin {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0px;
 }
-.container-coin-card-back .container-coin-card-front a .container-coin-card .coin-card-content .coin-card-description .coin-card-volume .coin-card-value {
+.container-coin-presentation-back .container-coin-presentation-front a .container-coin-presentation .coin-presentation-content .coin-presentation-description .coin-presentation-volume .coin-presentation-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #280d5f;
+}
+
+.container-coin-card-back {
+  width: 276px;
+  height: 377px;
+  background-color: #e7e3eb;
+  padding: 1px 1px 3px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container-coin-card-back .container-coin-card-front {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-img {
+  width: 100%;
+  height: auto;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description {
+  width: 100%;
+  font-family: "Kanit Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description span {
+  font-size: 12px;
+  color: #7a6eaa;
+  font-weight: 400;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description h4 {
+  color: #280d5f;
+  font-weight: 600px;
+  font-size: 16px;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description hr {
+  width: 100%;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description .coin-card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description .coin-card-footer .coin-card-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description .coin-card-footer .coin-card-price .coin-card-price-coin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container-coin-card-back .container-coin-card-front .coin-card-description .coin-card-footer .coin-card-price .coin-card-value {
   font-size: 16px;
   font-weight: 600;
   color: #280d5f;
