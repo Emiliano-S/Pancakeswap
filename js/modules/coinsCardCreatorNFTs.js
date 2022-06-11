@@ -1,5 +1,5 @@
-export function createCoinCard(coin){
-    const containerCoins = document.getElementById("nftsNewCollections");
+export function createCoinCard(coin, id){
+    const containerCoins = document.getElementById(id);
     const cardCoin = document.createElement('div');
     cardCoin.className = "container-coin-card-back";
     cardCoin.id = coin.id;

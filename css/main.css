@@ -1032,16 +1032,21 @@ e poi dentro la classe che dovete fare responsive
   height: 40px;
   width: 251px;
   padding: 0px 20px;
-  color: #a297b5;
+  font-family: "Kanit Regular";
+  color: #280d5f;
   background-color: #eeeaf4;
   border: 1px solid #d7caec;
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 16px;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
+}
+.section-nfts-title .container-nfts-title .nfts-title-right .nfts-search #searchNfts::placeholder {
+  color: #280d5f;
+  opacity: 0.5;
 }
 .section-nfts-title .container-nfts-title .nfts-title-right .nfts-search #searchNfts:focus {
   outline: none;
@@ -1103,6 +1108,31 @@ e poi dentro la classe che dovete fare responsive
   gap: 40px;
 }
 .section-nfts-newest-collections .container-nfts-newest-collections .nfts-newest-collections {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
+.section-nfts-hot-collections {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-hot-collections .container-nfts-hot-collections {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.section-nfts-hot-collections .container-nfts-hot-collections .nfts-hot-collections {
   display: flex;
   flex-direction: row;
   justify-content: center;
