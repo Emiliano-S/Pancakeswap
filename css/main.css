@@ -1091,6 +1091,9 @@ e poi dentro la classe che dovete fare responsive
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+.nfts-subsection-titles a .nfts-subsection-button:hover {
+  opacity: 0.6;
+}
 
 .section-nfts-newest-collections {
   width: 100%;
