@@ -1141,6 +1141,31 @@ e poi dentro la classe che dovete fare responsive
   flex-wrap: wrap;
 }
 
+.section-nfts-newest-arrivals {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.section-nfts-newest-arrivals .container-nfts-newest-arrivals {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.section-nfts-newest-arrivals .container-nfts-newest-arrivals .nfts-newest-arrivals {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
+  flex-wrap: wrap;
+}
+
 .container-coin-card-back {
   max-width: 371px;
   height: 201px;
