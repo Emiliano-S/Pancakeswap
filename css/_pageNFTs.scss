@@ -273,8 +273,8 @@
 }
 
 .container-coin-card-back{
-    width: 276px;
-    height: 377px;
+    max-width: 276px;
+    max-height: 377px;
     background-color: $white-dark;
     padding: 1px 1px 3px;
     border-radius: 8px;
