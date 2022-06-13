@@ -1,15 +1,19 @@
 import {arrayCoinsPresentation, arrayCoinsCard} from './modules/arrayCoinsNFTs.js';
 import {createCoinPresentation, createCoinCard} from './modules/coinsCardCreatorNFTs.js';
 
+
+//Creazione delle presentation NFT
 arrayCoinsPresentation.forEach(presentation => {
     createCoinPresentation(presentation, "nftsNewCollections");
     createCoinPresentation(presentation, "nftsHotCollections");
 });
 
+//Creazione delle card contentente NFT
 arrayCoinsCard.forEach(coin =>{
     createCoinCard(coin, "nftsNewestArrivals");
 });
 
+//Codice per nascondere e mostrare le domande nella sezione FAQs
 document.getElementById("faqsContent").addEventListener("click",(event)=>{
     if(event.target.classList == "question-click-zone"){
         event.target.parentNode.nextElementSibling.classList.toggle("visible");
