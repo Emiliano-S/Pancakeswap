@@ -1,0 +1,139 @@
+@use "../assets/ds/css/colors" as *;
+
+
+.section-stats {
+    .containerStatsSection {
+        background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+        padding: 48px 0px;
+        width: 100%;
+        height: 793px;
+        padding: 48px 0;
+        .statsWrap {
+            width: 100%;
+            height: calc(100% - 96px);
+            padding: 48px 24px;
+            .firstFlex {
+                width: 100%;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .icon_rabbit {
+                    margin-bottom: 24px;
+                }
+                .header_1 {
+                    color: $title-color;
+                    font-family: "kanit SemiBold";
+                    height: 44px;
+                    line-height: 1.1;
+                }
+                .header_2 {
+                    color: $title-color;
+                    margin-bottom: 32px;
+                    font-family: "kanit SemiBold";
+                    height: 44px;
+                    line-height: 1.1;
+                }
+                .paragr p {
+                    $color-1: $color-1;
+                }
+                .p_alone p {
+                    color: $color-1;
+                    line-height: 1.5;
+                    font-weight: 600;
+                    margin: 20px 0 32px 0;
+                }
+               
+                    .cardsCont {
+                        width: 878px;
+                        height: 285px;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+                        align-items: center;
+                        .card {
+                            background-color: $white-dark;
+                            width: 282px;
+                            height: 285px;
+                            padding: 1px 1px 2px 1px;
+                            border-radius: 24px;
+                            display: flex;
+                            justify-content: center;
+                            .sCard {
+                                width: 280px;
+                                height: 280px;
+                                border-radius: 24px;
+                                background-color: $card-background;
+                                padding: 24px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                .sLogo {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: flex-end;
+                                    #icona1 {
+                                        fill: $title-important-color;
+                                    }
+//quì colori diversi per ogni icona
+                                    #scnd_icon {
+                                        fill: $color-2;
+                                    }
+
+                                    #trd_icon {
+                                        fill: $color-4;
+                                    }
+                                }
+                                .stext {
+                                    margin-top: 64px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-end;
+                                    #firsth2 {
+                                    height: 44px;
+                                    font-family: "kanit SemiBold";
+                                    color: $title-color;
+                                    font-size: 40px;
+                                    }
+                                    #secondh2 {
+                                    height: 44px;
+                                    font-family: "kanit SemiBold";
+                                    color: $title-important-color;
+                                    font-size: 40px;
+                                    margin-bottom: 24px;
+                                    }
+//quì colori diversi per ogni "secondo" h2
+                                    #secondh22 {
+                                    height: 44px;
+                                    font-family: "kanit SemiBold";
+                                    color: $color-2;
+                                    font-size: 40px;
+                                    margin-bottom: 24px
+                                    }
+
+                                    #secondh23 {
+                                    height: 44px;
+                                    font-family: "kanit SemiBold";
+                                    color: $color-4;
+                                    font-size: 40px;
+                                    margin-bottom: 24px
+                                    }
+
+                                    .parag {
+                                    font-family: "Kanit Regular";
+                                    color: $text-color;
+                                    font-size: 16px;
+                                    }
+                                    
+                                }
+                              
+                        }                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+    
