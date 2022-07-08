@@ -934,11 +934,21 @@ body {
   line-height: 1.3;
 }
 
+/* Per utilizzare il mixin ricordatevi di prima effettuare il:
+@use './mediaquerry' as *;
+
+e poi dentro la classe che dovete fare responsive
+
+@include breakpoint("tablet" o "mobile") {
+      ...QUI IL CONTENUTO RESPONSIVE....
+    }
+
+*/
 .section-stats .containerStatsSection {
   background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
   padding: 48px 0px;
   width: 100%;
-  height: 793px;
+  height: auto;
   padding: 48px 0;
 }
 .section-stats .containerStatsSection .statsWrap {
@@ -948,20 +958,27 @@ body {
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex {
   width: 100%;
-  height: 600px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .icon_rabbit {
+  width: 48px;
+  height: 48px;
   margin-bottom: 24px;
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .header_1 {
   color: #280d5f;
   font-family: "kanit SemiBold";
-  height: 44px;
+  font-size: 40px;
   line-height: 1.1;
+}
+@media only screen and (max-width: 967px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .header_1 {
+    font-size: 32px;
+  }
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .header_2 {
   color: #280d5f;
@@ -969,20 +986,37 @@ body {
   font-family: "kanit SemiBold";
   height: 44px;
   line-height: 1.1;
+  font-size: 40px;
+}
+@media only screen and (max-width: 967px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .header_2 {
+    font-size: 32px;
+  }
+}
+.section-stats .containerStatsSection .statsWrap .firstFlex .paragr p {
+  color: #7a6eaa;
+  text-align: center;
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .p_alone p {
   color: #7a6eaa;
   line-height: 1.5;
   font-weight: 600;
   margin: 20px 0 32px 0;
+  text-align: center;
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont {
   width: 878px;
-  height: 285px;
+  height: auto;
   display: flex;
   flex-direction: row;
   gap: 16px;
   align-items: center;
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card {
   background-color: #e7e3eb;
@@ -993,15 +1027,32 @@ body {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card {
+    height: 171px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card {
+    margin-bottom: 16px;
+  }
+}
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard {
-  width: 280px;
-  height: 280px;
+  width: calc(100% - 2px);
+  height: calc(100% - 3px);
   border-radius: 24px;
   background-color: #ffffff;
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard {
+    height: 166px;
+  }
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .sLogo {
   display: flex;
@@ -1023,11 +1074,27 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext {
+    margin-top: 0;
+  }
+}
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #firsth2 {
   height: 44px;
   font-family: "kanit SemiBold";
   color: #280d5f;
   font-size: 40px;
+}
+@media only screen and (max-width: 967px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #firsth2 {
+    font-size: 32px;
+    line-height: 2;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #firsth2 {
+    line-height: 0;
+  }
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh2 {
   height: 44px;
@@ -1036,12 +1103,36 @@ body {
   font-size: 40px;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 967px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh2 {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh2 {
+    line-height: 0;
+  }
+}
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh22 {
   height: 44px;
   font-family: "kanit SemiBold";
   color: #1fc7d4;
   font-size: 40px;
   margin-bottom: 24px;
+}
+@media only screen and (max-width: 967px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh22 {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh22 {
+    line-height: 0;
+  }
 }
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh23 {
   height: 44px;
@@ -1050,10 +1141,27 @@ body {
   font-size: 40px;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 967px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh23 {
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext #secondh23 {
+    line-height: 0;
+  }
+}
 .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext .parag {
   font-family: "Kanit Regular";
   color: #7a6eaa;
   font-size: 16px;
+}
+@media only screen and (max-width: 850px) {
+  .section-stats .containerStatsSection .statsWrap .firstFlex .cardsCont .card .sCard .stext {
+    line-height: 0;
+  }
 }
 
 body {
