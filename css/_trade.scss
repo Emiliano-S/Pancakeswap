@@ -1,19 +1,52 @@
 @use '../assets/ds/css/colors';
 @use "./_animation.scss" as *;
 @use "../assets/ds/css/buttons";
+@use './mediaquery' as *;
 
-.section-trade{
+.section-trade {
     background-color: white;
+
+    @include breakpoint("mobile") {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    @include breakpoint("tablet") {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 
 .tradeColumn {
     display: flex;
     flex-direction: column;
 
+    @include breakpoint("mobile") {
+
+        flex-direction: column-reverse;
+
+    }
+
+    @include breakpoint("tablet") {
+
+        flex-direction: column-reverse;
+
+    }
+
     .tradeRow {
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        @include breakpoint("mobile") {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @include breakpoint("tablet") {
+            display: flex;
+            flex-direction: column-reverse;
+        }
 
         .tradeContainer {
             display: flex;
@@ -22,6 +55,18 @@
             margin-right: 64px;
             align-self: center;
             gap: 24px;
+
+            @include breakpoint("mobile") {
+                position: absolute;
+            }
+
+            @include breakpoint("tablet") {
+                position: absolute;
+                top: 400px;
+                margin-right: 0px;
+                padding: 20px;
+            }
+
 
             .tradeHeader {
 
@@ -78,26 +123,55 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        max-height: 512px;
 
         .tradeImage {
             position: absolute;
             top: -250px;
             left: 0px;
 
+            @include breakpoint("mobile") {
+                top: 50px;
+                left: 100px;
+            }
+            @include breakpoint("tablet") {
+                top: 100px;
+                left: 200px;
+            }
+
 
         }
 
         .bnb {
             @include floatAnimation (bnbAnimation, -10px, -20px, 3s, 1s);
+
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
+
         }
+
+
 
         .btc {
             @include floatAnimation (btcAnimation, -10px, -20px, 3s, 0.66s);
+
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
         }
 
         .cake {
             @include floatAnimation (cakeAnimation, -10px, -20px, 3s, 0.33s);
+
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
         }
     }
 }

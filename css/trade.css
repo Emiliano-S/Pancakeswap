@@ -1,0 +1,402 @@
+/* Colors Var */
+/*Background colors*/
+/*Text Var*/
+/*Components var*/
+/*Popup title background colors*/
+/*Buttons Toggle Switch colors*/
+@font-face {
+  font-family: "Kanit Bold";
+  src: url(../fonts/kanit/Kanit-Bold.ttf);
+}
+@font-face {
+  font-family: "Kanit Regular";
+  src: url(../fonts/kanit/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: "Kanit SemiBold";
+  src: url(../fonts/kanit/Kanit-SemiBold.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn-container-general {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  width: 80%;
+  gap: 30px;
+}
+
+.btn-01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: Kanit Regular;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 30px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-01:hover {
+  opacity: 0.5;
+}
+.btn-01:active {
+  transform: translateY(1px);
+}
+.btn-01 p.btn {
+  color: #eff4f5;
+}
+
+.btn-02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: Kanit Regular;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-02:hover {
+  opacity: 0.5;
+}
+.btn-02:active {
+  transform: translateY(1px);
+}
+.btn-02 p.btn {
+  color: #eff4f5;
+}
+.btn-02 svg {
+  fill: #ffffff;
+  margin-left: 0.5rem;
+}
+
+.btn-03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: Kanit Regular;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+}
+.btn-03:hover {
+  opacity: 0.5;
+}
+.btn-03:active {
+  transform: translateY(1px);
+}
+.btn-03 p.btn {
+  color: #eff4f5;
+}
+
+.btn-04 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #1fc7d4;
+  border-radius: 15px;
+  cursor: pointer;
+  font-family: Kanit Regular;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: transparent;
+  color: #1fc7d4;
+}
+.btn-04:hover {
+  opacity: 0.5;
+}
+.btn-04:active {
+  transform: translateY(1px);
+}
+.btn-04 p.btn {
+  color: #1fc7d4;
+}
+
+.btn-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: Kanit Regular;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 30px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+  background-color: #eff4f5;
+  box-shadow: none;
+  color: #1fc7d4;
+}
+.btn-settings:hover {
+  opacity: 0.5;
+}
+.btn-settings:active {
+  transform: translateY(1px);
+}
+.btn-settings p.btn {
+  color: #eff4f5;
+}
+.btn-settings p.btn {
+  color: #1fc7d4;
+}
+
+/* Per utilizzare il mixin ricordatevi di prima effettuare il:
+@use './mediaquerry' as *;
+e poi dentro la classe che dovete fare responsive
+@include breakpoint("tablet" o "mobile") {
+      ...QUI IL CONTENUTO RESPONSIVE....
+    }
+*/
+.section-trade {
+  background-color: white;
+}
+@media only screen and (max-width: 967px) {
+  .section-trade {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .section-trade {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.tradeColumn {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 967px) {
+  .tradeColumn {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tradeColumn {
+    flex-direction: column-reverse;
+  }
+}
+.tradeColumn .tradeRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 967px) {
+  .tradeColumn .tradeRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tradeColumn .tradeRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.tradeColumn .tradeRow .tradeContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-right: 64px;
+  align-self: center;
+  gap: 24px;
+}
+@media only screen and (max-width: 967px) {
+  .tradeColumn .tradeRow .tradeContainer {
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tradeColumn .tradeRow .tradeContainer {
+    position: absolute;
+    top: 400px;
+    margin-right: 0px;
+    padding: 20px;
+  }
+}
+.tradeColumn .tradeRow .tradeContainer .tradeHeader h2 {
+  color: #280d5f;
+  line-height: 1;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeHeader h2 span {
+  color: #7645d9;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeParagr p {
+  color: #7a6eaa;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeButtons {
+  display: flex;
+  flex-direction: row;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeButtons .btn-learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1fc7d4;
+  font-weight: 600;
+  height: 50px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeButtons .btn-learn:hover {
+  text-decoration: underline;
+}
+
+.tradePictures {
+  flex: 1 1 0%;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.tradePictures .tradeToken {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.tradePictures .tradeToken .tradeImage {
+  position: absolute;
+  top: -250px;
+  left: 0px;
+}
+@media only screen and (max-width: 967px) {
+  .tradePictures .tradeToken .tradeImage {
+    top: 50px;
+    left: 100px;
+  }
+}
+.tradePictures .tradeToken .bnb {
+  animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+  -webkit-animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+}
+@keyframes bnbAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tradePictures .tradeToken .bnb img {
+    height: 200px;
+  }
+}
+.tradePictures .tradeToken .btc {
+  animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
+}
+@keyframes btcAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tradePictures .tradeToken .btc img {
+    height: 200px;
+  }
+}
+.tradePictures .tradeToken .cake {
+  animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
+  -webkit-animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
+}
+@keyframes cakeAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .tradePictures .tradeToken .cake img {
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=trade.css.map */
