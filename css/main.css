@@ -996,13 +996,28 @@ body {
   position: relative;
 }
 
-.banner-container {
+.banner-padre {
   height: 200px;
+  position: relative;
+}
+
+.banner-container {
+  width: 100%;
+  height: 200px;
+  position: absolute;
   border-radius: 32px;
   padding: 24px;
-  position: relative;
   background: rgb(60, 23, 134);
   background: linear-gradient(0deg, rgb(60, 23, 134) 0%, rgb(118, 69, 217) 100%);
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+}
+.banner-container.hide {
+  opacity: 0;
 }
 .banner-container .left-banner-section {
   display: flex;

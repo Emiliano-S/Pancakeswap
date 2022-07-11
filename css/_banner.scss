@@ -77,27 +77,31 @@
     
 }
 
+.banner-padre{
+    height: 200px;
+    position: relative;
+
+}
+
+
 .banner-container {
+    width: 100%;
     height:200px;
-    // margin-top:280px; //da rivedere
+    position: absolute;
+    //margin-top:280px;
     border-radius: 32px;
     padding:24px;
-    position:relative;
     background: rgb(60, 23, 134);
     background: linear-gradient(0deg, rgba(60, 23, 134, 1) 0%, rgba(118, 69, 217, 1) 100%);
-
-
-            //     &::after {
-            //     content:"";
-            //     display:block;
-            //     width:100%;
-            //     height:100%;
-            //     position:absolute;
-            //     top:0;
-            //     left:0;
-            //     z-index:0;
-            // }
-    
+    opacity: 1;
+    transition: opacity 3s ease-in-out ;
+    -webkit-transition: opacity 3s ease-in-out ;
+    -moz-transition: opacity 3s ease-in-out ;
+    -ms-transition: opacity 3s ease-in-out ;
+    -o-transition: opacity 3s ease-in-out ;
+    &.hide{
+        opacity: 0;
+    }
 
     .left-banner-section {
         display: flex;
