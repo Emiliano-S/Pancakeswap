@@ -187,29 +187,17 @@ e poi dentro la classe che dovete fare responsive
 .section-trade {
   background-color: white;
 }
-@media only screen and (max-width: 967px) {
-  .section-trade {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .section-trade {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
 
 .tradeColumn {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 967px) {
+@media only screen and (max-width: 570px) {
   .tradeColumn {
     flex-direction: column-reverse;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .tradeColumn {
     flex-direction: column-reverse;
   }
@@ -219,13 +207,13 @@ e poi dentro la classe che dovete fare responsive
   flex-direction: row;
   align-items: center;
 }
-@media only screen and (max-width: 967px) {
+@media only screen and (max-width: 570px) {
   .tradeColumn .tradeRow {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .tradeColumn .tradeRow {
     display: flex;
     flex-direction: column-reverse;
@@ -239,12 +227,12 @@ e poi dentro la classe che dovete fare responsive
   align-self: center;
   gap: 24px;
 }
-@media only screen and (max-width: 967px) {
+@media only screen and (max-width: 570px) {
   .tradeColumn .tradeRow .tradeContainer {
     position: absolute;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .tradeColumn .tradeRow .tradeContainer {
     position: absolute;
     top: 400px;
@@ -296,10 +284,16 @@ e poi dentro la classe che dovete fare responsive
   top: -250px;
   left: 0px;
 }
+@media only screen and (max-width: 570px) {
+  .tradePictures .tradeToken .tradeImage {
+    top: 50px;
+    left: 10px;
+  }
+}
 @media only screen and (max-width: 967px) {
   .tradePictures .tradeToken .tradeImage {
     top: 50px;
-    left: 100px;
+    left: 650px;
   }
 }
 .tradePictures .tradeToken .bnb {
@@ -329,7 +323,7 @@ e poi dentro la classe che dovete fare responsive
     -o-transform: translate(0px, 0px);
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .tradePictures .tradeToken .bnb img {
     height: 200px;
   }
@@ -361,7 +355,7 @@ e poi dentro la classe che dovete fare responsive
     -o-transform: translate(0px, 0px);
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .tradePictures .tradeToken .btc img {
     height: 200px;
   }
@@ -393,7 +387,7 @@ e poi dentro la classe che dovete fare responsive
     -o-transform: translate(0px, 0px);
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .tradePictures .tradeToken .cake img {
     height: 200px;
   }

@@ -5,16 +5,6 @@
 
 .section-trade {
     background-color: white;
-
-    @include breakpoint("mobile") {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    @include breakpoint("tablet") {
-        display: flex;
-        flex-direction: column-reverse;
-    }
 }
 
 .tradeColumn {
@@ -131,11 +121,11 @@
 
             @include breakpoint("mobile") {
                 top: 50px;
-                left: 100px;
+                left: 10px;
             }
             @include breakpoint("tablet") {
-                top: 100px;
-                left: 200px;
+                top: 50px;
+                left: 650px;
             }
 
 
