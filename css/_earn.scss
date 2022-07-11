@@ -1,7 +1,7 @@
 @use '../assets/ds/css/colors';
 @use "./_animation.scss" as *;
 @use "../assets/ds/css/buttons";
-@use './_mediaquery' as *;
+@use './mediaquery' as *;
 
 .section-earn{
     background-color: white;
@@ -124,8 +124,8 @@
             left: -200px;
 
             @include breakpoint("tablet") {
-                top: 50px;
-                left: 650px;
+                top: -10px;
+                left: 50px;
             }
 
             @include breakpoint("mobile") {
