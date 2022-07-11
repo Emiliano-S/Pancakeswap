@@ -1057,11 +1057,26 @@ body {
   border-radius: 4px 0px 0px 4px;
   width: 54px;
   height: 8px;
-  border: none;
   opacity: 0.3;
+  border: none;
   cursor: pointer;
 }
 .btn-slide-banner .btn-banner-right {
+  border-radius: 0px 4px 4px 0px;
+  width: 54px;
+  height: 8px;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+.btn-slide-banner .btn-banner-left-active {
+  border-radius: 4px 0px 0px 4px;
+  width: 54px;
+  height: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-slide-banner .btn-banner-right-active {
   border-radius: 0px 4px 4px 0px;
   width: 54px;
   height: 8px;
