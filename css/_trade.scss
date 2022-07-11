@@ -11,13 +11,15 @@
     display: flex;
     flex-direction: column;
 
-    @include breakpoint("mobile") {
+
+
+    @include breakpoint("tablet") {
 
         flex-direction: column-reverse;
 
     }
 
-    @include breakpoint("tablet") {
+    @include breakpoint("mobile") {
 
         flex-direction: column-reverse;
 
@@ -28,12 +30,14 @@
         flex-direction: row;
         align-items: center;
 
-        @include breakpoint("mobile") {
+
+
+        @include breakpoint("tablet") {
             display: flex;
             flex-direction: column-reverse;
         }
 
-        @include breakpoint("tablet") {
+        @include breakpoint("mobile") {
             display: flex;
             flex-direction: column-reverse;
         }
@@ -46,15 +50,17 @@
             align-self: center;
             gap: 24px;
 
-            @include breakpoint("mobile") {
-                position: absolute;
-            }
+
 
             @include breakpoint("tablet") {
                 position: absolute;
                 top: 400px;
                 margin-right: 0px;
                 padding: 20px;
+            }
+
+            @include breakpoint("mobile") {
+                position: absolute;
             }
 
 
@@ -119,13 +125,15 @@
             top: -250px;
             left: 0px;
 
-            @include breakpoint("mobile") {
-                top: 50px;
-                left: 10px;
-            }
+
             @include breakpoint("tablet") {
                 top: 50px;
                 left: 650px;
+            }
+
+            @include breakpoint("mobile") {
+                top: 50px;
+                left: 50px;
             }
 
 
