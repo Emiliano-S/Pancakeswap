@@ -1,7 +1,7 @@
 @use '../assets/ds/css/colors';
 @use "./_animation.scss" as *;
 @use "../assets/ds/css/buttons";
-@use './mediaquery' as *;
+@use './_mediaquery' as *;
 
 .section-earn{
     background-color: white;
