@@ -74,6 +74,7 @@
 .banner-container > * {
     z-index:10;
     position:relative;
+    
 }
 
 .banner-container {
@@ -324,6 +325,29 @@
 }
 
 
+
+.yellow-gradient {
+    display:flex;
+    flex-direction: column;
+
+    h3 {
+        margin-right: 5px;
+        background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+        color: white;
+        text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+        margin-bottom: 7px;
+    }
+}
+
+
+
+
+
 @media screen and (min-width: 1200px){
     .img-01-banner{
         background-image: url(../img/lottery.png);
@@ -339,6 +363,26 @@
         z-index:0;
 
     }
+
+    .img-02-banner{
+        background-image: url(../img/perpetual.png);
+        display:flex;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height:120%;
+        width:100%;
+        position:absolute;
+        // top:0;
+        background-position: right;
+        bottom:0;
+        // left:750px;
+        right:0;
+        z-index:0;
+        
+
+    }
+
+
 }
 
 
@@ -349,6 +393,30 @@
 .banner-container {
     overflow: hidden;
 }
+
+
+
+.yellow-gradient {
+    display:flex;
+    flex-direction: column;
+
+    h3 {
+        margin-right: 5px;
+        background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+        color: white;
+        text-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+        margin-bottom: 7px;
+        font-size:22px;
+    }
+}
+
+
+
 
 
 .container-moon {
@@ -403,6 +471,25 @@ flex-direction: column-reverse;
         right:-45%;
         z-index:0;
     }
+
+
+
+    .img-02-banner{
+        background-image: url(../img/perpetualMobile.png);
+        display:flex;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height:120%;
+        width:100%;
+        position:absolute;
+        // top:0;
+        bottom:0;
+        // left:730px;
+        left:0;
+        background-position: right;
+        z-index:0;
+    
+    }
 }
 
 
@@ -425,5 +512,23 @@ flex-direction: column-reverse;
 
 
 
+    }
+
+
+    .img-02-banner{
+        background-image: url(../img/perpetualMobile.png);
+        display:flex;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height:120%;
+        width:100%;
+        position:absolute;
+        background-position: right;
+        // top:0;
+        bottom:0;
+        // left:140px;
+        left:0;
+        z-index:0;
+    
     }
     }
