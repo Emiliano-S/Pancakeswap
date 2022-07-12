@@ -1,0 +1,170 @@
+@use '../assets/ds/css/colors';
+@use "./_animation.scss" as *;
+@use "../assets/ds/css/buttons";
+@use './mediaquerry' as *;
+
+.section-earn{
+    background-color: white;
+    margin: 70px 0px;
+    background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
+    flex-direction: column;
+}
+
+.earnColumn {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+
+    @include breakpoint("tablet") {
+        flex-direction: column-reverse;
+        padding-top: 200px;
+    }
+
+    @include breakpoint("mobile") {
+        flex-direction: column-reverse;
+        padding-top: 200px;
+    }
+
+    .earnRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        @include breakpoint("tablet") {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include breakpoint("mobile") {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .earnContainer {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0%;
+            margin-right: 64px;
+            align-self: center;
+            gap: 24px;
+
+            @include breakpoint("tablet") {
+                margin-right: 0px;
+                padding: 20px;
+                align-self: start;
+            }
+
+            .earnHeader {
+
+                h2 {
+                    color: colors.$color-1-dark;
+                    line-height: 1;
+
+                    span {
+                        color: colors.$color-1-light;
+                    }
+                }
+
+            }
+
+            .earnParagr {
+                p {
+                    color: colors.$text-color;
+                }
+            }
+
+            .earnButtons {
+                display: flex;
+                flex-direction: row;
+
+                .explore-btn {
+                    padding: 0 25px;
+                }
+
+                .btn-learn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: colors.$link-text-color;
+                    font-weight: 600;
+                    height: 50px;
+                    padding: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.earnPictures {
+    flex: 1 1 0%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .earnToken {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-height: 512px;
+
+        .earnImage {
+            position: absolute;
+            top: -200px;
+            left: -50px;
+
+            @include breakpoint("tablet") {
+                left: calc(100vw - 250px);
+            }
+
+            @include breakpoint("mobile") {
+                left: 50px;
+            }
+
+
+        }
+
+        .pie {
+            img {
+                height: 428px;
+            }
+            @include floatAnimation (bnbAnimation, -10px, -20px, 3s, 1s);
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+
+        .stonks {
+            img {
+                height: 428px;
+            }
+            @include floatAnimation (btcAnimation, -10px, -20px, 3s, 0.66s);
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+
+        .folder {
+            img {
+                height: 428px;
+            }
+            @include floatAnimation (cakeAnimation, -10px, -20px, 3s, 0.33s);
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
+        }
+    }
+}
