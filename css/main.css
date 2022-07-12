@@ -934,6 +934,13 @@ body {
   line-height: 1.3;
 }
 
+/* Per utilizzare il mixin ricordatevi di prima effettuare il:
+@use './mediaquerry' as *;
+e poi dentro la classe che dovete fare responsive
+@include breakpoint("tablet" o "mobile") {
+      ...QUI IL CONTENUTO RESPONSIVE....
+    }
+*/
 * {
   text-decoration: none;
   font-family: kanit;
@@ -952,7 +959,6 @@ body {
   flex-direction: column;
   background-color: rgb(39, 38, 44);
 }
-
 .footer-title {
   color: rgb(154, 106, 255);
 }

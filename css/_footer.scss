@@ -1,5 +1,6 @@
 @use "../assets/ds/css/colors" as *;
 @use "./animation" as *;
+@use "./mediaquerry" as *;
 
 @mixin flex($display, $flx-direc, $width, $height) {
   $display: display;
@@ -16,6 +17,7 @@
   padding: 56px 40px 32px;
   background-color: rgb(39, 38, 44);
   justify-content: center;
+  
 }
 .small-container {
   height: auto;
@@ -23,6 +25,9 @@
   display: flex;
   flex-direction: column;
   background-color: rgb(39, 38, 44);
+  @include breakpoint("mobile") {
+    @include flex(flex, row, 100%, 100%);
+  }
 }
 .footer-title {
   color: rgb(154, 106, 255);
