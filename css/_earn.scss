@@ -3,36 +3,32 @@
 @use "../assets/ds/css/buttons";
 @use './mediaquerry' as *;
 
-.section-trade {
+.section-earn{
     background-color: white;
-    padding: 48px 0px;
     margin: 70px 0px;
+    background: rgba(0, 0, 0, 0) linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
+    flex-direction: column;
 }
 
-.tradeColumn {
+.earnColumn {
     display: flex;
     flex-direction: column;
-
-
+    padding: 100px 0px;
 
     @include breakpoint("tablet") {
-
         flex-direction: column-reverse;
-
+        padding-top: 200px;
     }
 
     @include breakpoint("mobile") {
-
         flex-direction: column-reverse;
-
+        padding-top: 200px;
     }
 
-    .tradeRow {
+    .earnRow {
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         align-items: center;
-
-
 
         @include breakpoint("tablet") {
             display: flex;
@@ -44,7 +40,7 @@
             flex-direction: column;
         }
 
-        .tradeContainer {
+        .earnContainer {
             display: flex;
             flex-direction: column;
             flex: 1 1 0%;
@@ -52,16 +48,13 @@
             align-self: center;
             gap: 24px;
 
-
-
             @include breakpoint("tablet") {
-
                 margin-right: 0px;
                 padding: 20px;
+                align-self: start;
             }
 
-
-            .tradeHeader {
+            .earnHeader {
 
                 h2 {
                     color: colors.$color-1-dark;
@@ -74,15 +67,19 @@
 
             }
 
-            .tradeParagr {
+            .earnParagr {
                 p {
                     color: colors.$text-color;
                 }
             }
 
-            .tradeButtons {
+            .earnButtons {
                 display: flex;
                 flex-direction: row;
+
+                .explore-btn {
+                    padding: 0 25px;
+                }
 
                 .btn-learn {
                     display: flex;
@@ -106,25 +103,25 @@
 
 }
 
-.tradePictures {
+.earnPictures {
     flex: 1 1 0%;
     display: flex;
     height: 100%;
     width: 100%;
 
-    .tradeToken {
+    .earnToken {
         display: flex;
         flex-direction: column;
         position: relative;
+        max-height: 512px;
 
-        .tradeImage {
+        .earnImage {
             position: absolute;
             top: -200px;
-            left: 0px;
-
+            left: -50px;
 
             @include breakpoint("tablet") {
-                left: calc(100vw - 220px);
+                left: calc(100vw - 250px);
             }
 
             @include breakpoint("mobile") {
@@ -134,28 +131,23 @@
 
         }
 
-        .bnb {
+        .pie {
             img {
                 height: 428px;
             }
             @include floatAnimation (bnbAnimation, -10px, -20px, 3s, 1s);
-
             @include breakpoint("tablet") {
                 img {
                     height: 200px;
                 }
             }
-
         }
 
-
-
-        .btc {
+        .stonks {
             img {
                 height: 428px;
             }
             @include floatAnimation (btcAnimation, -10px, -20px, 3s, 0.66s);
-
             @include breakpoint("tablet") {
                 img {
                     height: 200px;
@@ -163,12 +155,11 @@
             }
         }
 
-        .cake {
+        .folder {
             img {
                 height: 428px;
             }
             @include floatAnimation (cakeAnimation, -10px, -20px, 3s, 0.33s);
-
             @include breakpoint("tablet") {
                 img {
                     height: 200px;

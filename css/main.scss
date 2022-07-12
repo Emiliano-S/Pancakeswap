@@ -1,7 +1,8 @@
 // Collegare qui dentro i singoli moduli riferiti alle section della homepage
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
-@use './mediaquery' as *;
 @use './trade';
+@use './mediaquerry' as *;
+@use './earn';
 body{
     width: 100%;
     min-height: 200px;
