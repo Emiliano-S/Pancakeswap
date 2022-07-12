@@ -140,6 +140,9 @@
         }
 
         .bnb {
+            img {
+                height: 428px;
+            }
             @include floatAnimation (bnbAnimation, -10px, -20px, 3s, 1s);
 
             @include breakpoint("tablet") {
@@ -153,6 +156,9 @@
 
 
         .btc {
+            img {
+                height: 428px;
+            }
             @include floatAnimation (btcAnimation, -10px, -20px, 3s, 0.66s);
 
             @include breakpoint("tablet") {
@@ -163,6 +169,9 @@
         }
 
         .cake {
+            img {
+                height: 428px;
+            }
             @include floatAnimation (cakeAnimation, -10px, -20px, 3s, 0.33s);
 
             @include breakpoint("tablet") {
