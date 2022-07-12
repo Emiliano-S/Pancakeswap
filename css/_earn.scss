@@ -1,0 +1,107 @@
+@use '../assets/ds/css/colors';
+@use "./_animation.scss" as *;
+@use "../assets/ds/css/buttons";
+
+.section-earn{
+    background-color: white;
+}
+
+.earnColumn {
+    display: flex;
+    flex-direction: column;
+
+    .earnRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .earnContainer {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0%;
+            margin-right: 64px;
+            align-self: center;
+            gap: 24px;
+
+            .earnHeader {
+
+                h2 {
+                    color: colors.$color-1-dark;
+                    line-height: 1;
+
+                    span {
+                        color: colors.$color-1-light;
+                    }
+                }
+
+            }
+
+            .earnParagr {
+                p {
+                    color: colors.$text-color;
+                }
+            }
+
+            .earnButtons {
+                display: flex;
+                flex-direction: row;
+
+                .explore-btn {
+                    padding: 0 25px;
+                }
+
+                .btn-learn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: colors.$link-text-color;
+                    font-weight: 600;
+                    height: 50px;
+                    padding: 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+    }
+
+
+}
+
+.earnPictures {
+    flex: 1 1 0%;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .earnToken {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-height: 512px;
+
+        .earnImage {
+            position: absolute;
+            top: -250px;
+            left: -200px;
+
+
+        }
+
+        .pie {
+            @include floatAnimation (bnbAnimation, -10px, -20px, 3s, 1s);
+        }
+
+        .stonks {
+            @include floatAnimation (btcAnimation, -10px, -20px, 3s, 0.66s);
+        }
+
+        .folder {
+            @include floatAnimation (cakeAnimation, -10px, -20px, 3s, 0.33s);
+        }
+    }
+}
