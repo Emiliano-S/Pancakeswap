@@ -5,6 +5,8 @@
 @use './mediaquerry' as *;
 @use './earn';
 @use './homePrizes';
+@use '_banner.scss';
+
 body{
     width: 100%;
     min-height: 200px;

@@ -1168,7 +1168,16 @@ e poi dentro la classe che dovete fare responsive
   background-color: white;
   padding: 48px 0px;
   margin: 70px 0px;
-  padding-top: 150px;
+}
+@media only screen and (max-width: 967px) {
+  .section-trade {
+    padding-top: 150px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .section-trade {
+    padding-top: 150px;
+  }
 }
 
 .tradeColumn {
@@ -1885,6 +1894,421 @@ e poi dentro la classe che dovete fare responsive
   -webkit-text-fill-color: transparent;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn-02-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  cursor: pointer;
+  font-family: Kanit Regular;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  height: 50px;
+  padding: 1rem;
+  background-color: #1fc7d4;
+  color: #ffffff;
+  width: 150px;
+}
+.btn-02-banner:hover {
+  opacity: 0.5;
+}
+.btn-02-banner:active {
+  transform: translateY(1px);
+}
+.btn-02-banner p.btn {
+  color: #eff4f5;
+}
+.btn-02-banner svg {
+  fill: #ffffff;
+  margin-left: 0.5rem;
+}
+
+.container-banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-banner {
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+  background: linear-gradient(139.73deg, rgb(230, 253, 255) 0%, rgb(243, 239, 255) 100%);
+  padding: 48px 0px;
+}
+.section-banner svg.bg-banner-section {
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+  bottom: 0;
+}
+
+.banner-container > * {
+  z-index: 10;
+  position: relative;
+}
+
+.banner-padre {
+  height: 200px;
+  position: relative;
+}
+
+.banner-container {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  border-radius: 32px;
+  padding: 24px;
+  background: rgb(60, 23, 134);
+  background: linear-gradient(0deg, rgb(60, 23, 134) 0%, rgb(118, 69, 217) 100%);
+  opacity: 1;
+  transition: opacity 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in-out;
+  -moz-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  -o-transition: opacity 3s ease-in-out;
+}
+.banner-container.hide {
+  opacity: 0;
+}
+.banner-container .left-banner-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.banner-container .left-banner-section h3 {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  margin-bottom: 7px;
+}
+.banner-container .left-banner-section .timer-banner-container {
+  width: 250px;
+  height: 50px;
+  background-color: #280d5f;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(153, 106, 255, 0.4901960784);
+}
+.banner-container .left-banner-section .timer-banner-container .timer-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.banner-container .left-banner-section .timer-banner-container .timer-banner h2 {
+  margin-right: 5px;
+  background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-container .left-banner-section .timer-banner-container .timer-banner h4 {
+  background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 10px;
+}
+
+.btn-slide-banner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 108px;
+  bottom: 12px;
+}
+.btn-slide-banner .btn-banner-left {
+  border-radius: 4px 0px 0px 4px;
+  width: 54px;
+  height: 8px;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+.btn-slide-banner .btn-banner-right {
+  border-radius: 0px 4px 4px 0px;
+  width: 54px;
+  height: 8px;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+.btn-slide-banner .btn-banner-left-active {
+  border-radius: 4px 0px 0px 4px;
+  width: 54px;
+  height: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-slide-banner .btn-banner-right-active {
+  border-radius: 0px 4px 4px 0px;
+  width: 54px;
+  height: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.container-moon {
+  height: 600px;
+  margin-top: 50px;
+  display: flex;
+}
+.container-moon h1 {
+  line-height: 1.1;
+}
+.container-moon h3 {
+  margin-top: 24px;
+  color: #280d5f;
+}
+.container-moon .container-moon-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  justify-content: center;
+}
+.container-moon .container-moon-left .button-moon-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 24px;
+}
+.container-moon .container-moon-left .button-moon-left .btn-03 {
+  margin-right: 10px;
+  width: 180px;
+}
+.container-moon .container-moon-left .button-moon-left .btn-03 .btn-connect {
+  color: #ffffff;
+  font-weight: 600;
+}
+.container-moon .container-moon-left .button-moon-left .btn-04 {
+  width: 140px;
+}
+.container-moon .container-moon-left .button-moon-left .btn-04 .btn-trade {
+  color: #1fc7d4;
+  font-weight: 600;
+}
+.container-moon .container-moon-right {
+  flex: 1 1 0%;
+}
+.container-moon .container-moon-right .cont-img-bunny {
+  position: relative;
+}
+.container-moon .container-moon-right .cont-img-bunny img {
+  width: 100%;
+  position: absolute;
+}
+.container-moon .container-moon-right .cont-img-bunny img:nth-child(1) {
+  animation: bunnyAnimation 5s ease-in-out 1s infinite normal none running;
+  -webkit-animation: bunnyAnimation 5s ease-in-out 1s infinite normal none running;
+}
+@keyframes bunnyAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+    -webkit-transform: translate(10px, 10px);
+    -moz-transform: translate(10px, 10px);
+    -ms-transform: translate(10px, 10px);
+    -o-transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+.container-moon .container-moon-right .cont-img-bunny img:nth-child(2) {
+  animation: 3s ease-in-out 0ms infinite normal none running;
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fadeIn;
+  animation-duration: 3.5s;
+}
+.container-moon .container-moon-right .cont-img-bunny img:nth-child(3) {
+  animation: 3s ease-in-out 0ms infinite normal none running;
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+}
+.container-moon .container-moon-right .cont-img-bunny img:nth-child(4) {
+  animation: 3s ease-in-out 0ms infinite normal none running;
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.yellow-gradient {
+  display: flex;
+  flex-direction: column;
+}
+.yellow-gradient h3 {
+  margin-right: 5px;
+  background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.yellow-gradient h2 {
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-01-banner {
+    background-image: url(../img/lottery.png);
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    z-index: 0;
+  }
+
+  .img-02-banner {
+    background-image: url(../img/perpetual.png);
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    background-position: right;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .banner-container {
+    overflow: hidden;
+  }
+
+  .yellow-gradient {
+    display: flex;
+    flex-direction: column;
+  }
+  .yellow-gradient h3 {
+    margin-right: 5px;
+    background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .yellow-gradient h2 {
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px;
+    margin-bottom: 7px;
+    font-size: 22px;
+  }
+
+  .container-moon {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .container-moon .container-moon-left {
+    margin-top: 150px;
+  }
+  .container-moon .container-moon-right .cont-img-bunny img {
+    width: 40%;
+    left: 30%;
+  }
+
+  .left-banner-section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .img-01-banner {
+    background-image: url(../img/lotteryMobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: auto;
+    top: 0;
+    right: -45%;
+    z-index: 0;
+  }
+
+  .img-02-banner {
+    background-image: url(../img/perpetualMobile.png);
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-position: right;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 730px) {
+  .img-01-banner {
+    background-image: url(../img/lotteryMobile.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: auto;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+
+  .img-02-banner {
+    background-image: url(../img/perpetualMobile.png);
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    background-position: right;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
 body {
   width: 100%;
   min-height: 200px;
