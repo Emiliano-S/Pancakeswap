@@ -3,6 +3,7 @@
 @use './trade';
 @use './mediaquerry' as *;
 @use './earn';
+@use './homePrizes';
 body{
     width: 100%;
     min-height: 200px;
