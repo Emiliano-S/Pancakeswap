@@ -1,6 +1,7 @@
 @use '../assets/ds/css/colors';
 @use "./_animation.scss" as *;
 @use "../assets/ds/css/buttons";
+@use './mediaquery' as *;
 
 .section-earn{
     background-color: white;
@@ -10,10 +11,32 @@
     display: flex;
     flex-direction: column;
 
+    @include breakpoint("tablet") {
+
+        flex-direction: column-reverse;
+
+    }
+
+    @include breakpoint("mobile") {
+
+        flex-direction: column-reverse;
+
+    }
+
     .earnRow {
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        @include breakpoint("tablet") {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        @include breakpoint("mobile") {
+            display: flex;
+            flex-direction: column-reverse;
+        }
 
         .earnContainer {
             display: flex;
@@ -22,6 +45,17 @@
             margin-right: 64px;
             align-self: center;
             gap: 24px;
+
+            @include breakpoint("tablet") {
+                position: absolute;
+                top: 400px;
+                margin-right: 0px;
+                padding: 20px;
+            }
+
+            @include breakpoint("mobile") {
+                position: absolute;
+            }
 
             .earnHeader {
 
@@ -86,22 +120,56 @@
 
         .earnImage {
             position: absolute;
-            top: -250px;
-            left: -200px;
+            top: -200px;
+            left: -50px;
+
+            @include breakpoint("tablet") {
+                top: -10px;
+                left: 50px;
+            }
+
+            @include breakpoint("mobile") {
+                top: 50px;
+                left: 50px;
+            }
 
 
         }
 
         .pie {
+            img {
+                height: 428px;
+            }
             @include floatAnimation (bnbAnimation, -10px, -20px, 3s, 1s);
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
         }
 
         .stonks {
+            img {
+                height: 428px;
+            }
             @include floatAnimation (btcAnimation, -10px, -20px, 3s, 0.66s);
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
         }
 
         .folder {
+            img {
+                height: 428px;
+            }
             @include floatAnimation (cakeAnimation, -10px, -20px, 3s, 0.33s);
+            @include breakpoint("tablet") {
+                img {
+                    height: 200px;
+                }
+            }
         }
     }
 }
