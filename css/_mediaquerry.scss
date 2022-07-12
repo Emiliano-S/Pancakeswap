@@ -4,11 +4,11 @@ $mobile-container-width: 570px;
 
 @mixin breakpoint($point) {
     @if $point=="tablet" {
-      @media only screen and (max-width: $desktop-container-width) {
+      @media only screen and (max-width: $tablet-container-width) {
         @content;
       }
     } @else if $point=="mobile" {
-      @media only screen and (max-width: $tablet-container-width) {
+      @media only screen and (max-width: $mobile-container-width) {
         @content;
       }
     }
@@ -16,11 +16,8 @@ $mobile-container-width: 570px;
 
 /* Per utilizzare il mixin ricordatevi di prima effettuare il:
 @use './mediaquerry' as *;
-
 e poi dentro la classe che dovete fare responsive
-
 @include breakpoint("tablet" o "mobile") {
       ...QUI IL CONTENUTO RESPONSIVE....
     }
-
 */

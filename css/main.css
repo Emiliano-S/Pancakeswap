@@ -936,14 +936,233 @@ body {
 
 /* Per utilizzare il mixin ricordatevi di prima effettuare il:
 @use './mediaquerry' as *;
-
 e poi dentro la classe che dovete fare responsive
-
 @include breakpoint("tablet" o "mobile") {
       ...QUI IL CONTENUTO RESPONSIVE....
     }
-
 */
+.section-earn {
+  background-color: white;
+}
+
+.earnColumn {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 967px) {
+  .earnColumn {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .earnColumn {
+    flex-direction: column-reverse;
+  }
+}
+.earnColumn .earnRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 967px) {
+  .earnColumn .earnRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .earnColumn .earnRow {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.earnColumn .earnRow .earnContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-right: 64px;
+  align-self: center;
+  gap: 24px;
+}
+@media only screen and (max-width: 967px) {
+  .earnColumn .earnRow .earnContainer {
+    position: absolute;
+    top: 400px;
+    margin-right: 0px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .earnColumn .earnRow .earnContainer {
+    position: absolute;
+  }
+}
+.earnColumn .earnRow .earnContainer .earnHeader h2 {
+  color: #280d5f;
+  line-height: 1;
+}
+.earnColumn .earnRow .earnContainer .earnHeader h2 span {
+  color: #7645d9;
+}
+.earnColumn .earnRow .earnContainer .earnParagr p {
+  color: #7a6eaa;
+}
+.earnColumn .earnRow .earnContainer .earnButtons {
+  display: flex;
+  flex-direction: row;
+}
+.earnColumn .earnRow .earnContainer .earnButtons .explore-btn {
+  padding: 0 25px;
+}
+.earnColumn .earnRow .earnContainer .earnButtons .btn-learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1fc7d4;
+  font-weight: 600;
+  height: 50px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.earnColumn .earnRow .earnContainer .earnButtons .btn-learn:hover {
+  text-decoration: underline;
+}
+
+.earnPictures {
+  flex: 1 1 0%;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.earnPictures .earnToken {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-height: 512px;
+}
+.earnPictures .earnToken .earnImage {
+  position: absolute;
+  top: -200px;
+  left: -50px;
+}
+@media only screen and (max-width: 967px) {
+  .earnPictures .earnToken .earnImage {
+    top: -10px;
+    left: 50px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .earnPictures .earnToken .earnImage {
+    top: 50px;
+    left: 50px;
+  }
+}
+.earnPictures .earnToken .pie {
+  animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+  -webkit-animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+}
+.earnPictures .earnToken .pie img {
+  height: 428px;
+}
+@keyframes bnbAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 967px) {
+  .earnPictures .earnToken .pie img {
+    height: 200px;
+  }
+}
+.earnPictures .earnToken .stonks {
+  animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
+}
+.earnPictures .earnToken .stonks img {
+  height: 428px;
+}
+@keyframes btcAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 967px) {
+  .earnPictures .earnToken .stonks img {
+    height: 200px;
+  }
+}
+.earnPictures .earnToken .folder {
+  animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
+  -webkit-animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
+}
+.earnPictures .earnToken .folder img {
+  height: 428px;
+}
+@keyframes cakeAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 967px) {
+  .earnPictures .earnToken .folder img {
+    height: 200px;
+  }
+}
+
 body {
   width: 100%;
   min-height: 200px;
@@ -983,13 +1202,13 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
   padding: 48px 24px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 967px) {
   .section-1200, .section-968 {
     width: 100%;
     padding: 32px 24px;
   }
 }
-@media only screen and (max-width: 967px) {
+@media only screen and (max-width: 570px) {
   .section-1200, .section-968 {
     width: 100%;
     padding: 16px 24px;
