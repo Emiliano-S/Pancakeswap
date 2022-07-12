@@ -6,6 +6,7 @@
 .section-earn{
     background-color: white;
     padding: 48px 0px;
+    margin: 70px 0px;
 }
 
 .earnColumn {
@@ -51,6 +52,7 @@
             @include breakpoint("tablet") {
                 margin-right: 0px;
                 padding: 20px;
+                align-self: start;
             }
 
             .earnHeader {
@@ -124,7 +126,6 @@
             }
 
             @include breakpoint("mobile") {
-                top: 50px;
                 left: 50px;
             }
 
