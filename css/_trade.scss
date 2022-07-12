@@ -28,19 +28,19 @@
 
     .tradeRow {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         align-items: center;
 
 
 
         @include breakpoint("tablet") {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column
         }
 
         @include breakpoint("mobile") {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column
         }
 
         .tradeContainer {
@@ -128,12 +128,10 @@
 
 
             @include breakpoint("tablet") {
-                top: 50px;
-                left: 650px;
+                left: calc(100vw - 220px);
             }
 
             @include breakpoint("mobile") {
-                top: 50px;
                 left: 50px;
             }
 
