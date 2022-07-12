@@ -28,10 +28,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        position: relative;
 
         @include breakpoint("tablet") {
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
 
         @include breakpoint("mobile") {
@@ -48,14 +49,8 @@
             gap: 24px;
 
             @include breakpoint("tablet") {
-                position: absolute;
-                top: 400px;
                 margin-right: 0px;
                 padding: 20px;
-            }
-
-            @include breakpoint("mobile") {
-                position: absolute;
             }
 
             .earnHeader {
@@ -125,8 +120,7 @@
             left: -50px;
 
             @include breakpoint("tablet") {
-                top: -10px;
-                left: 50px;
+                left: (calc(100vw - 250px))
             }
 
             @include breakpoint("mobile") {
