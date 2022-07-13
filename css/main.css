@@ -943,14 +943,19 @@ e poi dentro la classe che dovete fare responsive
 */
 .section-earn {
   background-color: white;
+  flex-direction: column;
+  margin: 70px 0px;
+  background: 0, 0, 0, 0 linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%) repeat scroll 0% 0%;
 }
 
 .earnColumn {
   display: flex;
   flex-direction: column;
+  padding: 100px 0px;
 }
 @media only screen and (max-width: 967px) {
   .earnColumn {
+    padding-top: 200px;
     flex-direction: column-reverse;
   }
 }
@@ -963,11 +968,12 @@ e poi dentro la classe che dovete fare responsive
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: relative;
 }
 @media only screen and (max-width: 967px) {
   .earnColumn .earnRow {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 570px) {
@@ -986,15 +992,9 @@ e poi dentro la classe che dovete fare responsive
 }
 @media only screen and (max-width: 967px) {
   .earnColumn .earnRow .earnContainer {
-    position: absolute;
-    top: 400px;
     margin-right: 0px;
     padding: 20px;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .earnColumn .earnRow .earnContainer {
-    position: absolute;
+    align-self: start;
   }
 }
 .earnColumn .earnRow .earnContainer .earnHeader h2 {
@@ -1042,24 +1042,25 @@ e poi dentro la classe che dovete fare responsive
 }
 .earnPictures .earnToken .earnImage {
   position: absolute;
-  top: -250px;
-  left: -200px;
+  top: -200px;
+  left: -50px;
 }
 @media only screen and (max-width: 967px) {
   .earnPictures .earnToken .earnImage {
-    top: 50px;
-    left: 650px;
+    left: calc(100vw - 250px);
   }
 }
 @media only screen and (max-width: 570px) {
   .earnPictures .earnToken .earnImage {
-    top: 50px;
     left: 50px;
   }
 }
 .earnPictures .earnToken .pie {
   animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
   -webkit-animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+}
+.earnPictures .earnToken .pie img {
+  height: 428px;
 }
 @keyframes bnbAnimation {
   0% {
@@ -1093,6 +1094,9 @@ e poi dentro la classe che dovete fare responsive
   animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
   -webkit-animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
 }
+.earnPictures .earnToken .stonks img {
+  height: 428px;
+}
 @keyframes btcAnimation {
   0% {
     transform: translate(0px, 0px);
@@ -1125,6 +1129,9 @@ e poi dentro la classe che dovete fare responsive
   animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
   -webkit-animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
 }
+.earnPictures .earnToken .folder img {
+  height: 428px;
+}
 @keyframes cakeAnimation {
   0% {
     transform: translate(0px, 0px);
@@ -1152,6 +1159,68 @@ e poi dentro la classe che dovete fare responsive
   .earnPictures .earnToken .folder img {
     height: 200px;
   }
+}
+
+.earnTopContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.earnTopContainer .earnTopTitle {
+  display: flex;
+  margin-bottom: 24px;
+}
+.earnTopContainer .earnTopTitle h2 {
+  color: rgb(40, 13, 95);
+  font-size: 20px;
+}
+.earnTopContainer .earnTopTitle span {
+  color: rgb(118, 69, 217);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.earnTopContainer .earnTopTitle button {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+.earnTopContainer .earnTopTitle button:hover {
+  cursor: pointer;
+}
+.earnTopContainer .earnTopContent {
+  height: 80px;
+}
+.earnTopContainer .earnTopContent .earnFirstContent {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(5, auto);
+}
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard {
+  display: flex;
+}
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn {
+  display: flex;
+  flex-direction: column;
+}
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardTitle {
+  color: rgb(118, 69, 217);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers span {
+  color: rgb(40, 13, 95);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardApy {
+  color: rgb(122, 110, 170);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 body {
