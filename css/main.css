@@ -964,7 +964,7 @@ e poi dentro la classe che dovete fare responsive
 
 .small-container {
   height: auto;
-  width: 1200px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: rgb(39, 38, 44);
@@ -1865,6 +1865,9 @@ ul {
   }
 }
 
+.section-cake {
+  overflow: hidden;
+}
 @media screen and (max-width: 688px) {
   .section-cake {
     padding-top: 50px;
@@ -1873,6 +1876,7 @@ ul {
 
 .section-stats {
   background: linear-gradient(rgb(255, 255, 255) 22%, rgb(215, 202, 236) 100%);
+  overflow: hidden;
 }
 .section-stats .container-stats {
   padding: 48px 0px;
