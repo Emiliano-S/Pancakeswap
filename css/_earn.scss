@@ -182,6 +182,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    z-index: 3;
 
     .earnTopTitle {
         display: flex;
@@ -212,11 +213,21 @@
 
     .earnTopContent {
         height: 80px;
+        position: relative;
 
-        .earnFirstContent {
+        .earnFirstContent, .earnSecondContent {
             display: grid;
             gap: 32px;
             grid-template-columns: repeat(5, auto);
+            position: absolute;
+            opacity: 1;
+            margin-top: 0px;
+            transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+
+            &.hideEarn {
+                opacity: 0;
+                margin-top: 68px;
+            }
 
             .earnCard {
                 display: flex;

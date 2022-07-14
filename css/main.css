@@ -1165,6 +1165,7 @@ e poi dentro la classe che dovete fare responsive
   display: flex;
   flex-direction: column;
   margin-top: 80px;
+  z-index: 3;
 }
 .earnTopContainer .earnTopTitle {
   display: flex;
@@ -1191,32 +1192,41 @@ e poi dentro la classe che dovete fare responsive
 }
 .earnTopContainer .earnTopContent {
   height: 80px;
+  position: relative;
 }
-.earnTopContainer .earnTopContent .earnFirstContent {
+.earnTopContainer .earnTopContent .earnFirstContent, .earnTopContainer .earnTopContent .earnSecondContent {
   display: grid;
   gap: 32px;
   grid-template-columns: repeat(5, auto);
+  position: absolute;
+  opacity: 1;
+  margin-top: 0px;
+  transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
 }
-.earnTopContainer .earnTopContent .earnFirstContent .earnCard {
+.earnTopContainer .earnTopContent .earnFirstContent.hideEarn, .earnTopContainer .earnTopContent .earnSecondContent.hideEarn {
+  opacity: 0;
+  margin-top: 68px;
+}
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard, .earnTopContainer .earnTopContent .earnSecondContent .earnCard {
   display: flex;
 }
-.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn {
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn, .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn {
   display: flex;
   flex-direction: column;
 }
-.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardTitle {
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardTitle, .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardTitle {
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
-.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers span {
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers span, .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardNumbers span {
   color: rgb(40, 13, 95);
   font-weight: 600;
   line-height: 1.1;
 }
-.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardApy {
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardApy, .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardApy {
   color: rgb(122, 110, 170);
   font-weight: 400;
   line-height: 1.5;
