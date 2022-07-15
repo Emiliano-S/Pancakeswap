@@ -3692,6 +3692,7 @@ body .section-nav {
   height: auto;
 }
 body main {
+  margin-top: 127px;
   width: 100%;
   height: auto;
   display: flex;

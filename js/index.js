@@ -117,4 +117,15 @@ document.getElementById('btnBannerL').addEventListener('click', ()=>{
       timer = setTimeout(showSlides, 5000);
     }, 5000)
   }
-})
+});
+
+document.getElementById('warningSiteCloser').addEventListener('click', ()=>{
+    const bannerWarning = document.getElementById("bannerWarningPhishing");
+    const main = document.getElementById("mainContainer");
+
+    bannerWarning.style.display = "none";
+    main.style.marginTop = "56px";
+
+});
+
+
