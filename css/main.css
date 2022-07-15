@@ -1169,7 +1169,7 @@ e poi dentro la classe che dovete fare responsive
   flex-wrap: wrap;
   margin-top: 80px;
   z-index: 3;
-  width: 100vw;
+  width: 100%;
 }
 @media only screen and (max-width: 967px) {
   .earnTopContainer {
