@@ -941,6 +941,229 @@ e poi dentro la classe che dovete fare responsive
       ...QUI IL CONTENUTO RESPONSIVE....
     }
 */
+.section-trade {
+  background-color: white;
+  padding: 48px 0px;
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+.section-trade .tradeSvg {
+  width: 100%;
+}
+
+.tradeColumn {
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 967px) {
+  .tradeColumn {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .tradeColumn {
+    flex-direction: column-reverse;
+  }
+}
+.tradeColumn .tradeRow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+@media only screen and (max-width: 967px) {
+  .tradeColumn .tradeRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .tradeColumn .tradeRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.tradeColumn .tradeRow .tradeContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-right: 64px;
+  align-self: center;
+  gap: 24px;
+}
+@media only screen and (max-width: 967px) {
+  .tradeColumn .tradeRow .tradeContainer {
+    position: absolute;
+    top: 400px;
+    margin-right: 0px;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .tradeColumn .tradeRow .tradeContainer {
+    position: absolute;
+  }
+}
+.tradeColumn .tradeRow .tradeContainer .tradeHeader h2 {
+  color: #280d5f;
+  line-height: 1;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeHeader h2 span {
+  color: #7645d9;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeParagr p {
+  color: #7a6eaa;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeButtons {
+  display: flex;
+  flex-direction: row;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeButtons .btn-learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1fc7d4;
+  font-weight: 600;
+  height: 50px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.tradeColumn .tradeRow .tradeContainer .tradeButtons .btn-learn:hover {
+  text-decoration: underline;
+}
+
+.tradePictures {
+  flex: 1 1 0%;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.tradePictures .tradeToken {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.tradePictures .tradeToken .tradeImage {
+  position: absolute;
+  top: -200px;
+  left: 0px;
+}
+@media only screen and (max-width: 967px) {
+  .tradePictures .tradeToken .tradeImage {
+    left: calc(100vw - 220px);
+  }
+}
+@media only screen and (max-width: 570px) {
+  .tradePictures .tradeToken .tradeImage {
+    left: 50px;
+  }
+}
+.tradePictures .tradeToken .bnb {
+  animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+  -webkit-animation: bnbAnimation 3s ease-in-out 1s infinite normal none running;
+}
+.tradePictures .tradeToken .bnb img {
+  height: 428px;
+}
+@keyframes bnbAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 967px) {
+  .tradePictures .tradeToken .bnb img {
+    height: 200px;
+  }
+}
+.tradePictures .tradeToken .btc {
+  animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
+  -webkit-animation: btcAnimation 3s ease-in-out 0.66s infinite normal none running;
+}
+.tradePictures .tradeToken .btc img {
+  height: 428px;
+}
+@keyframes btcAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 967px) {
+  .tradePictures .tradeToken .btc img {
+    height: 200px;
+  }
+}
+.tradePictures .tradeToken .cake {
+  animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
+  -webkit-animation: cakeAnimation 3s ease-in-out 0.33s infinite normal none running;
+}
+.tradePictures .tradeToken .cake img {
+  height: 428px;
+}
+@keyframes cakeAnimation {
+  0% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+    -webkit-transform: translate(-10px, -20px);
+    -moz-transform: translate(-10px, -20px);
+    -ms-transform: translate(-10px, -20px);
+    -o-transform: translate(-10px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+  }
+}
+@media only screen and (max-width: 967px) {
+  .tradePictures .tradeToken .cake img {
+    height: 200px;
+  }
+}
+
 body {
   width: 100%;
   min-height: 200px;
