@@ -942,10 +942,13 @@ e poi dentro la classe che dovete fare responsive
     }
 */
 .section-earn {
+  display: flex;
+  width: 100%;
   background-color: white;
   flex-direction: column;
   margin: 70px 0px;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
+  overflow: hidden;
 }
 .section-earn .svgEarn {
   fill: rgb(250, 249, 250);
@@ -962,12 +965,6 @@ e poi dentro la classe che dovete fare responsive
 @media only screen and (max-width: 967px) {
   .earnColumn {
     padding-top: 200px;
-    flex-direction: column-reverse;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .earnColumn {
-    flex-direction: column-reverse;
   }
 }
 .earnColumn .earnRow {
@@ -985,7 +982,6 @@ e poi dentro la classe che dovete fare responsive
 @media only screen and (max-width: 570px) {
   .earnColumn .earnRow {
     display: flex;
-    flex-direction: column-reverse;
   }
 }
 .earnColumn .earnRow .earnContainer {
@@ -1173,11 +1169,12 @@ e poi dentro la classe che dovete fare responsive
   flex-wrap: wrap;
   margin-top: 80px;
   z-index: 3;
+  width: 100vw;
 }
 @media only screen and (max-width: 967px) {
   .earnTopContainer {
-    position: absolute;
-    top: 650px;
+    margin-top: 10px;
+    margin-bottom: 100px;
   }
 }
 .earnTopContainer .earnTopTitle {
@@ -1212,17 +1209,18 @@ e poi dentro la classe che dovete fare responsive
 .earnTopContainer .earnTopContent .earnFirstContent,
 .earnTopContainer .earnTopContent .earnSecondContent {
   display: grid;
-  gap: 64px;
+  gap: 32x;
   grid-template-columns: repeat(5, auto);
   position: absolute;
   opacity: 1;
   margin-top: 0px;
   transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+  width: 100%;
 }
 @media only screen and (max-width: 967px) {
   .earnTopContainer .earnTopContent .earnFirstContent,
 .earnTopContainer .earnTopContent .earnSecondContent {
-    gap: 32px;
+    gap: 16px;
   }
 }
 @media only screen and (max-width: 570px) {
@@ -1240,6 +1238,7 @@ e poi dentro la classe che dovete fare responsive
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard {
   display: flex;
+  width: 100%;
 }
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn {
@@ -1254,10 +1253,12 @@ e poi dentro la classe che dovete fare responsive
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
+  width: 100%;
 }
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardNumbers {
   display: flex;
+  gap: 5px;
 }
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers span,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardNumbers span {
@@ -1298,6 +1299,7 @@ e poi dentro la classe che dovete fare responsive
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .fourthCardE,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .fifthCardE {
     border-left: none;
+    padding-left: 0;
   }
 }
 
