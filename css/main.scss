@@ -1,7 +1,17 @@
 // Collegare qui dentro i singoli moduli riferiti alle section della homepage
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
-@use './mediaquery' as *;
+@use '../css/navbar.scss'; 
+@use './footer.scss';
+@use '../assets/ds/css/colors' as *;
+@use '_buy-cake.scss';
+@use '_animation.scss'; 
+@use '_stats.scss';
+@use './trade';
+@use './mediaquerry' as *;
 @use './earn';
+@use './homePrizes';
+@use '_banner.scss';
+
 body{
     width: 100%;
     min-height: 200px;
@@ -13,6 +23,7 @@ body{
         height: auto;
     }
     main{
+        margin-top: 127px;
         width: 100%;
         height: auto;
         display: flex;
@@ -27,6 +38,14 @@ body{
             align-items: center;
         }
     }
+}
+
+.section-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-1200{
