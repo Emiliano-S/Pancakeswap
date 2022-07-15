@@ -947,6 +947,12 @@ e poi dentro la classe che dovete fare responsive
   margin: 70px 0px;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
 }
+.section-earn .svgEarn {
+  fill: rgb(250, 249, 250);
+  width: 150%;
+  height: 100%;
+  max-height: 48px;
+}
 
 .earnColumn {
   display: flex;
@@ -1164,8 +1170,15 @@ e poi dentro la classe che dovete fare responsive
 .earnTopContainer {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 80px;
   z-index: 3;
+}
+@media only screen and (max-width: 967px) {
+  .earnTopContainer {
+    position: absolute;
+    top: 650px;
+  }
 }
 .earnTopContainer .earnTopTitle {
   display: flex;
@@ -1193,16 +1206,31 @@ e poi dentro la classe che dovete fare responsive
 .earnTopContainer .earnTopContent {
   height: 80px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .earnTopContainer .earnTopContent .earnFirstContent,
 .earnTopContainer .earnTopContent .earnSecondContent {
   display: grid;
-  gap: 32px;
+  gap: 64px;
   grid-template-columns: repeat(5, auto);
   position: absolute;
   opacity: 1;
   margin-top: 0px;
   transition: opacity 0s ease 0s, margin-top 0s ease 0s, all 0.4s ease-out 0s;
+}
+@media only screen and (max-width: 967px) {
+  .earnTopContainer .earnTopContent .earnFirstContent,
+.earnTopContainer .earnTopContent .earnSecondContent {
+    gap: 32px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .earnTopContainer .earnTopContent .earnFirstContent,
+.earnTopContainer .earnTopContent .earnSecondContent {
+    gap: 8px;
+    grid-template-columns: repeat(2, auto);
+  }
 }
 .earnTopContainer .earnTopContent .earnFirstContent.hideEarn,
 .earnTopContainer .earnTopContent .earnSecondContent.hideEarn {
@@ -1220,20 +1248,27 @@ e poi dentro la classe che dovete fare responsive
 }
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardTitle,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardTitle {
+  display: flex;
   color: rgb(118, 69, 217);
   font-weight: 600;
   line-height: 1.5;
   margin-bottom: 8px;
   font-size: 12px;
 }
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers,
+.earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardNumbers {
+  display: flex;
+}
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardNumbers span,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardNumbers span {
+  display: flex;
   color: rgb(40, 13, 95);
   font-weight: 600;
   line-height: 1.1;
 }
 .earnTopContainer .earnTopContent .earnFirstContent .earnCard .earnCardColumn .earnCardApy,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .earnCardColumn .earnCardApy {
+  display: flex;
   color: rgb(122, 110, 170);
   font-weight: 400;
   line-height: 1.5;
@@ -1247,10 +1282,23 @@ e poi dentro la classe che dovete fare responsive
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .thirdCardE,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .fourthCardE,
 .earnTopContainer .earnTopContent .earnSecondContent .earnCard .fifthCardE {
+  display: flex;
   height: 80px;
   top: 0px;
   padding-left: 16px;
   border-left: 1px solid rgb(215, 202, 236);
+}
+@media only screen and (max-width: 570px) {
+  .earnTopContainer .earnTopContent .earnFirstContent .earnCard .secondCardE,
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .thirdCardE,
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .fourthCardE,
+.earnTopContainer .earnTopContent .earnFirstContent .earnCard .fifthCardE,
+.earnTopContainer .earnTopContent .earnSecondContent .earnCard .secondCardE,
+.earnTopContainer .earnTopContent .earnSecondContent .earnCard .thirdCardE,
+.earnTopContainer .earnTopContent .earnSecondContent .earnCard .fourthCardE,
+.earnTopContainer .earnTopContent .earnSecondContent .earnCard .fifthCardE {
+    border-left: none;
+  }
 }
 
 body {
