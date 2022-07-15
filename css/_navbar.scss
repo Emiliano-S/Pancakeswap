@@ -115,6 +115,7 @@ font-size: 14px;
   display: flex;
 }
 .logo-container {
+  margin-right: 20px;
   display: flex;
   a {
     display: flex;
@@ -164,6 +165,8 @@ font-size: 14px;
 }
 .hwMcXE:hover ~ .kOBRaF {
   visibility: visible;
+  position: absolute;
+  display: block;
 }
 .kHcMUr {
   pointer-events: none;
@@ -286,7 +289,7 @@ font-size: 14px;
 //
 .settings-container {
   display: flex;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .settings-button-navbar {
