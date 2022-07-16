@@ -2537,8 +2537,13 @@ ul {
 
 .section-trade {
   background: white;
-  padding: 48px 0px;
-  margin: 70px 0px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.section-trade .tradeSvg {
+  width: 100%;
 }
 @media only screen and (max-width: 967px) {
   .section-trade {
@@ -2761,7 +2766,6 @@ ul {
   width: 100%;
   background-color: white;
   flex-direction: column;
-  margin-top: 70px;
   background: linear-gradient(111.68deg, rgb(242, 236, 242) 0%, rgb(232, 242, 246) 100%);
   overflow: hidden;
 }
@@ -3860,6 +3864,30 @@ ul {
 
 /*SECTION TRADE */
 #sectionTrade.darkmode {
+  background: rgb(8, 6, 11) none repeat scroll 0% 0%;
+}
+#sectionTrade #tradeSvg.darkmode svg {
+  fill: rgb(32, 19, 53);
+}
+
+/*SECTION EARN */
+#sectionEarn.darkmode {
+  background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
+}
+#sectionEarn #earnSvg.darkmode svg {
+  fill: rgb(8, 6, 11);
+}
+
+/*SECTION PRIZES */
+#sectionPrizes.darkmode {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%) repeat scroll 0% 0%;
+}
+#sectionPrizes.darkmode .center-prizes {
+  background: rgba(8, 6, 11, 0.6) none repeat scroll 0% 0%;
+}
+
+/*SECTION CAKE*/
+#sectionCake.darkmode {
   background: rgb(8, 6, 11) none repeat scroll 0% 0%;
 }
 

@@ -157,4 +157,12 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
   document.getElementById('sectionStats').classList.toggle('darkmode');
 
   document.getElementById('sectionTrade').classList.toggle('darkmode');
+  document.getElementById('tradeSvg').classList.toggle('darkmode');
+
+  document.getElementById('sectionEarn').classList.toggle('darkmode');
+  document.getElementById('earnSvg').classList.toggle('darkmode');
+
+  document.getElementById('sectionPrizes').classList.toggle('darkmode');
+
+  document.getElementById('sectionCake').classList.toggle('darkmode');
 });
