@@ -4,7 +4,7 @@
 @use './mediaquerry' as *;
 
 .section-trade {
-    background-color: white;
+    background: white;
     padding: 48px 0px;
     margin: 70px 0px;
     @include breakpoint("tablet") {

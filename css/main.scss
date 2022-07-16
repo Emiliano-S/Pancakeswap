@@ -11,6 +11,7 @@
 @use './earn';
 @use './homePrizes';
 @use '_banner.scss';
+@use './darkmode';
 
 body{
     width: 100%;
@@ -23,7 +24,7 @@ body{
         height: auto;
     }
     main{
-        margin-top: 127px;
+        margin-top: 126px;
         width: 100%;
         height: auto;
         display: flex;

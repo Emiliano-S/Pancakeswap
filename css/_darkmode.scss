@@ -1,0 +1,50 @@
+
+#navbar{
+    &.darkmode{
+        background-color: rgb(39, 38, 44);
+        border-bottom: 1px solid rgb(56, 50, 65);
+    }
+}
+
+/* SECTION BANNER */
+#sectionBanner{
+    &.darkmode{
+        background: rgba(0, 0, 0, 0) radial-gradient(103.12% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%) repeat scroll 0% 0%;
+    }
+}
+
+
+#bannerSectionSvgStop1{
+    stop-color: #ffffff;
+    &.darkmode{
+        stop-color: #08060B;
+    }
+}
+
+#bannerSectionSvgStop2{
+    stop-color: #ffffff;
+    &.darkmode{
+        stop-color: #08060B;
+    }
+}
+
+#bannerSectionSvgStop3{
+    stop-color: #ffffff;
+    &.darkmode{
+        stop-color: #08060B;
+    }
+}
+
+/* SECTION STATS */
+#sectionStats{
+    &.darkmode{
+        background: rgba(0, 0, 0, 0) linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%) repeat scroll 0% 0%;
+    }
+}
+
+/*SECTION TRADE */
+#sectionTrade {
+    &.darkmode{
+        background: rgb(8, 6, 11) none repeat scroll 0% 0%;
+    }
+}

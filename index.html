@@ -10,7 +10,7 @@
     <body>
         <div class="section-nav">
             <div height="126" class="sc-58762f97-2 ibNPKR" >
-                <div height="70" class="sc-58762f97-3 eFPbdX" id="bannerWarningPhishing">
+            <div height="70" class="sc-58762f97-3 eFPbdX" id="bannerWarningPhishing">
                 <div class="sc-5d6c008f-1 sc-1080dffc-0 sc-40361ea1-0 hwMcXE bHahRd gLltxo warning-banner">
                     <div class="sc-5d6c008f-1 sc-1080dffc-0 sc-40361ea1-1 hwMcXE bHahRd byXjae">
                         <picture>
@@ -34,7 +34,7 @@
                     </button>
                 </div>
             </div>
-            <nav class="navbar">
+            <nav class="navbar" id="navbar">
                 <div class="left-navbar">
                     <div class="logo-container">
                         <a href="https://pancakeswap.finance/" aria-label="Pancake home page"
@@ -342,7 +342,7 @@
             </div>
         </div>
         <main id="mainContainer">
-            <div class="section-banner">
+            <div class="section-banner" id="sectionBanner">
                 <div class="container-banner section-1200">
                   <!-- INIZIO BANNER -->
 
@@ -472,10 +472,19 @@
                 </div>
                   <!-- FINE BANNER -->
                 </div>
-                <svg class="bg-banner-section" viewBox="0 0 1660 339" width="100%" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 mvupn"><path d="M804 167.023C520.5 167.023 267.5 290.522 0 304.5V339H1660V0.5C1358.83 0.5 1104 167.023 804 167.023Z" fill="url(#paint0_linear_light)"></path><defs><linearGradient id="paint0_linear_light" x1="830" y1="84" x2="830" y2="339" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.48"></stop><stop offset="0.566389" stop-color="white" stop-opacity="0.35"></stop><stop offset="1" stop-color="white"></stop></linearGradient></defs></svg>
+                <svg class="bg-banner-section" viewBox="0 0 1660 339" width="100%" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-eaf7e66-0 mvupn">
+                    <path d="M804 167.023C520.5 167.023 267.5 290.522 0 304.5V339H1660V0.5C1358.83 0.5 1104 167.023 804 167.023Z" fill="url(#paint0_linear_light)"></path>
+                    <defs>
+                        <linearGradient id="paint0_linear_light" x1="830" y1="84" x2="830" y2="339" gradientUnits="userSpaceOnUse">
+                            <stop stop-opacity="0.48" id="bannerSectionSvgStop1"></stop>
+                            <stop offset="0.566389" stop-opacity="0.35" id="bannerSectionSvgStop2"></stop>
+                            <stop offset="1" id="bannerSectionSvgStop3"></stop>
+                        </linearGradient>
+                    </defs>
+                </svg>
 
             </div>
-            <div class="section-stats">
+            <div class="section-stats" id="sectionStats">
                 <div class="container-stats section-1200">
                     <div class="statsWrap">
                             <div class="firstFlex">
@@ -534,7 +543,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-trade">
+            <div class="section-trade" id="sectionTrade">
                 <div class="container-trade section-968">
                     <!--FLEX COLUMN-->
                     <div class="tradeColumn">
@@ -1218,7 +1227,7 @@
                         <div class="bottom-container">
                             <div order="2,,1" class="left-bottom-container">
                                 <label class="toggle-switch light darkmode">
-                                    <input type="checkbox" id="">
+                                    <input type="checkbox" id="footerDarkMode">
                                     <div class="toggle-switch-container">
                                         <div class="icon-toggle-switch sun">
                                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none"

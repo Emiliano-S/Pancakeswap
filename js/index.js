@@ -147,3 +147,14 @@ document.getElementById('warningSiteCloser').addEventListener('click', ()=>{
 });
 
 
+document.getElementById('footerDarkMode').addEventListener('change', ()=>{
+  document.getElementById('navbar').classList.toggle('darkmode');
+  document.getElementById('sectionBanner').classList.toggle('darkmode');
+  document.getElementById('bannerSectionSvgStop1').classList.toggle('darkmode');
+  document.getElementById('bannerSectionSvgStop2').classList.toggle('darkmode');
+  document.getElementById('bannerSectionSvgStop3').classList.toggle('darkmode');
+
+  document.getElementById('sectionStats').classList.toggle('darkmode');
+
+  document.getElementById('sectionTrade').classList.toggle('darkmode');
+});
