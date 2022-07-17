@@ -1153,19 +1153,19 @@ body {
   align-items: center;
 }
 
-.language-icon-container {
-  margin-top: 4px;
+.world-en {
+  position: relative;
 }
 
-.language-button-navbar {
+.eng-svg-button {
   position: relative;
-  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
+  font-size: 16px;
   font-weight: 600;
   -webkit-box-pack: center;
   justify-content: center;
@@ -1174,22 +1174,93 @@ body {
   opacity: 1;
   outline: 0px;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 20px;
-  font-size: 12px;
-  padding: 0px 8px;
+  height: 48px;
+  padding: 0px 24px;
   background-color: transparent;
-  color: rgb(31, 199, 212);
   box-shadow: none;
 }
-
-.language-svg-navbar {
-  align-self: center;
-  fill: rgb(122, 110, 170);
+.eng-svg-button :nth-child(1) {
+  fill: rgb(184, 173, 210);
   flex-shrink: 0;
   margin-right: 0.5rem;
+  filter: none !important;
 }
-.language-svg-navbar :hover {
-  fill: rgb(188, 182, 212);
+.eng-svg-button :nth-child(2) {
+  color: rgb(184, 173, 210);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.language-change-selector {
+  vertical-align: baseline;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, 0px);
+  left: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px, rgba(25, 19, 38, 0.05) 0px 1px 1px;
+  padding: 16px;
+  max-height: 0px;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 4px;
+  opacity: 0;
+  transition: max-height 0s ease 0.3s, opacity 0.3s ease-in-out 0s;
+  will-change: opacity;
+  pointer-events: none;
+}
+.language-change-selector button {
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  box-shadow: none;
+  color: rgb(40, 13, 95);
+  padding: 0px 8px;
+  border-radius: 8px;
+  min-height: 32px;
+  height: auto;
+}
+
+.language-change-selector button:hover {
+  opacity: 0.65;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -webkit-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -moz-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -ms-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -o-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+:hover.eng-svg-button .world-svg-icon {
+  opacity: 0.65;
+}
+
+:hover.eng-svg-button .en {
+  opacity: 0.65;
+}
+
+:hover.world-en .language-change-selector {
+  opacity: 1;
+  max-height: 400px;
+  overflow-y: auto;
+  transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
+  pointer-events: auto;
 }
 
 .dEZvJK {
@@ -1285,29 +1356,6 @@ body {
 .section2-right-navbar {
   display: flex;
   margin-right: 24px;
-}
-
-.navbar-link-section {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-.navbar-link-section .navbar-link-container {
-  position: relative;
-}
-.navbar-link-section .navbar-link-container a {
-  position: relative;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  color: rgb(122, 110, 170);
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0px 16px;
-  height: 48px;
-  text-decoration: none;
-}
-.navbar-link-section .navbar-link-container svg {
-  fill: rgb(122, 110, 170);
 }
 
 .connect-wall-button {
