@@ -166,3 +166,32 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
 
   document.getElementById('sectionCake').classList.toggle('darkmode');
 });
+
+const settingsButton = document.getElementById('open-settings-dialog-button');
+const hiddenSettings = document.getElementById('hiddenSettings');
+const closeSettings = document.getElementById('closeSettings');
+
+closeSettings.addEventListener('click', () => {
+  hiddenSettings.style.display = 'none';
+  document.body.style.overflowY = 'overlay';
+})
+
+settingsButton.addEventListener('click', () => {
+  hiddenSettings.style.display = "block";
+  document.body.style.overflowY = "hidden";
+});
+
+ document.body.addEventListener('click', (element) =>{
+  if(element.target.id === 'containerPositioner'){
+    hiddenSettings.style.display = 'none';
+    document.body.style.overflowY = 'overlay';
+  }
+
+  /* if(element.target == settingsButton){
+  hiddenSettings.style.display = 'block';
+  document.body.style.overflowY = "hidden";
+  } */
+});
+
+
+
