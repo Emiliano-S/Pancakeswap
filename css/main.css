@@ -2546,13 +2546,13 @@ ul {
   width: 100%;
 }
 @media only screen and (max-width: 967px) {
-  .section-trade {
-    padding-top: 150px;
+  .section-trade .tradeSvg {
+    padding-bottom: 200px;
   }
 }
 @media only screen and (max-width: 570px) {
-  .section-trade {
-    padding-top: 150px;
+  .section-trade .tradeSvg {
+    padding-bottom: 200px;
   }
 }
 
@@ -3826,69 +3826,119 @@ ul {
     z-index: 0;
   }
 }
-#navbar.darkmode {
+body.darkmode {
+  /* SECTION BANNER */
+  /* SECTION STATS */
+  /*SECTION TRADE */
+  /*SECTION EARN */
+  /*SECTION PRIZES */
+  /*SECTION CAKE*/
+}
+body.darkmode #navbar {
   background-color: rgb(39, 38, 44);
   border-bottom: 1px solid rgb(56, 50, 65);
 }
-
-/* SECTION BANNER */
-#sectionBanner.darkmode {
+body.darkmode #sectionBanner {
   background: rgba(0, 0, 0, 0) radial-gradient(103.12% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%) repeat scroll 0% 0%;
+}
+body.darkmode #sectionBanner .container-moon-left h1 {
+  color: #9a6aff;
+}
+body.darkmode #sectionBanner .container-moon-left h3 {
+  color: #ffffff;
+}
+body.darkmode #bannerSectionSvgStop1 {
+  stop-color: #08060B;
+}
+body.darkmode #bannerSectionSvgStop2 {
+  stop-color: #08060B;
+}
+body.darkmode #bannerSectionSvgStop3 {
+  stop-color: #08060B;
+}
+body.darkmode #sectionStats {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%) repeat scroll 0% 0%;
+}
+body.darkmode #sectionStats .header_1, body.darkmode #sectionStats .header_2 {
+  color: #f4eeff;
+}
+body.darkmode #sectionStats .paragr p, body.darkmode #sectionStats .p_alone p {
+  color: rgb(184, 173, 210);
+}
+body.darkmode #sectionTrade {
+  background: rgb(8, 6, 11) none repeat scroll 0% 0%;
+}
+body.darkmode #sectionTrade h2 {
+  color: #ffffff;
+}
+body.darkmode #sectionTrade p {
+  color: rgb(184, 173, 210);
+}
+body.darkmode #sectionTrade #tradeSvg svg {
+  fill: rgb(32, 19, 53);
+}
+body.darkmode #sectionEarn {
+  background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
+}
+body.darkmode #sectionEarn h2 {
+  color: #ffffff;
+}
+body.darkmode #sectionEarn p {
+  color: rgb(184, 173, 210);
+}
+body.darkmode #sectionEarn .earnCardNumbers {
+  color: #ffffff;
+}
+body.darkmode #sectionEarn .earnCardNumbers span {
+  color: #ffffff;
+}
+body.darkmode #sectionEarn .earnCardApy {
+  color: #b8add2;
+}
+body.darkmode #sectionEarn #earnSvg svg {
+  fill: rgb(8, 6, 11);
+}
+body.darkmode #sectionPrizes {
+  background: rgba(0, 0, 0, 0) linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%) repeat scroll 0% 0%;
+}
+body.darkmode #sectionPrizes .center-prizes {
+  background: rgba(8, 6, 11, 0.6) none repeat scroll 0% 0%;
+}
+body.darkmode #sectionPrizes .center-prizes h2 span {
+  color: #ffffff;
+}
+body.darkmode #sectionPrizes .center-prizes .prizes-text span {
+  color: #b8add2;
+}
+body.darkmode #sectionCake {
+  background: rgb(8, 6, 11) none repeat scroll 0% 0%;
+}
+body.darkmode #sectionCake h2 {
+  color: #ffffff;
+}
+body.darkmode #sectionCake h2 span {
+  color: #9a6aff !important;
+}
+body.darkmode #sectionCake .buy-cake-p-text {
+  color: #b8add2;
+}
+body.darkmode #sectionCake .buy-cake-numbers-text p {
+  color: #b8add2;
+}
+body.darkmode #sectionCake .buy-cake-numbers-value h3 {
+  color: #f4eeff;
 }
 
 #bannerSectionSvgStop1 {
   stop-color: #ffffff;
 }
-#bannerSectionSvgStop1.darkmode {
-  stop-color: #08060B;
-}
 
 #bannerSectionSvgStop2 {
   stop-color: #ffffff;
 }
-#bannerSectionSvgStop2.darkmode {
-  stop-color: #08060B;
-}
 
 #bannerSectionSvgStop3 {
   stop-color: #ffffff;
-}
-#bannerSectionSvgStop3.darkmode {
-  stop-color: #08060B;
-}
-
-/* SECTION STATS */
-#sectionStats.darkmode {
-  background: rgba(0, 0, 0, 0) linear-gradient(rgb(9, 7, 12) 22%, rgb(32, 19, 53) 100%) repeat scroll 0% 0%;
-}
-
-/*SECTION TRADE */
-#sectionTrade.darkmode {
-  background: rgb(8, 6, 11) none repeat scroll 0% 0%;
-}
-#sectionTrade #tradeSvg.darkmode svg {
-  fill: rgb(32, 19, 53);
-}
-
-/*SECTION EARN */
-#sectionEarn.darkmode {
-  background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
-}
-#sectionEarn #earnSvg.darkmode svg {
-  fill: rgb(8, 6, 11);
-}
-
-/*SECTION PRIZES */
-#sectionPrizes.darkmode {
-  background: rgba(0, 0, 0, 0) linear-gradient(rgb(11, 69, 118) 0%, rgb(9, 17, 21) 100%) repeat scroll 0% 0%;
-}
-#sectionPrizes.darkmode .center-prizes {
-  background: rgba(8, 6, 11, 0.6) none repeat scroll 0% 0%;
-}
-
-/*SECTION CAKE*/
-#sectionCake.darkmode {
-  background: rgb(8, 6, 11) none repeat scroll 0% 0%;
 }
 
 body {

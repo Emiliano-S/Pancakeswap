@@ -148,21 +148,12 @@ document.getElementById('warningSiteCloser').addEventListener('click', ()=>{
 
 
 document.getElementById('footerDarkMode').addEventListener('change', ()=>{
-  document.getElementById('navbar').classList.toggle('darkmode');
-  document.getElementById('sectionBanner').classList.toggle('darkmode');
-  document.getElementById('bannerSectionSvgStop1').classList.toggle('darkmode');
-  document.getElementById('bannerSectionSvgStop2').classList.toggle('darkmode');
-  document.getElementById('bannerSectionSvgStop3').classList.toggle('darkmode');
 
-  document.getElementById('sectionStats').classList.toggle('darkmode');
+  document.body.classList.toggle('darkmode');
 
-  document.getElementById('sectionTrade').classList.toggle('darkmode');
-  document.getElementById('tradeSvg').classList.toggle('darkmode');
-
-  document.getElementById('sectionEarn').classList.toggle('darkmode');
-  document.getElementById('earnSvg').classList.toggle('darkmode');
-
-  document.getElementById('sectionPrizes').classList.toggle('darkmode');
-
-  document.getElementById('sectionCake').classList.toggle('darkmode');
+  if(document.body.classList.contains('darkmode')){
+      document.getElementById('bannerBunny').src = "img/bunnyDark.png";
+  }else{
+    document.getElementById('bannerBunny').src = "img/bunny.png";
+  }
 });
