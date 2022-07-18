@@ -22,10 +22,33 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(122, 110, 170);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: rgb(238, 234, 244) 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
 .question-mark-icon {
   width: 16px;
   height: 16px;
   margin-bottom: 10px;
+}
+
+.hidden-settings {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 13, 95, 0.6);
 }
 
 .container-positioner {
@@ -61,12 +84,18 @@
   font-family: Kanit SemiBold;
   color: #280d5f;
 }
+.container-positioner .container-settings .greybar #closeSettings {
+  cursor: pointer;
+}
 .container-positioner .container-settings .whitecontainer {
   padding: 24px;
   display: flex;
   flex-direction: column;
   max-height: 90vh;
   overflow-y: auto;
+}
+.container-positioner .container-settings .whitecontainer ::-webkit-scrollbar {
+  background: red;
 }
 .container-positioner .container-settings .padded-white-container {
   display: flex;
