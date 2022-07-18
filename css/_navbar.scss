@@ -1,3 +1,6 @@
+@use '../assets/ds/css/style.scss'; 
+@use './mediaquery' as *;
+
 * {
   font-family: Kanit;
 }
@@ -400,6 +403,10 @@ button:hover{
 .section2-right-navbar {
   display: flex;
   margin-right: 24px;
+  @include breakpoint("mobile") {
+    display: none;
+  }
+
 }
 
 .connect-wall-button {
