@@ -1465,14 +1465,14 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     padding-left: 8px;
     background: rgb(255, 255, 255);
     border-top: 1px solid rgb(231, 227, 235);
-    padding-bottom: env(safe-area-inset-bottom);
     z-index: 22;
+    padding-bottom: 8px;
   }
   .section-navMobile .dropup {
     position: relative;
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 40px;
   }
   .section-navMobile .dropup :hover .dropup-content {
     display: block;
@@ -4064,6 +4064,10 @@ body.darkmode {
   /*SECTION EARN */
   /*SECTION PRIZES */
   /*SECTION CAKE*/
+}
+body.darkmode .section-navMobile {
+  background: #27262c;
+  border-top: 1px solid rgb(56, 50, 65);
 }
 body.darkmode #hiddenSettings .container-positioner .container-settings {
   background-color: #27262c;

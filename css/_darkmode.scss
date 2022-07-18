@@ -1,6 +1,9 @@
 body{
     &.darkmode{
-
+        .section-navMobile{
+            background: #27262c;
+            border-top: 1px solid rgb(56, 50, 65);
+        }
         #hiddenSettings{
             .container-positioner .container-settings{
                 background-color: #27262c;
