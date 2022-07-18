@@ -1144,6 +1144,17 @@ e poi dentro la classe che dovete fare responsive
   }
 }
 
+@keyframes eyescloser {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .igTmVw {
   position: relative;
 }
@@ -4122,6 +4133,18 @@ body.darkmode #sectionStats .header_1, body.darkmode #sectionStats .header_2 {
 }
 body.darkmode #sectionStats .paragr p, body.darkmode #sectionStats .p_alone p {
   color: rgb(184, 173, 210);
+}
+body.darkmode #sectionStats .card {
+  background-color: #383241;
+}
+body.darkmode #sectionStats .card .sCard {
+  background-color: #27262c;
+}
+body.darkmode #sectionStats .card .sCard #firsth2 {
+  color: #ffffff;
+}
+body.darkmode #sectionStats .card .sCard .parag {
+  color: #b8add2;
 }
 body.darkmode #sectionTrade {
   background: rgb(8, 6, 11) none repeat scroll 0% 0%;

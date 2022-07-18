@@ -70,6 +70,18 @@ body{
             .paragr p, .p_alone p{
                 color: rgb(184, 173, 210);
             }
+            .card{
+                background-color: #383241;
+                .sCard{
+                    background-color: #27262c;
+                    #firsth2{
+                        color: #ffffff;
+                    }
+                    .parag{
+                        color: #b8add2;
+                    }
+                }
+            }
         }
 
         /*SECTION TRADE */

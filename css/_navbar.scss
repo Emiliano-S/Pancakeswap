@@ -165,11 +165,25 @@
       display: none;
       @include breakpoint("tablet"){
         display: block;
+        // .eye{
+        //   animation: eyescloser 2s infinite;
+        //   -webkit-animation: eyescloser 2s infinite;
+        // }
       }
     }
   }
 }
-
+@keyframes eyescloser {
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .igTmVw {
   position: relative;
 
