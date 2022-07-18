@@ -7,7 +7,6 @@
   top: 0px;
   left: 0px;
   transition: top 0.2s ease 0s;
-  height: 126px;
   width: 100%;
   z-index: 20;
 }
@@ -136,14 +135,22 @@
     -webkit-box-align: center;
     align-items: center;
 
-    svg {
-      display: block;
-      width: 160px;
-
-      .pnck {
-        @include breakpoint("mobile") {
+    .logo-bunny-desk{
+        svg {
+          display: block;
+          width: 160px;
+        }
+        @include breakpoint("tablet") {
           display: none;
         }
+      }
+
+    .logo-bunny-mobile{
+      width: 32px;
+      height: 32px;
+      display: none;
+      @include breakpoint("tablet"){
+        display: block;
       }
     }
   }
@@ -228,6 +235,17 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  .bunny-money-block{
+    @include breakpoint("tablet"){
+      display: none;
+    }
+  }
+  .kjmjrE::after{
+    content: "Connect Wallet";
+    @include breakpoint("tablet"){
+      content: "Connect";
+    }
+  }
 }
 
 //PARTE CAMBIO LINGUAGGIO
@@ -337,13 +355,19 @@
 :hover.eng-svg-button .en {
   opacity: 0.65;
 }
-
-:hover.world-en .language-change-selector {
-  opacity: 1;
-  max-height: 400px;
-  overflow-y: auto;
-  transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
-  pointer-events: auto;
+nav{
+  .language-change-selector{
+    display: none;
+  }
+  :hover.world-en .language-change-selector, .language-change-selector:hover {
+    display: flex;
+    height: 400px;
+    overflow-y: auto;
+    transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
+    pointer-events: auto;
+    top: 40px;
+    left: 50px;
+  }
 }
 
 .dEZvJK {
@@ -621,3 +645,5 @@
   background-color: rgba(0,0,0,.5);
   z-index: 21;
 }
+
+

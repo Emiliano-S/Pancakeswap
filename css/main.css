@@ -973,7 +973,6 @@ e poi dentro la classe che dovete fare responsive
   top: 0px;
   left: 0px;
   transition: top 0.2s ease 0s;
-  height: 126px;
   width: 100%;
   z-index: 20;
 }
@@ -1101,13 +1100,23 @@ e poi dentro la classe che dovete fare responsive
   -webkit-box-align: center;
   align-items: center;
 }
-.logo-container a svg {
+.logo-container a .logo-bunny-desk svg {
   display: block;
   width: 160px;
 }
-@media only screen and (max-width: 570px) {
-  .logo-container a svg .pnck {
+@media only screen and (max-width: 967px) {
+  .logo-container a .logo-bunny-desk {
     display: none;
+  }
+}
+.logo-container a .logo-bunny-mobile {
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+@media only screen and (max-width: 967px) {
+  .logo-container a .logo-bunny-mobile {
+    display: block;
   }
 }
 
@@ -1186,6 +1195,19 @@ e poi dentro la classe che dovete fare responsive
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+}
+@media only screen and (max-width: 967px) {
+  .right-navbar .bunny-money-block {
+    display: none;
+  }
+}
+.right-navbar .kjmjrE::after {
+  content: "Connect Wallet";
+}
+@media only screen and (max-width: 967px) {
+  .right-navbar .kjmjrE::after {
+    content: "Connect";
+  }
 }
 
 .world-en {
@@ -1290,12 +1312,17 @@ e poi dentro la classe che dovete fare responsive
   opacity: 0.65;
 }
 
-:hover.world-en .language-change-selector {
-  opacity: 1;
-  max-height: 400px;
+nav .language-change-selector {
+  display: none;
+}
+nav :hover.world-en .language-change-selector, nav .language-change-selector:hover {
+  display: flex;
+  height: 400px;
   overflow-y: auto;
   transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
   pointer-events: auto;
+  top: 40px;
+  left: 50px;
 }
 
 .dEZvJK {
@@ -4134,7 +4161,7 @@ body .section-nav {
   height: auto;
 }
 body main {
-  margin-top: 126px;
+  margin-top: 56px;
   width: 100%;
   height: auto;
   display: flex;
