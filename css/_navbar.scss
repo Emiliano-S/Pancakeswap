@@ -40,6 +40,11 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+  picture{
+    @include breakpoint("tablet") {
+      display: none;
+    }
+  }
 }
 
 .dqficw {
@@ -52,6 +57,11 @@
   -webkit-box-align: center;
   align-items: center;
   flex-wrap: wrap;
+  @include breakpoint("tablet") {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 
 .dqficw .sc-2fd47505-0 {
@@ -105,6 +115,10 @@
   background-color: transparent;
   color: rgb(31, 199, 212);
   box-shadow: none;
+  @include breakpoint("tablet") {
+    position: absolute;
+    right: 10px;
+  }
 }
 
 .navbar {
