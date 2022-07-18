@@ -152,11 +152,20 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
       document.getElementById('bannerStar1').src = "img/star-dark-l.png";
       document.getElementById('bannerStar2').src = "img/star-dark-r.png";
       document.getElementById('bannerStar3').src = "img/star-top-dark-r.png";
+
+      document.querySelectorAll('.toggle-switch').forEach(element =>{
+        element.classList.replace('light', 'dark');
+      });
+
   }else{
     document.getElementById('bannerBunny').src = "img/bunny.png";
     document.getElementById('bannerStar1').src = "img/star-l.png";
-      document.getElementById('bannerStar2').src = "img/star-r.png";
-      document.getElementById('bannerStar3').src = "img/star-top-r.png";
+    document.getElementById('bannerStar2').src = "img/star-r.png";
+    document.getElementById('bannerStar3').src = "img/star-top-r.png";
+
+      document.querySelectorAll('.toggle-switch').forEach(element =>{
+        element.classList.replace('dark', 'light');
+      });
   }
 });
 

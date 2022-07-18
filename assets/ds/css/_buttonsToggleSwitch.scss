@@ -110,6 +110,11 @@
                 background-color: $b-ToggleSwitch-dark-ball;
             }
         }
+        &.button-pancake{
+          .toggle-slider{
+            box-shadow: rgb(102, 97, 113) 0px 1.5px 0px 1.5px;
+          }
+        }
       }
 
       &.button-pancake{
@@ -175,6 +180,14 @@
             }
         }
       }
+      &.dark{
+        &.button-pancake{
+          .toggle-slider{
+            box-shadow: rgb(102, 97, 113) 0px 1.5px 0px 1.5px;
+          }
+        }
+      }
+
       input[type="checkbox"]:focus{
         & + .toggle-switch-container{
           box-shadow: $color-1-light 0px 0px 0px 1px, rgb(118 69 217 / 60%) 0px 0px 0px 4px;

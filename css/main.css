@@ -634,6 +634,9 @@
 .toggle-switch.dark .toggle-switch-container .toggle-slider {
   background-color: #27262C;
 }
+.toggle-switch.dark.button-pancake .toggle-slider {
+  box-shadow: rgb(102, 97, 113) 0px 1.5px 0px 1.5px;
+}
 .toggle-switch.button-pancake .toggle-switch-container .toggle-slider {
   width: 24px;
   height: 24px;
@@ -692,6 +695,9 @@
   -moz-transition: all 0.9s ease 0s;
   -ms-transition: all 0.9s ease 0s;
   -o-transition: all 0.9s ease 0s;
+}
+.toggle-switch.button-pancake.dark.button-pancake .toggle-slider {
+  box-shadow: rgb(102, 97, 113) 0px 1.5px 0px 1.5px;
 }
 .toggle-switch.button-pancake input[type=checkbox]:focus + .toggle-switch-container {
   box-shadow: #7645d9 0px 0px 0px 1px, rgba(118, 69, 217, 0.6) 0px 0px 0px 4px;
@@ -4040,6 +4046,26 @@ body.darkmode {
   /*SECTION EARN */
   /*SECTION PRIZES */
   /*SECTION CAKE*/
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings {
+  background-color: #27262c;
+  border: 1px solid rgb(56, 50, 65);
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .greybar {
+  background: transparent none repeat scroll 0% 0%;
+  border-bottom: 1px solid rgb(56, 50, 65);
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings h4 {
+  color: #f4eeff;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .settings-bar-text p, body.darkmode #hiddenSettings .container-positioner .container-settings .settings-bar-text {
+  color: #f4eeff;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .question-mark-icon .icons {
+  color: #b8add2;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .swaps-and-liquidity {
+  border-top: 1px solid #383241;
 }
 body.darkmode #navbar {
   background-color: rgb(39, 38, 44);
