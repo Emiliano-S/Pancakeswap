@@ -4268,7 +4268,7 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
 .section-968 {
   max-width: 968px;
   width: 100%;
-  padding: 48px 24px;
+  padding: 100px 24px;
 }
 
 @media only screen and (max-width: 967px) {
