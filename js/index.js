@@ -153,6 +153,11 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
       document.getElementById('bannerStar2').src = "img/star-dark-r.png";
       document.getElementById('bannerStar3').src = "img/star-top-dark-r.png";
 
+      document.getElementById('tradeBtc').src = "img/BTC-dark.png";
+      document.getElementById('tradeCake').src = "img/CAKE2.png";
+
+      document.getElementById('buyCakeCoin').src = "img/coin_pancake-dark.png";
+
       document.querySelectorAll('.toggle-switch').forEach(element =>{
         element.classList.replace('light', 'dark');
       });
@@ -162,6 +167,11 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
     document.getElementById('bannerStar1').src = "img/star-l.png";
     document.getElementById('bannerStar2').src = "img/star-r.png";
     document.getElementById('bannerStar3').src = "img/star-top-r.png";
+
+    document.getElementById('tradeBtc').src = "img/BTC.png";
+    document.getElementById('tradeCake').src = "img/CAKE.png";
+
+    document.getElementById('buyCakeCoin').src = "/img/coin_pancake.png";
 
       document.querySelectorAll('.toggle-switch').forEach(element =>{
         element.classList.replace('dark', 'light');
