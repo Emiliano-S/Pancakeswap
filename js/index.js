@@ -153,8 +153,14 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
 
   if(document.body.classList.contains('darkmode')){
       document.getElementById('bannerBunny').src = "img/bunnyDark.png";
+      document.getElementById('bannerStar1').src = "img/star-dark-l.png";
+      document.getElementById('bannerStar2').src = "img/star-dark-r.png";
+      document.getElementById('bannerStar3').src = "img/star-top-dark-r.png";
   }else{
     document.getElementById('bannerBunny').src = "img/bunny.png";
+    document.getElementById('bannerStar1').src = "img/star-l.png";
+      document.getElementById('bannerStar2').src = "img/star-r.png";
+      document.getElementById('bannerStar3').src = "img/star-top-r.png";
   }
 });
 
