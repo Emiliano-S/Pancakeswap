@@ -1,10 +1,10 @@
 // Collegare qui dentro i singoli moduli riferiti alle section della homepage
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
-@use '../css/navbar.scss'; 
+@use '../css/navbar.scss';
 @use './footer.scss';
 @use '../assets/ds/css/colors' as *;
 @use '_buy-cake.scss';
-@use '_animation.scss'; 
+@use '_animation.scss';
 @use '_stats.scss';
 @use './trade';
 @use './mediaquerry' as *;
