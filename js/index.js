@@ -148,21 +148,67 @@ document.getElementById('warningSiteCloser').addEventListener('click', ()=>{
 
 
 document.getElementById('footerDarkMode').addEventListener('change', ()=>{
-  document.getElementById('navbar').classList.toggle('darkmode');
-  document.getElementById('sectionBanner').classList.toggle('darkmode');
-  document.getElementById('bannerSectionSvgStop1').classList.toggle('darkmode');
-  document.getElementById('bannerSectionSvgStop2').classList.toggle('darkmode');
-  document.getElementById('bannerSectionSvgStop3').classList.toggle('darkmode');
 
-  document.getElementById('sectionStats').classList.toggle('darkmode');
+  document.body.classList.toggle('darkmode');
 
-  document.getElementById('sectionTrade').classList.toggle('darkmode');
-  document.getElementById('tradeSvg').classList.toggle('darkmode');
+  if(document.body.classList.contains('darkmode')){
+      document.getElementById('bannerBunny').src = "img/bunnyDark.png";
+      document.getElementById('bannerStar1').src = "img/star-dark-l.png";
+      document.getElementById('bannerStar2').src = "img/star-dark-r.png";
+      document.getElementById('bannerStar3').src = "img/star-top-dark-r.png";
+  }else{
+    document.getElementById('bannerBunny').src = "img/bunny.png";
+    document.getElementById('bannerStar1').src = "img/star-l.png";
+      document.getElementById('bannerStar2').src = "img/star-r.png";
+      document.getElementById('bannerStar3').src = "img/star-top-r.png";
+  }
+});
 
-  document.getElementById('sectionEarn').classList.toggle('darkmode');
-  document.getElementById('earnSvg').classList.toggle('darkmode');
+let btnArray = document.querySelectorAll('.btnActive');
 
-  document.getElementById('sectionPrizes').classList.toggle('darkmode');
+btnArray.forEach(element => {
+
+  element.addEventListener('mouseover', ()=>{
+    document.getElementById('navMobileBack').style.display = 'block';
+  });
+
+  element.addEventListener('mouseleave', ()=>{
+    document.getElementById('navMobileBack').style.display = 'none';
+  })
 
   document.getElementById('sectionCake').classList.toggle('darkmode');
 });
+
+
+
+
+
+
+const settingsButton = document.getElementById('open-settings-dialog-button');
+const hiddenSettings = document.getElementById('hiddenSettings');
+const closeSettings = document.getElementById('closeSettings');
+
+closeSettings.addEventListener('click', () => {
+  hiddenSettings.style.display = 'none';
+  document.body.style.overflowY = 'auto';
+})
+
+settingsButton.addEventListener('click', () => {
+  hiddenSettings.style.display = "block";
+  document.body.style.overflowY = "hidden";
+});
+
+ document.body.addEventListener('click', (element) =>{
+  if(element.target.id === 'containerPositioner'){
+    hiddenSettings.style.display = 'none';
+    document.body.style.overflowY = 'auto';
+  }
+
+  /* if(element.target == settingsButton){
+  hiddenSettings.style.display = 'block';
+  document.body.style.overflowY = "hidden";
+  } */
+});
+
+
+
