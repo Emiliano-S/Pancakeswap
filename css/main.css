@@ -934,10 +934,14 @@ body {
   line-height: 1.3;
 }
 
-.section-nav {
-  font-family: "Kanit Regular";
-}
+/* Per utilizzare il mixin ricordatevi di prima effettuare il:
+@use './mediaquerry' as *;
+e poi dentro la classe che dovete fare responsive
+@include breakpoint("tablet" o "mobile") {
+      ...QUI IL CONTENUTO RESPONSIVE....
+    }
 
+*/
 .ibNPKR {
   position: fixed;
   top: 0px;
@@ -1063,6 +1067,7 @@ body {
 }
 
 .logo-container {
+  margin-right: 20px;
   display: flex;
 }
 .logo-container a {
@@ -1073,6 +1078,11 @@ body {
 .logo-container a svg {
   display: block;
   width: 160px;
+}
+@media only screen and (max-width: 570px) {
+  .logo-container a svg .pnck {
+    display: none;
+  }
 }
 
 .igTmVw {
@@ -1111,6 +1121,8 @@ body {
 
 .hwMcXE:hover ~ .kOBRaF {
   visibility: visible;
+  position: absolute;
+  display: block;
 }
 
 .kHcMUr {
@@ -1150,19 +1162,19 @@ body {
   align-items: center;
 }
 
-.language-icon-container {
-  margin-top: 4px;
+.world-en {
+  position: relative;
 }
 
-.language-button-navbar {
+.eng-svg-button {
   position: relative;
-  -webkit-box-align: center;
   align-items: center;
   border: 0px;
   border-radius: 16px;
   cursor: pointer;
   display: inline-flex;
   font-family: inherit;
+  font-size: 16px;
   font-weight: 600;
   -webkit-box-pack: center;
   justify-content: center;
@@ -1171,22 +1183,93 @@ body {
   opacity: 1;
   outline: 0px;
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  height: 20px;
-  font-size: 12px;
-  padding: 0px 8px;
+  height: 48px;
+  padding: 0px 24px;
   background-color: transparent;
-  color: rgb(31, 199, 212);
   box-shadow: none;
 }
-
-.language-svg-navbar {
-  align-self: center;
-  fill: rgb(122, 110, 170);
+.eng-svg-button :nth-child(1) {
+  fill: rgb(184, 173, 210);
   flex-shrink: 0;
   margin-right: 0.5rem;
+  filter: none !important;
 }
-.language-svg-navbar :hover {
-  fill: rgb(188, 182, 212);
+.eng-svg-button :nth-child(2) {
+  color: rgb(184, 173, 210);
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.language-change-selector {
+  vertical-align: baseline;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, 0px);
+  left: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(25, 19, 38, 0.1) 0px 2px 12px -8px, rgba(25, 19, 38, 0.05) 0px 1px 1px;
+  padding: 16px;
+  max-height: 0px;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 4px;
+  opacity: 0;
+  transition: max-height 0s ease 0.3s, opacity 0.3s ease-in-out 0s;
+  will-change: opacity;
+  pointer-events: none;
+}
+.language-change-selector button {
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  border: 0px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-box-pack: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  opacity: 1;
+  outline: 0px;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  background-color: transparent;
+  box-shadow: none;
+  color: rgb(40, 13, 95);
+  padding: 0px 8px;
+  border-radius: 8px;
+  min-height: 32px;
+  height: auto;
+}
+
+.language-change-selector button:hover {
+  opacity: 0.65;
+  transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -webkit-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -moz-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -ms-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+  -o-transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+:hover.eng-svg-button .world-svg-icon {
+  opacity: 0.65;
+}
+
+:hover.eng-svg-button .en {
+  opacity: 0.65;
+}
+
+:hover.world-en .language-change-selector {
+  opacity: 1;
+  max-height: 400px;
+  overflow-y: auto;
+  transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
+  pointer-events: auto;
 }
 
 .dEZvJK {
@@ -1239,7 +1322,7 @@ body {
 
 .settings-container {
   display: flex;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .settings-button-navbar {
@@ -1283,28 +1366,93 @@ body {
   display: flex;
   margin-right: 24px;
 }
+@media only screen and (max-width: 570px) {
+  .section2-right-navbar {
+    display: none;
+  }
+}
 
-.navbar-link-section {
-  padding-top: 4px;
-  padding-bottom: 4px;
+.section-navMobile {
+  display: none;
 }
-.navbar-link-section .navbar-link-container {
-  position: relative;
-}
-.navbar-link-section .navbar-link-container a {
-  position: relative;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  color: rgb(122, 110, 170);
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0px 16px;
-  height: 48px;
-  text-decoration: none;
-}
-.navbar-link-section .navbar-link-container svg {
-  fill: rgb(122, 110, 170);
+@media only screen and (max-width: 570px) {
+  .section-navMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgb(231, 227, 235);
+    padding-bottom: env(safe-area-inset-bottom);
+    z-index: 22;
+  }
+  .section-navMobile .dropup {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+  }
+  .section-navMobile .dropup :hover .dropup-content {
+    display: block;
+  }
+  .section-navMobile .dropup :hover body {
+    overflow: hidden;
+  }
+  .section-navMobile .dropup .dropupbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-navMobile .dropup .dropupbtn .textNav {
+    color: rgb(188, 182, 212);
+    font-size: 10px;
+  }
+  .section-navMobile .dropup .bloc-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+  }
+  .section-navMobile .relative-nav {
+    position: relative;
+  }
+  .section-navMobile .relative-nav :hover {
+    display: block;
+  }
+  .section-navMobile .dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(231, 227, 235);
+    border-radius: 16px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    width: 350px;
+    z-index: 1001;
+    pointer-events: none;
+    left: 0px;
+  }
+  .section-navMobile .dropup-content a {
+    padding: 16px 16px;
+    color: rgb(184, 173, 210);
+    text-decoration: none;
+    display: block;
+  }
+  .section-navMobile .dropup-content .blogDocs {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .connect-wall-button {
@@ -1343,6 +1491,11 @@ body {
 .bunny-money-block a {
   text-decoration: none;
 }
+@media only screen and (max-width: 570px) {
+  .bunny-money-block {
+    display: none;
+  }
+}
 
 .bunny-svg {
   margin-right: 8px;
@@ -1372,14 +1525,15 @@ body {
   font-size: 16px;
 }
 
-/* Per utilizzare il mixin ricordatevi di prima effettuare il:
-@use './mediaquerry' as *;
-e poi dentro la classe che dovete fare responsive
-@include breakpoint("tablet" o "mobile") {
-      ...QUI IL CONTENUTO RESPONSIVE....
-    }
+#navMobileBack {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: calc(100% - 38px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 21;
+}
 
-*/
 .section-footer {
   background-color: rgb(39, 38, 44);
   font-family: "Kanit Regular";

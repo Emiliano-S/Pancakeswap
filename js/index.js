@@ -157,3 +157,15 @@ document.getElementById('footerDarkMode').addEventListener('change', ()=>{
     document.getElementById('bannerBunny').src = "img/bunny.png";
   }
 });
+
+let btnArray = document.querySelectorAll('.btnActive');
+
+
+btnArray.forEach(element => {
+  element.addEventListener('mouseover', ()=>{
+    document.getElementById('navMobileBack').style.display = 'block';
+  });
+  element.addEventListener('mouseleave', ()=>{
+    document.getElementById('navMobileBack').style.display = 'none';
+  })
+});
