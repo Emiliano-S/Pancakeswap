@@ -191,6 +191,22 @@ document.querySelectorAll('.checkboxDarkMode').forEach(element => {
 
 /* ^============ FINE DARKMODE ============^ */
 
+/* v============ INIZIO SCROLL NAV ============v */
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbarContainer").style.top = "0";
+  } else {
+    document.getElementById("navbarContainer").style.top = "-126px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+/* ^============ FINE SCROLL NAV ============^ */
+
+
 
 let btnArray = document.querySelectorAll('.btnActive');
 
