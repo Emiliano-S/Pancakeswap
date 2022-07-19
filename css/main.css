@@ -602,19 +602,6 @@
   right: 3px;
   left: 0;
 }
-.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container {
-  background-color: #666171;
-}
-.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container .toggle-slider {
-  transform: translateX(26px);
-  right: 3px;
-  left: 0;
-  background: url("../img/icons/moon.svg") center no-repeat, #27262C;
-  background-size: auto;
-}
-.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container .icon-toggle-switch svg path {
-  fill: #27262C;
-}
 .toggle-switch.light.darkmode .toggle-slider {
   background: url("../img/icons/sun.svg") center no-repeat, #27262C;
   background-size: auto;
@@ -627,6 +614,19 @@
 }
 .toggle-switch.light .toggle-switch-container .toggle-slider {
   background-color: #ffffff;
+}
+.toggle-switch.dark.darkmode input[type=checkbox]:checked + .toggle-switch-container {
+  background-color: #666171;
+}
+.toggle-switch.dark.darkmode input[type=checkbox]:checked + .toggle-switch-container .toggle-slider {
+  transform: translateX(26px);
+  right: 3px;
+  left: 0;
+  background: url("../img/icons/moon.svg") center no-repeat, #27262C;
+  background-size: auto;
+}
+.toggle-switch.dark.darkmode input[type=checkbox]:checked + .toggle-switch-container .icon-toggle-switch svg path {
+  fill: #27262C;
 }
 .toggle-switch.dark .toggle-switch-container {
   background-color: #372F47;
@@ -3959,7 +3959,6 @@ ul {
     left: 0;
     z-index: 0;
   }
-
   .img-02-banner {
     background-image: url(../img/perpetual.png);
     display: flex;
@@ -3978,7 +3977,6 @@ ul {
   .banner-container {
     overflow: hidden;
   }
-
   .yellow-gradient {
     display: flex;
     flex-direction: column;
@@ -3995,7 +3993,6 @@ ul {
     margin-bottom: 7px;
     font-size: 22px;
   }
-
   .container-moon {
     display: flex;
     flex-direction: column-reverse;
@@ -4007,13 +4004,11 @@ ul {
     width: 40%;
     left: 30%;
   }
-
   .left-banner-section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
-
   .img-01-banner {
     background-image: url(../img/lotteryMobile.png);
     background-size: contain;
@@ -4026,7 +4021,6 @@ ul {
     right: -45%;
     z-index: 0;
   }
-
   .img-02-banner {
     background-image: url(../img/perpetualMobile.png);
     display: flex;
@@ -4053,7 +4047,6 @@ ul {
     right: 0;
     z-index: 0;
   }
-
   .img-02-banner {
     background-image: url(../img/perpetualMobile.png);
     display: flex;
