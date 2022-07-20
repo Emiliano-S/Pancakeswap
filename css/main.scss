@@ -1,10 +1,10 @@
 // Collegare qui dentro i singoli moduli riferiti alle section della homepage
 @use '../assets/ds/css/style.scss'; //Collegamento al file scss del ds
-@use '../css/navbar.scss'; 
+@use '../css/navbar.scss';
 @use './footer.scss';
 @use '../assets/ds/css/colors' as *;
 @use '_buy-cake.scss';
-@use '_animation.scss'; 
+@use '_animation.scss';
 @use '_stats.scss';
 @use './trade';
 @use './mediaquerry' as *;
@@ -25,7 +25,7 @@ body{
         height: auto;
     }
     main{
-        margin-top: 126px;
+        margin-top: 56px;
         width: 100%;
         height: auto;
         display: flex;
@@ -58,7 +58,7 @@ body{
 .section-968{
     max-width: 968px;
     width: 100%;
-    padding: 48px 24px;
+    padding: 100px 24px;
 }
 
 @include breakpoint("tablet") {

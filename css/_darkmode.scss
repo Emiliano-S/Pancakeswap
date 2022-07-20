@@ -1,8 +1,38 @@
 body{
     &.darkmode{
+        .section-navMobile{
+            background: #27262c;
+            border-top: 1px solid rgb(56, 50, 65);
+        }
+        #hiddenSettings{
+            .container-positioner .container-settings{
+                background-color: #27262c;
+                border: 1px solid rgb(56, 50, 65);
+                .greybar{
+                    background: transparent none repeat scroll 0% 0%;
+                    border-bottom: 1px solid rgb(56, 50, 65);
+                }
+                h4{
+                    color: #f4eeff;
+                }
+                .settings-bar-text p, .settings-bar-text {
+                    color: #f4eeff;
+                }
+                .question-mark-icon .icons{
+                    color: #b8add2;
+                }
+                .swaps-and-liquidity{
+                    border-top: 1px solid #383241;
+                }
+            }
+        }
+
         #navbar{
             background-color: rgb(39, 38, 44);
             border-bottom: 1px solid rgb(56, 50, 65);
+            .pnck{
+                fill: #ffffff;
+            }
         }
 
         /* SECTION BANNER */
@@ -39,6 +69,18 @@ body{
             }
             .paragr p, .p_alone p{
                 color: rgb(184, 173, 210);
+            }
+            .card{
+                background-color: #383241;
+                .sCard{
+                    background-color: #27262c;
+                    #firsth2{
+                        color: #ffffff;
+                    }
+                    .parag{
+                        color: #b8add2;
+                    }
+                }
             }
         }
 

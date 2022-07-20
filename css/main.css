@@ -605,19 +605,6 @@
   right: 3px;
   left: 0;
 }
-.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container {
-  background-color: #666171;
-}
-.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container .toggle-slider {
-  transform: translateX(26px);
-  right: 3px;
-  left: 0;
-  background: url("../img/icons/moon.svg") center no-repeat, #27262C;
-  background-size: auto;
-}
-.toggle-switch.light.darkmode input[type=checkbox]:checked + .toggle-switch-container .icon-toggle-switch svg path {
-  fill: #27262C;
-}
 .toggle-switch.light.darkmode .toggle-slider {
   background: url("../img/icons/sun.svg") center no-repeat, #27262C;
   background-size: auto;
@@ -631,11 +618,27 @@
 .toggle-switch.light .toggle-switch-container .toggle-slider {
   background-color: #ffffff;
 }
+.toggle-switch.dark.darkmode input[type=checkbox]:checked + .toggle-switch-container {
+  background-color: #666171;
+}
+.toggle-switch.dark.darkmode input[type=checkbox]:checked + .toggle-switch-container .toggle-slider {
+  transform: translateX(26px);
+  right: 3px;
+  left: 0;
+  background: url("../img/icons/moon.svg") center no-repeat, #27262C;
+  background-size: auto;
+}
+.toggle-switch.dark.darkmode input[type=checkbox]:checked + .toggle-switch-container .icon-toggle-switch svg path {
+  fill: #27262C;
+}
 .toggle-switch.dark .toggle-switch-container {
   background-color: #372F47;
 }
 .toggle-switch.dark .toggle-switch-container .toggle-slider {
   background-color: #27262C;
+}
+.toggle-switch.dark.button-pancake .toggle-slider {
+  box-shadow: rgb(102, 97, 113) 0px 1.5px 0px 1.5px;
 }
 .toggle-switch.button-pancake .toggle-switch-container .toggle-slider {
   width: 24px;
@@ -695,6 +698,9 @@
   -moz-transition: all 0.9s ease 0s;
   -ms-transition: all 0.9s ease 0s;
   -o-transition: all 0.9s ease 0s;
+}
+.toggle-switch.button-pancake.dark.button-pancake .toggle-slider {
+  box-shadow: rgb(102, 97, 113) 0px 1.5px 0px 1.5px;
 }
 .toggle-switch.button-pancake input[type=checkbox]:focus + .toggle-switch-container {
   box-shadow: #7645d9 0px 0px 0px 1px, rgba(118, 69, 217, 0.6) 0px 0px 0px 4px;
@@ -976,7 +982,6 @@ e poi dentro la classe che dovete fare responsive
   top: 0px;
   left: 0px;
   transition: top 0.2s ease 0s;
-  height: 126px;
   width: 100%;
   z-index: 20;
 }
@@ -1010,6 +1015,11 @@ e poi dentro la classe che dovete fare responsive
   -webkit-box-align: center;
   align-items: center;
 }
+@media only screen and (max-width: 967px) {
+  .byXjae picture {
+    display: none;
+  }
+}
 
 .dqficw {
   background: rgba(39, 38, 44, 0.4);
@@ -1021,6 +1031,13 @@ e poi dentro la classe che dovete fare responsive
   -webkit-box-align: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media only screen and (max-width: 967px) {
+  .dqficw {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 }
 
 .dqficw .sc-2fd47505-0 {
@@ -1075,6 +1092,12 @@ e poi dentro la classe che dovete fare responsive
   color: rgb(31, 199, 212);
   box-shadow: none;
 }
+@media only screen and (max-width: 967px) {
+  .jodCDD {
+    position: absolute;
+    right: 10px;
+  }
+}
 
 .navbar {
   display: flex;
@@ -1104,16 +1127,37 @@ e poi dentro la classe che dovete fare responsive
   -webkit-box-align: center;
   align-items: center;
 }
-.logo-container a svg {
+.logo-container a .logo-bunny-desk svg {
   display: block;
   width: 160px;
 }
-@media only screen and (max-width: 570px) {
-  .logo-container a svg .pnck {
+@media only screen and (max-width: 967px) {
+  .logo-container a .logo-bunny-desk {
     display: none;
   }
 }
+.logo-container a .logo-bunny-mobile {
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+@media only screen and (max-width: 967px) {
+  .logo-container a .logo-bunny-mobile {
+    display: block;
+  }
+}
 
+@keyframes eyescloser {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .igTmVw {
   position: relative;
 }
@@ -1189,6 +1233,19 @@ e poi dentro la classe che dovete fare responsive
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+}
+@media only screen and (max-width: 967px) {
+  .right-navbar .bunny-money-block {
+    display: none;
+  }
+}
+.right-navbar .kjmjrE::after {
+  content: "Connect Wallet";
+}
+@media only screen and (max-width: 967px) {
+  .right-navbar .kjmjrE::after {
+    content: "Connect";
+  }
 }
 
 .world-en {
@@ -1293,12 +1350,17 @@ e poi dentro la classe che dovete fare responsive
   opacity: 0.65;
 }
 
-:hover.world-en .language-change-selector {
-  opacity: 1;
-  max-height: 400px;
+nav .language-change-selector {
+  display: none;
+}
+nav :hover.world-en .language-change-selector, nav .language-change-selector:hover {
+  display: flex;
+  height: 400px;
   overflow-y: auto;
   transition: max-height 0s ease 0s, opacity 0.3s ease-in-out 0s;
   pointer-events: auto;
+  top: 40px;
+  left: 50px;
 }
 
 .dEZvJK {
@@ -1417,14 +1479,14 @@ e poi dentro la classe che dovete fare responsive
     padding-left: 8px;
     background: rgb(255, 255, 255);
     border-top: 1px solid rgb(231, 227, 235);
-    padding-bottom: env(safe-area-inset-bottom);
     z-index: 22;
+    padding-bottom: 8px;
   }
   .section-navMobile .dropup {
     position: relative;
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 40px;
   }
   .section-navMobile .dropup :hover .dropup-content {
     display: block;
@@ -3700,6 +3762,12 @@ ul {
   align-items: center;
   border: 1px solid rgba(153, 106, 255, 0.4901960784);
 }
+@media screen and (max-width: 730px) {
+  .banner-container .left-banner-section .timer-banner-container {
+    width: 200px;
+    height: 40px;
+  }
+}
 .banner-container .left-banner-section .timer-banner-container .timer-banner {
   display: flex;
   flex-direction: row;
@@ -3710,6 +3778,11 @@ ul {
   background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 730px) {
+  .banner-container .left-banner-section .timer-banner-container .timer-banner h2 {
+    font-size: 28px;
+  }
 }
 .banner-container .left-banner-section .timer-banner-container .timer-banner h4 {
   background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
@@ -3986,12 +4059,10 @@ ul {
   .img-01-banner {
     background-image: url(../img/lotteryMobile.png);
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
     position: absolute;
-    background-size: auto;
-    top: 0;
-    right: 0;
+    background-size: 50%;
+    top: 65px;
+    left: 190px;
     z-index: 0;
   }
 
@@ -4008,6 +4079,12 @@ ul {
     left: 0;
     z-index: 0;
   }
+
+  .timer-banner-container {
+    width: 200px;
+    color: red;
+    background-color: red;
+  }
 }
 body.darkmode {
   /* SECTION BANNER */
@@ -4017,9 +4094,36 @@ body.darkmode {
   /*SECTION PRIZES */
   /*SECTION CAKE*/
 }
+body.darkmode .section-navMobile {
+  background: #27262c;
+  border-top: 1px solid rgb(56, 50, 65);
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings {
+  background-color: #27262c;
+  border: 1px solid rgb(56, 50, 65);
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .greybar {
+  background: transparent none repeat scroll 0% 0%;
+  border-bottom: 1px solid rgb(56, 50, 65);
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings h4 {
+  color: #f4eeff;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .settings-bar-text p, body.darkmode #hiddenSettings .container-positioner .container-settings .settings-bar-text {
+  color: #f4eeff;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .question-mark-icon .icons {
+  color: #b8add2;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .swaps-and-liquidity {
+  border-top: 1px solid #383241;
+}
 body.darkmode #navbar {
   background-color: rgb(39, 38, 44);
   border-bottom: 1px solid rgb(56, 50, 65);
+}
+body.darkmode #navbar .pnck {
+  fill: #ffffff;
 }
 body.darkmode #sectionBanner {
   background: rgba(0, 0, 0, 0) radial-gradient(103.12% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%) repeat scroll 0% 0%;
@@ -4047,6 +4151,18 @@ body.darkmode #sectionStats .header_1, body.darkmode #sectionStats .header_2 {
 }
 body.darkmode #sectionStats .paragr p, body.darkmode #sectionStats .p_alone p {
   color: rgb(184, 173, 210);
+}
+body.darkmode #sectionStats .card {
+  background-color: #383241;
+}
+body.darkmode #sectionStats .card .sCard {
+  background-color: #27262c;
+}
+body.darkmode #sectionStats .card .sCard #firsth2 {
+  color: #ffffff;
+}
+body.darkmode #sectionStats .card .sCard .parag {
+  color: #b8add2;
 }
 body.darkmode #sectionTrade {
   background: rgb(8, 6, 11) none repeat scroll 0% 0%;
@@ -4137,7 +4253,7 @@ body .section-nav {
   height: auto;
 }
 body main {
-  margin-top: 126px;
+  margin-top: 56px;
   width: 100%;
   height: auto;
   display: flex;
@@ -4170,7 +4286,7 @@ body main .section-banner, body main .section-stats, body main .section-trade, b
 .section-968 {
   max-width: 968px;
   width: 100%;
-  padding: 48px 24px;
+  padding: 100px 24px;
 }
 
 @media only screen and (max-width: 967px) {
