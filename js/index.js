@@ -1,3 +1,14 @@
+let darkmode = "false";
+
+if(localStorage.getItem('darkmode') === null){
+  localStorage.setItem('darkmode', darkmode);
+}else{
+  darkmode = localStorage.getItem('darkmode');
+  checkDarMode();
+}
+
+
+
 const earnSwitchTitle = () => {
     let title = document.getElementById("titleEarnSwitch");
     let titleContent = title.innerText;
@@ -146,72 +157,81 @@ document.getElementById('warningSiteCloser').addEventListener('click', ()=>{
 
 document.querySelectorAll('.checkboxDarkMode').forEach(element => {
   element.addEventListener('change', ()=>{
+    
+    if(darkmode == "true"){darkmode = "false";}else{
+      darkmode = "true";
+    }
+    localStorage.setItem('darkmode', darkmode);
+    checkDarMode();
+})});
 
-  document.body.classList.toggle('darkmode');
 
-  if(document.body.classList.contains('darkmode')){
-      document.getElementById('bannerBunny').src = "img/bunnyDark.png";
-      document.getElementById('bannerStar1').src = "img/star-dark-l.png";
-      document.getElementById('bannerStar2').src = "img/star-dark-r.png";
-      document.getElementById('bannerStar3').src = "img/star-top-dark-r.png";
-
-      document.getElementById('ball-4').src = "img/section-prizes/4-dark.png";
-      document.getElementById('ball-7').src = "img/section-prizes/7-dark.png";
-
-      document.getElementById('bottom-left-card').src = "img/section-prizes/bottom-left-dark.png";
-      document.getElementById('green-card').src = "img/section-prizes/green-dark.png";
-      document.getElementById('red-card').src = "img/section-prizes/red-dark.png";
-      document.getElementById('top-right-card').src = "img/section-prizes/top-right-dark.png";
-
-      document.getElementById('pie-image').src = "img/pie-dark.png";
-      document.getElementById('stonks-image').src = "img/stonks-dark.png";
-      document.getElementById('folder-image').src = "img/folder-dark.png";
-
-      document.getElementById('tradeBtc').src = "img/BTC-dark.png";
-      document.getElementById('tradeCake').src = "img/CAKE2.png";
-
-      document.getElementById('buyCakeCoin').src = "img/coin_pancake-dark.png";
-
-      document.querySelectorAll('.toggle-switch').forEach(element =>{
-        element.classList.replace('light', 'dark');
-      });
-
-      document.querySelectorAll('.checkboxDarkMode').forEach(element =>{
-        element.checked = true;
-      })
-
+function checkDarMode(){
+  if(darkmode == "false"){
+    document.body.classList.add('darkmode');
+    document.getElementById('bannerBunny').src = "img/bunnyDark.png";
+    document.getElementById('bannerStar1').src = "img/star-dark-l.png";
+    document.getElementById('bannerStar2').src = "img/star-dark-r.png";
+    document.getElementById('bannerStar3').src = "img/star-top-dark-r.png";
+  
+    document.getElementById('ball-4').src = "img/section-prizes/4-dark.png";
+    document.getElementById('ball-7').src = "img/section-prizes/7-dark.png";
+  
+    document.getElementById('bottom-left-card').src = "img/section-prizes/bottom-left-dark.png";
+    document.getElementById('green-card').src = "img/section-prizes/green-dark.png";
+    document.getElementById('red-card').src = "img/section-prizes/red-dark.png";
+    document.getElementById('top-right-card').src = "img/section-prizes/top-right-dark.png";
+  
+    document.getElementById('pie-image').src = "img/pie-dark.png";
+    document.getElementById('stonks-image').src = "img/stonks-dark.png";
+    document.getElementById('folder-image').src = "img/folder-dark.png";
+  
+    document.getElementById('tradeBtc').src = "img/BTC-dark.png";
+    document.getElementById('tradeCake').src = "img/CAKE2.png";
+  
+    document.getElementById('buyCakeCoin').src = "img/coin_pancake-dark.png";
+  
+    document.querySelectorAll('.toggle-switch').forEach(element =>{
+      element.classList.replace('light', 'dark');
+    });
+  
+    document.querySelectorAll('.checkboxDarkMode').forEach(element =>{
+      element.checked = true;
+    })
   }else{
-      document.getElementById('bannerBunny').src = "img/bunny.png";
-      document.getElementById('bannerStar1').src = "img/star-l.png";
-      document.getElementById('bannerStar2').src = "img/star-r.png";
-      document.getElementById('bannerStar3').src = "img/star-top-r.png";
-
-      document.getElementById('ball-4').src = "img/section-prizes/4.png";
-      document.getElementById('ball-7').src = "img/section-prizes/7.png";
-
-      document.getElementById('bottom-left-card').src = "img/section-prizes/bottom-left.png";
-      document.getElementById('green-card').src = "img/section-prizes/green.png";
-      document.getElementById('red-card').src = "img/section-prizes/red.png";
-      document.getElementById('top-right-card').src = "img/section-prizes/top-right.png";
-
-      document.getElementById('pie-image').src = "img/pie.png";
-      document.getElementById('stonks-image').src = "img/stonks.png";
-      document.getElementById('folder-image').src = "img/folder.png";
-
-      document.getElementById('tradeBtc').src = "img/BTC.png";
-      document.getElementById('tradeCake').src = "img/CAKE.png";
-
-      document.getElementById('buyCakeCoin').src = "/img/coin_pancake.png";
-
-      document.querySelectorAll('.toggle-switch').forEach(element =>{
-        element.classList.replace('dark', 'light');
-      });
-
-      document.querySelectorAll('.checkboxDarkMode').forEach(element =>{
-        element.checked = false;
-      })
+        document.body.classList.remove('darkmode');
+        document.getElementById('bannerBunny').src = "img/bunny.png";
+        document.getElementById('bannerStar1').src = "img/star-l.png";
+        document.getElementById('bannerStar2').src = "img/star-r.png";
+        document.getElementById('bannerStar3').src = "img/star-top-r.png";
+  
+        document.getElementById('ball-4').src = "img/section-prizes/4.png";
+        document.getElementById('ball-7').src = "img/section-prizes/7.png";
+  
+        document.getElementById('bottom-left-card').src = "img/section-prizes/bottom-left.png";
+        document.getElementById('green-card').src = "img/section-prizes/green.png";
+        document.getElementById('red-card').src = "img/section-prizes/red.png";
+        document.getElementById('top-right-card').src = "img/section-prizes/top-right.png";
+  
+        document.getElementById('pie-image').src = "img/pie.png";
+        document.getElementById('stonks-image').src = "img/stonks.png";
+        document.getElementById('folder-image').src = "img/folder.png";
+  
+        document.getElementById('tradeBtc').src = "img/BTC.png";
+        document.getElementById('tradeCake').src = "img/CAKE.png";
+  
+        document.getElementById('buyCakeCoin').src = "/img/coin_pancake.png";
+  
+        document.querySelectorAll('.toggle-switch').forEach(element =>{
+          element.classList.replace('dark', 'light');
+        });
+  
+        document.querySelectorAll('.checkboxDarkMode').forEach(element =>{
+          element.checked = false;
+        })
   }
-}) });
+}
+
 
 /* ^============ FINE DARKMODE ============^ */
 
