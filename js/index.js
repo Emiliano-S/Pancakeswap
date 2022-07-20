@@ -163,6 +163,10 @@ document.querySelectorAll('.checkboxDarkMode').forEach(element => {
       document.getElementById('red-card').src = "img/section-prizes/red-dark.png";
       document.getElementById('top-right-card').src = "img/section-prizes/top-right-dark.png";
 
+      document.getElementById('pie-image').src = "img/pie-dark.png";
+      document.getElementById('stonks-image').src = "img/stonks-dark.png";
+      document.getElementById('folder-image').src = "img/folder-dark.png";
+
       document.getElementById('tradeBtc').src = "img/BTC-dark.png";
       document.getElementById('tradeCake').src = "img/CAKE2.png";
 
@@ -189,6 +193,10 @@ document.querySelectorAll('.checkboxDarkMode').forEach(element => {
       document.getElementById('green-card').src = "img/section-prizes/green.png";
       document.getElementById('red-card').src = "img/section-prizes/red.png";
       document.getElementById('top-right-card').src = "img/section-prizes/top-right.png";
+
+      document.getElementById('pie-image').src = "img/pie.png";
+      document.getElementById('stonks-image').src = "img/stonks.png";
+      document.getElementById('folder-image').src = "img/folder.png";
 
       document.getElementById('tradeBtc').src = "img/BTC.png";
       document.getElementById('tradeCake').src = "img/CAKE.png";
@@ -225,16 +233,36 @@ window.onscroll = function() {
 
 
 let btnArray = document.querySelectorAll('.btnActive');
+let menuMobileDisplay;
+let mobileNavMenuBack = document.getElementById('navMobileBack');
 
 btnArray.forEach(element => {
 
   element.addEventListener('click', ()=>{
-    document.getElementById('navMobileBack').classList.toggle('visibleMobileBack');
-    element.childNodes[2].style.display = 'block';
-  });
+    let dropMenu = element.querySelector('.dropup-content')
 
-  document.getElementById('sectionCake').classList.toggle('darkmode');
+    if(dropMenu.classList.contains('visibleMobileMenu')){
+      dropMenu.classList.remove('visibleMobileMenu');
+      menuMobileDisplay = null;
+      mobileNavMenuBack.classList.remove('visibleMobileBack');
+    }else{
+      dropMenu.classList.add('visibleMobileMenu');
+      if(menuMobileDisplay != null){
+        menuMobileDisplay.classList.remove("visibleMobileMenu");
+      }
+      menuMobileDisplay = dropMenu;
+      mobileNavMenuBack.classList.add('visibleMobileBack');
+    }
+
+  });
 });
+
+mobileNavMenuBack.addEventListener('click', ()=>{
+  menuMobileDisplay.classList.remove("visibleMobileMenu");
+  mobileNavMenuBack.classList.remove('visibleMobileBack');
+  menuMobileDisplay = null;
+});
+
 
 
 

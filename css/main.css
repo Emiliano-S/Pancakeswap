@@ -872,13 +872,13 @@ h1 {
 
 h2 {
   font-size: 40px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
 h3 {
   font-size: 24px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
@@ -1507,9 +1507,6 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     justify-content: space-around;
     gap: 40px;
   }
-  .section-navMobile .dropup :hover .dropup-content {
-    display: block;
-  }
   .section-navMobile .dropup :hover body {
     overflow: hidden;
   }
@@ -1517,7 +1514,7 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .section-navMobile .dropup .dropupbtn .textNav {
     color: rgb(188, 182, 212);
@@ -1548,7 +1545,7 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     border-radius: 16px;
     padding-bottom: 4px;
     padding-top: 4px;
-    width: 350px;
+    width: 100%;
     z-index: 1001;
     pointer-events: none;
     left: 0px;
@@ -1644,7 +1641,7 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
   z-index: 21;
 }
 
-#navMobileBack.visibleMobileBack {
+#navMobileBack.visibleMobileBack, .dropup-content.visibleMobileMenu {
   display: block;
 }
 
@@ -1653,6 +1650,14 @@ nav .money-value {
 }
 nav .eng-svg-button :nth-child(1) {
   fill: #7a6eaa;
+}
+
+.earnTopContent {
+  font-family: "Kanit Regular";
+}
+
+.jkVFUJ {
+  color: #F3F1F5;
 }
 
 .section-footer {
@@ -1721,10 +1726,6 @@ li {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 8px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 ul {
@@ -2101,10 +2102,11 @@ ul {
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-h2-text h2 {
   font-size: 40px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #000000;
   line-height: 1.1;
   margin-bottom: 24px;
+  color: #280d5f;
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-h2-text span {
   font-size: 40px;
@@ -2332,7 +2334,8 @@ ul {
 }
 
 .section-wallet {
-  background: purple url("../img/Background-purple.png") no-repeat center;
+  background: rgb(118, 69, 217) url("../img/bg_section.svg") no-repeat center;
+  background-size: 100%;
 }
 .section-wallet .container-wallet {
   width: 100%;
@@ -3873,6 +3876,8 @@ ul {
 .container-moon h3 {
   margin-top: 24px;
   color: #280d5f;
+  font-size: 20px;
+  font-family: "Kanit SemiBold";
 }
 .container-moon .container-moon-left {
   display: flex;
@@ -4167,6 +4172,26 @@ body.darkmode #navbar .eng-svg-button :nth-child(1) {
 }
 body.darkmode #navbar .money-value {
   color: #b8add2;
+}
+body.darkmode #navbar .kOBRaF {
+  background-color: #27262c;
+  border: 1px solid #383241;
+}
+body.darkmode #navbar .kHcMUr:hover {
+  background-color: #353547;
+}
+body.darkmode #navbar .fIBjTC:hover {
+  background-color: #353547;
+}
+body.darkmode #navbar .jkVFUJ {
+  color: #383241;
+}
+body.darkmode .dropup-content {
+  background-color: #27262c;
+  border: 1px solid #383241;
+}
+body.darkmode .bYguAj {
+  fill: #ffffff;
 }
 body.darkmode #sectionBanner {
   background: rgba(0, 0, 0, 0) radial-gradient(103.12% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%) repeat scroll 0% 0%;
