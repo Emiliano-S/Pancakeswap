@@ -4308,6 +4308,12 @@ body.darkmode #sectionCake .buy-cake-numbers-value h3 {
 body.darkmode .btn-settings {
   background-color: #353547;
 }
+body.darkmode .language-change-selector {
+  background-color: #27262c;
+}
+body.darkmode .language-change-selector button {
+  color: white;
+}
 
 #bannerSectionSvgStop1 {
   stop-color: #ffffff;
