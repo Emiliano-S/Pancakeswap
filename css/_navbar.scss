@@ -681,7 +681,7 @@ nav{
 }
 
 #navMobileBack{
-  position: absolute;
+  position: fixed;
   display: none;
   width: 100%;
   height: calc(100% - 38px);
@@ -710,3 +710,4 @@ nav{
 .jkVFUJ{
   color: #F3F1F5;
 }
+
