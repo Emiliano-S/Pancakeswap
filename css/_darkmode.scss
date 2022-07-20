@@ -9,7 +9,7 @@ body{
                 background-color: #27262c;
                 border: 1px solid rgb(56, 50, 65);
                 .greybar{
-                    background: transparent none repeat scroll 0% 0%;
+                    background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
                     border-bottom: 1px solid rgb(56, 50, 65);
                 }
                 h4{
@@ -23,6 +23,14 @@ body{
                 }
                 .swaps-and-liquidity{
                     border-top: 1px solid #383241;
+                }
+                .input-text{
+                    background-color: #353547 !important;
+                    color: #7d7392 !important;
+                }
+                .type-button{
+                    border: none !important;
+                    background-color: #353547 !important;
                 }
             }
         }
@@ -64,6 +72,9 @@ body{
         .dropup-content{
             background-color: #27262c;
             border: 1px solid #383241;
+            hr{
+                color: #383241;
+            }
         }
 
         .bYguAj{
@@ -203,6 +214,11 @@ body{
                 }
             }
         }
+
+        .btn-settings{
+            background-color: #353547;
+        }
+        
     }
 }
 
@@ -217,3 +233,4 @@ body{
 #bannerSectionSvgStop3{
     stop-color: #ffffff;
 }
+

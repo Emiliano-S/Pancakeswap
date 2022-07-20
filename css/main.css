@@ -866,7 +866,7 @@ body {
 /* STILI HEADER E PARAGRAPH */
 h1 {
   font-size: 64px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
@@ -884,7 +884,7 @@ h3 {
 
 h4 {
   font-size: 20px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
@@ -1547,7 +1547,6 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     padding-top: 4px;
     width: 100%;
     z-index: 1001;
-    pointer-events: none;
     left: 0px;
   }
   .section-navMobile .dropup-content a {
@@ -4138,7 +4137,7 @@ body.darkmode #hiddenSettings .container-positioner .container-settings {
   border: 1px solid rgb(56, 50, 65);
 }
 body.darkmode #hiddenSettings .container-positioner .container-settings .greybar {
-  background: transparent none repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
   border-bottom: 1px solid rgb(56, 50, 65);
 }
 body.darkmode #hiddenSettings .container-positioner .container-settings h4 {
@@ -4152,6 +4151,14 @@ body.darkmode #hiddenSettings .container-positioner .container-settings .questio
 }
 body.darkmode #hiddenSettings .container-positioner .container-settings .swaps-and-liquidity {
   border-top: 1px solid #383241;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .input-text {
+  background-color: #353547 !important;
+  color: #7d7392 !important;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .type-button {
+  border: none !important;
+  background-color: #353547 !important;
 }
 body.darkmode #navbar {
   background-color: rgb(39, 38, 44);
@@ -4189,6 +4196,9 @@ body.darkmode #navbar .jkVFUJ {
 body.darkmode .dropup-content {
   background-color: #27262c;
   border: 1px solid #383241;
+}
+body.darkmode .dropup-content hr {
+  color: #383241;
 }
 body.darkmode .bYguAj {
   fill: #ffffff;
@@ -4294,6 +4304,9 @@ body.darkmode #sectionCake .buy-cake-numbers-text p {
 }
 body.darkmode #sectionCake .buy-cake-numbers-value h3 {
   color: #f4eeff;
+}
+body.darkmode .btn-settings {
+  background-color: #353547;
 }
 
 #bannerSectionSvgStop1 {
