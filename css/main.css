@@ -3767,6 +3767,12 @@ ul {
   align-items: center;
   border: 1px solid rgba(153, 106, 255, 0.4901960784);
 }
+@media screen and (max-width: 730px) {
+  .banner-container .left-banner-section .timer-banner-container {
+    width: 200px;
+    height: 40px;
+  }
+}
 .banner-container .left-banner-section .timer-banner-container .timer-banner {
   display: flex;
   flex-direction: row;
@@ -3777,6 +3783,11 @@ ul {
   background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 730px) {
+  .banner-container .left-banner-section .timer-banner-container .timer-banner h2 {
+    font-size: 28px;
+  }
 }
 .banner-container .left-banner-section .timer-banner-container .timer-banner h4 {
   background: -webkit-linear-gradient(rgb(255, 216, 0) 0%, rgb(253, 171, 50) 100%);
@@ -4053,12 +4064,10 @@ ul {
   .img-01-banner {
     background-image: url(../img/lotteryMobile.png);
     background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
     position: absolute;
-    background-size: auto;
-    top: 0;
-    right: 0;
+    background-size: 50%;
+    top: 65px;
+    left: 190px;
     z-index: 0;
   }
 
@@ -4074,6 +4083,12 @@ ul {
     bottom: 0;
     left: 0;
     z-index: 0;
+  }
+
+  .timer-banner-container {
+    width: 200px;
+    color: red;
+    background-color: red;
   }
 }
 body.darkmode {
