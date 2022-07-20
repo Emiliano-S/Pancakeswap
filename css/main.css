@@ -1182,7 +1182,7 @@ e poi dentro la classe che dovete fare responsive
 .kOBRaF {
   position: fixed;
   inset: 0px auto auto 0px;
-  transform: translate3d(72px, 55.2px, 0px);
+  transform: translate3d(200px, 55.2px, 0px);
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 227, 235);
   border-radius: 16px;
@@ -1191,6 +1191,11 @@ e poi dentro la classe che dovete fare responsive
   width: 280px;
   z-index: 1001;
   visibility: hidden;
+}
+@media only screen and (max-width: 967px) {
+  .kOBRaF {
+    transform: translate3d(72px, 55.2px, 0px);
+  }
 }
 
 .fIBjTC:hover {
@@ -1657,6 +1662,42 @@ nav .eng-svg-button :nth-child(1) {
 
 .jkVFUJ {
   color: #F3F1F5;
+}
+
+.earn-dropdown-translation {
+  transform: translate3d(271.2px, 55.2px, 0px);
+}
+@media only screen and (max-width: 967px) {
+  .earn-dropdown-translation {
+    transform: translate3d(143.2px, 55.2px, 0px);
+  }
+}
+
+.win-dropdown-translation {
+  transform: translate3d(336px, 55.2px, 0px);
+}
+@media only screen and (max-width: 967px) {
+  .win-dropdown-translation {
+    transform: translate3d(208px, 55.2px, 0px);
+  }
+}
+
+.NFT-dropdown-translation {
+  transform: translate3d(394px, 55.2px, 0px);
+}
+@media only screen and (max-width: 967px) {
+  .NFT-dropdown-translation {
+    transform: translate3d(266.4px, 55.2px, 0px);
+  }
+}
+
+.info-dropdown-translation {
+  transform: translate3d(455.2px, 55.2px, 0px);
+}
+@media only screen and (max-width: 967px) {
+  .info-dropdown-translation {
+    transform: translate3d(327.2px, 55.2px, 0px);
+  }
 }
 
 .section-footer {
