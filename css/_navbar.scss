@@ -201,7 +201,7 @@
   font-size: 16px;
   font-weight: 400;
   padding: 0px 16px;
-  height: 48px;
+  height: 56px;
   font-family: "Kanit Regular";
   fill: #7a6eaa;
 }
@@ -213,26 +213,38 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 227, 235);
   border-radius: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   width: 280px;
   z-index: 1001;
-  pointer-events: none;
   visibility: hidden;
 
 }
 
-.hwMcXE:hover~.kOBRaF {
+.hwMcXE:hover ~.kOBRaF, .kOBRaF:hover {
   visibility: visible;
   position: absolute;
   display: block;
 }
 
-.kHcMUr {
-  pointer-events: none;
+.kHcMUr:hover{
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+}
 
+.eeauGl{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kHcMUr {
+  font-family: "Kanit Regular";
   a {
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 
