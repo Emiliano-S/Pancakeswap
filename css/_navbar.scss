@@ -189,6 +189,9 @@
 
   a {
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 
@@ -219,6 +222,11 @@
   z-index: 1001;
   visibility: hidden;
 
+}
+
+.fIBjTC:hover{
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+  border-radius: 20px;
 }
 
 .hwMcXE:hover ~.kOBRaF, .kOBRaF:hover {
@@ -684,6 +692,10 @@ nav{
   height: calc(100% - 38px);
   background-color: rgba(0,0,0,.5);
   z-index: 21;
+}
+
+#navMobileBack.visibleMobileBack{
+  display: block;
 }
 
 

@@ -1161,6 +1161,9 @@ e poi dentro la classe che dovete fare responsive
 .igTmVw a {
   text-decoration: none;
 }
+.igTmVw a:hover {
+  text-decoration: none;
+}
 
 .fIBjTC {
   position: relative;
@@ -1188,6 +1191,11 @@ e poi dentro la classe che dovete fare responsive
   width: 280px;
   z-index: 1001;
   visibility: hidden;
+}
+
+.fIBjTC:hover {
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+  border-radius: 20px;
 }
 
 .hwMcXE:hover ~ .kOBRaF, .kOBRaF:hover {
@@ -1634,6 +1642,10 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
   height: calc(100% - 38px);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 21;
+}
+
+#navMobileBack.visibleMobileBack {
+  display: block;
 }
 
 nav .money-value {

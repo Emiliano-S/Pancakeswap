@@ -228,13 +228,10 @@ let btnArray = document.querySelectorAll('.btnActive');
 
 btnArray.forEach(element => {
 
-  element.addEventListener('mouseover', ()=>{
-    document.getElementById('navMobileBack').style.display = 'block';
+  element.addEventListener('click', ()=>{
+    document.getElementById('navMobileBack').classList.toggle('visibleMobileBack');
+    element.childNodes[2].style.display = 'block';
   });
-
-  element.addEventListener('mouseleave', ()=>{
-    document.getElementById('navMobileBack').style.display = 'none';
-  })
 
   document.getElementById('sectionCake').classList.toggle('darkmode');
 });
