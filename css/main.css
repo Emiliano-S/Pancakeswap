@@ -1167,11 +1167,13 @@ e poi dentro la classe che dovete fare responsive
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  color: rgb(122, 110, 170);
+  color: #7a6eaa;
   font-size: 16px;
   font-weight: 400;
   padding: 0px 16px;
   height: 48px;
+  font-family: "Kanit Regular";
+  fill: #7a6eaa;
 }
 
 .kOBRaF {
@@ -1272,13 +1274,13 @@ e poi dentro la classe che dovete fare responsive
   box-shadow: none;
 }
 .eng-svg-button :nth-child(1) {
-  fill: rgb(184, 173, 210);
+  fill: #7a6eaa;
   flex-shrink: 0;
   margin-right: 0.5rem;
   filter: none !important;
 }
 .eng-svg-button :nth-child(2) {
-  color: rgb(184, 173, 210);
+  color: #7a6eaa;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -1410,7 +1412,6 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
 
 .settings-container {
   display: flex;
-  margin-bottom: 3px;
 }
 
 .settings-button-navbar {
@@ -1442,7 +1443,7 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
 
 .settings-svg-navbar {
   align-self: center;
-  fill: rgb(122, 110, 170);
+  fill: #7a6eaa;
   flex-shrink: 0;
   margin-right: 0.5rem;
 }
@@ -1620,6 +1621,13 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
   height: calc(100% - 38px);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 21;
+}
+
+nav .money-value {
+  color: #7a6eaa;
+}
+nav .eng-svg-button :nth-child(1) {
+  fill: #7a6eaa;
 }
 
 .section-footer {
@@ -3959,6 +3967,7 @@ ul {
     left: 0;
     z-index: 0;
   }
+
   .img-02-banner {
     background-image: url(../img/perpetual.png);
     display: flex;
@@ -3977,6 +3986,7 @@ ul {
   .banner-container {
     overflow: hidden;
   }
+
   .yellow-gradient {
     display: flex;
     flex-direction: column;
@@ -3993,6 +4003,7 @@ ul {
     margin-bottom: 7px;
     font-size: 22px;
   }
+
   .container-moon {
     display: flex;
     flex-direction: column-reverse;
@@ -4004,11 +4015,13 @@ ul {
     width: 40%;
     left: 30%;
   }
+
   .left-banner-section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
   }
+
   .img-01-banner {
     background-image: url(../img/lotteryMobile.png);
     background-size: contain;
@@ -4021,6 +4034,7 @@ ul {
     right: -45%;
     z-index: 0;
   }
+
   .img-02-banner {
     background-image: url(../img/perpetualMobile.png);
     display: flex;
@@ -4047,6 +4061,7 @@ ul {
     right: 0;
     z-index: 0;
   }
+
   .img-02-banner {
     background-image: url(../img/perpetualMobile.png);
     display: flex;
@@ -4099,6 +4114,19 @@ body.darkmode #navbar {
 }
 body.darkmode #navbar .pnck {
   fill: #ffffff;
+}
+body.darkmode #navbar .fIBjTC {
+  color: #b8add2;
+  fill: #b8add2;
+}
+body.darkmode #navbar .settings-svg-navbar {
+  fill: #b8add2;
+}
+body.darkmode #navbar .eng-svg-button :nth-child(1) {
+  fill: #b8add2;
+}
+body.darkmode #navbar .money-value {
+  color: #b8add2;
 }
 body.darkmode #sectionBanner {
   background: rgba(0, 0, 0, 0) radial-gradient(103.12% 50%, rgb(33, 25, 58) 0%, rgb(25, 19, 38) 100%) repeat scroll 0% 0%;

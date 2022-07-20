@@ -197,12 +197,13 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  color: rgb(122, 110, 170);
+  color: #7a6eaa;
   font-size: 16px;
   font-weight: 400;
   padding: 0px 16px;
   height: 48px;
-
+  font-family: "Kanit Regular";
+  fill: #7a6eaa;
 }
 
 .kOBRaF {
@@ -304,14 +305,14 @@
   box-shadow: none;
 
   :nth-child(1) {
-    fill: rgb(184, 173, 210);
+    fill: #7a6eaa;
     flex-shrink: 0;
     margin-right: 0.5rem;
     filter: none !important;
   }
 
   :nth-child(2) {
-    color: rgb(184, 173, 210);
+    color: #7a6eaa;
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px;
@@ -450,7 +451,6 @@ nav{
 //
 .settings-container {
   display: flex;
-  margin-bottom: 3px;
 }
 
 .settings-button-navbar {
@@ -482,7 +482,7 @@ nav{
 
 .settings-svg-navbar {
   align-self: center;
-  fill: rgb(122, 110, 170);
+  fill: #7a6eaa;
   flex-shrink: 0;
   margin-right: 0.5rem;
 
@@ -675,3 +675,11 @@ nav{
 }
 
 
+nav{
+  .money-value{
+    color: #7a6eaa;
+  }
+  .eng-svg-button :nth-child(1){
+    fill: #7a6eaa;
+  }
+}
