@@ -189,6 +189,9 @@
 
   a {
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 
@@ -197,12 +200,13 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  color: rgb(122, 110, 170);
+  color: #7a6eaa;
   font-size: 16px;
   font-weight: 400;
   padding: 0px 16px;
-  height: 48px;
-
+  height: 56px;
+  font-family: "Kanit Regular";
+  fill: #7a6eaa;
 }
 
 .kOBRaF {
@@ -212,26 +216,43 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 227, 235);
   border-radius: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   width: 280px;
   z-index: 1001;
-  pointer-events: none;
   visibility: hidden;
 
 }
 
-.hwMcXE:hover~.kOBRaF {
+.fIBjTC:hover{
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+  border-radius: 20px;
+}
+
+.hwMcXE:hover ~.kOBRaF, .kOBRaF:hover {
   visibility: visible;
   position: absolute;
   display: block;
 }
 
-.kHcMUr {
-  pointer-events: none;
+.kHcMUr:hover{
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+}
 
+.eeauGl{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kHcMUr {
+  font-family: "Kanit Regular";
   a {
     text-decoration: none;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 
@@ -304,14 +325,14 @@
   box-shadow: none;
 
   :nth-child(1) {
-    fill: rgb(184, 173, 210);
+    fill: #7a6eaa;
     flex-shrink: 0;
     margin-right: 0.5rem;
     filter: none !important;
   }
 
   :nth-child(2) {
-    color: rgb(184, 173, 210);
+    color: #7a6eaa;
     font-weight: 400;
     line-height: 1.5;
     font-size: 16px;
@@ -450,7 +471,6 @@ nav{
 //
 .settings-container {
   display: flex;
-  margin-bottom: 3px;
 }
 
 .settings-button-navbar {
@@ -482,7 +502,7 @@ nav{
 
 .settings-svg-navbar {
   align-self: center;
-  fill: rgb(122, 110, 170);
+  fill: #7a6eaa;
   flex-shrink: 0;
   margin-right: 0.5rem;
 
@@ -524,10 +544,6 @@ nav{
       justify-content: space-around;
       gap: 40px;
 
-      :hover .dropup-content {
-        display: block;
-      }
-
       :hover body {
         overflow: hidden;
       }
@@ -536,7 +552,7 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
 
         .textNav {
           color:rgb(188 182 212);
@@ -573,9 +589,8 @@ nav{
       border-radius: 16px;
       padding-bottom: 4px;
       padding-top: 4px;
-      width: 350px;
+      width: 100%;
       z-index: 1001;
-      pointer-events: none;
       left: 0px;
 
       a {
@@ -674,4 +689,24 @@ nav{
   z-index: 21;
 }
 
+#navMobileBack.visibleMobileBack, .dropup-content.visibleMobileMenu {
+  display: block;
+}
 
+
+nav{
+  .money-value{
+    color: #7a6eaa;
+  }
+  .eng-svg-button :nth-child(1){
+    fill: #7a6eaa;
+  }
+}
+
+.earnTopContent{
+  font-family: "Kanit Regular";
+}
+
+.jkVFUJ{
+  color: #F3F1F5;
+}

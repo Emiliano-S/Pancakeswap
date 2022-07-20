@@ -9,7 +9,7 @@ body{
                 background-color: #27262c;
                 border: 1px solid rgb(56, 50, 65);
                 .greybar{
-                    background: transparent none repeat scroll 0% 0%;
+                    background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
                     border-bottom: 1px solid rgb(56, 50, 65);
                 }
                 h4{
@@ -24,6 +24,14 @@ body{
                 .swaps-and-liquidity{
                     border-top: 1px solid #383241;
                 }
+                .input-text{
+                    background-color: #353547 !important;
+                    color: #7d7392 !important;
+                }
+                .type-button{
+                    border: none !important;
+                    background-color: #353547 !important;
+                }
             }
         }
 
@@ -33,6 +41,44 @@ body{
             .pnck{
                 fill: #ffffff;
             }
+            .fIBjTC{
+                color:#b8add2;
+                fill:#b8add2;
+            }
+            .settings-svg-navbar{
+                fill: #b8add2;
+            }
+            .eng-svg-button :nth-child(1){
+                fill: #b8add2;
+            }
+            .money-value{
+                color: #b8add2;
+            }
+            .kOBRaF{
+                background-color: #27262c;
+                border: 1px solid #383241;
+            }
+            .kHcMUr:hover{
+                background-color: #353547;
+            }
+            .fIBjTC:hover{
+                background-color: #353547;
+            }
+            .jkVFUJ{
+                color: #383241;
+            }
+        }
+
+        .dropup-content{
+            background-color: #27262c;
+            border: 1px solid #383241;
+            hr{
+                color: #383241;
+            }
+        }
+
+        .bYguAj{
+            fill: #ffffff;
         }
 
         /* SECTION BANNER */
@@ -168,6 +214,17 @@ body{
                 }
             }
         }
+
+        .btn-settings{
+            background-color: #353547;
+        }
+        
+        .language-change-selector{
+            background-color: #27262c;
+            button{
+                color: rgb(244, 238, 255);
+            }
+        }
     }
 }
 
@@ -182,3 +239,4 @@ body{
 #bannerSectionSvgStop3{
     stop-color: #ffffff;
 }
+

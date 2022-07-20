@@ -869,25 +869,25 @@ body {
 /* STILI HEADER E PARAGRAPH */
 h1 {
   font-size: 64px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
 h2 {
   font-size: 40px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
 h3 {
   font-size: 24px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
 h4 {
   font-size: 20px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #7645d9;
 }
 
@@ -1164,17 +1164,22 @@ e poi dentro la classe che dovete fare responsive
 .igTmVw a {
   text-decoration: none;
 }
+.igTmVw a:hover {
+  text-decoration: none;
+}
 
 .fIBjTC {
   position: relative;
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  color: rgb(122, 110, 170);
+  color: #7a6eaa;
   font-size: 16px;
   font-weight: 400;
   padding: 0px 16px;
-  height: 48px;
+  height: 56px;
+  font-family: "Kanit Regular";
+  fill: #7a6eaa;
 }
 
 .kOBRaF {
@@ -1184,24 +1189,42 @@ e poi dentro la classe che dovete fare responsive
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(231, 227, 235);
   border-radius: 16px;
-  padding-bottom: 4px;
-  padding-top: 4px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   width: 280px;
   z-index: 1001;
-  pointer-events: none;
   visibility: hidden;
 }
 
-.hwMcXE:hover ~ .kOBRaF {
+.fIBjTC:hover {
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+  border-radius: 20px;
+}
+
+.hwMcXE:hover ~ .kOBRaF, .kOBRaF:hover {
   visibility: visible;
   position: absolute;
   display: block;
 }
 
+.kHcMUr:hover {
+  background: rgb(239, 244, 245) none repeat scroll 0% 0%;
+}
+
+.eeauGl {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .kHcMUr {
-  pointer-events: none;
+  font-family: "Kanit Regular";
 }
 .kHcMUr a {
+  text-decoration: none;
+}
+.kHcMUr a:hover {
   text-decoration: none;
 }
 
@@ -1275,13 +1298,13 @@ e poi dentro la classe che dovete fare responsive
   box-shadow: none;
 }
 .eng-svg-button :nth-child(1) {
-  fill: rgb(184, 173, 210);
+  fill: #7a6eaa;
   flex-shrink: 0;
   margin-right: 0.5rem;
   filter: none !important;
 }
 .eng-svg-button :nth-child(2) {
-  color: rgb(184, 173, 210);
+  color: #7a6eaa;
   font-weight: 400;
   line-height: 1.5;
   font-size: 16px;
@@ -1413,7 +1436,6 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
 
 .settings-container {
   display: flex;
-  margin-bottom: 3px;
 }
 
 .settings-button-navbar {
@@ -1445,7 +1467,7 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
 
 .settings-svg-navbar {
   align-self: center;
-  fill: rgb(122, 110, 170);
+  fill: #7a6eaa;
   flex-shrink: 0;
   margin-right: 0.5rem;
 }
@@ -1488,9 +1510,6 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     justify-content: space-around;
     gap: 40px;
   }
-  .section-navMobile .dropup :hover .dropup-content {
-    display: block;
-  }
   .section-navMobile .dropup :hover body {
     overflow: hidden;
   }
@@ -1498,7 +1517,7 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .section-navMobile .dropup .dropupbtn .textNav {
     color: rgb(188, 182, 212);
@@ -1529,9 +1548,8 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
     border-radius: 16px;
     padding-bottom: 4px;
     padding-top: 4px;
-    width: 350px;
+    width: 100%;
     z-index: 1001;
-    pointer-events: none;
     left: 0px;
   }
   .section-navMobile .dropup-content a {
@@ -1625,6 +1643,25 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
   z-index: 21;
 }
 
+#navMobileBack.visibleMobileBack, .dropup-content.visibleMobileMenu {
+  display: block;
+}
+
+nav .money-value {
+  color: #7a6eaa;
+}
+nav .eng-svg-button :nth-child(1) {
+  fill: #7a6eaa;
+}
+
+.earnTopContent {
+  font-family: "Kanit Regular";
+}
+
+.jkVFUJ {
+  color: #F3F1F5;
+}
+
 .section-footer {
   background-color: rgb(39, 38, 44);
   font-family: "Kanit Regular";
@@ -1691,10 +1728,6 @@ li {
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 8px;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 ul {
@@ -2071,10 +2104,11 @@ ul {
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-h2-text h2 {
   font-size: 40px;
-  font-family: Kanit Bold;
+  font-family: Kanit SemiBold;
   color: #000000;
   line-height: 1.1;
   margin-bottom: 24px;
+  color: #280d5f;
 }
 .buy-cake-and-starts-in-seconds .buy-cake-container .small-buy-cake-container .buy-cake-text-and-svg .small-buy-cake-text-and-svg .buy-cake-text .buy-cake-h2-text span {
   font-size: 40px;
@@ -2302,7 +2336,8 @@ ul {
 }
 
 .section-wallet {
-  background: purple url("../img/Background-purple.png") no-repeat center;
+  background: rgb(118, 69, 217) url("../img/bg_section.svg") no-repeat center;
+  background-size: 100%;
 }
 .section-wallet .container-wallet {
   width: 100%;
@@ -3843,6 +3878,8 @@ ul {
 .container-moon h3 {
   margin-top: 24px;
   color: #280d5f;
+  font-size: 20px;
+  font-family: "Kanit SemiBold";
 }
 .container-moon .container-moon-left {
   display: flex;
@@ -4103,7 +4140,7 @@ body.darkmode #hiddenSettings .container-positioner .container-settings {
   border: 1px solid rgb(56, 50, 65);
 }
 body.darkmode #hiddenSettings .container-positioner .container-settings .greybar {
-  background: transparent none repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(166.77deg, rgb(59, 65, 85) 0%, rgb(58, 48, 69) 100%) repeat scroll 0% 0%;
   border-bottom: 1px solid rgb(56, 50, 65);
 }
 body.darkmode #hiddenSettings .container-positioner .container-settings h4 {
@@ -4118,11 +4155,55 @@ body.darkmode #hiddenSettings .container-positioner .container-settings .questio
 body.darkmode #hiddenSettings .container-positioner .container-settings .swaps-and-liquidity {
   border-top: 1px solid #383241;
 }
+body.darkmode #hiddenSettings .container-positioner .container-settings .input-text {
+  background-color: #353547 !important;
+  color: #7d7392 !important;
+}
+body.darkmode #hiddenSettings .container-positioner .container-settings .type-button {
+  border: none !important;
+  background-color: #353547 !important;
+}
 body.darkmode #navbar {
   background-color: rgb(39, 38, 44);
   border-bottom: 1px solid rgb(56, 50, 65);
 }
 body.darkmode #navbar .pnck {
+  fill: #ffffff;
+}
+body.darkmode #navbar .fIBjTC {
+  color: #b8add2;
+  fill: #b8add2;
+}
+body.darkmode #navbar .settings-svg-navbar {
+  fill: #b8add2;
+}
+body.darkmode #navbar .eng-svg-button :nth-child(1) {
+  fill: #b8add2;
+}
+body.darkmode #navbar .money-value {
+  color: #b8add2;
+}
+body.darkmode #navbar .kOBRaF {
+  background-color: #27262c;
+  border: 1px solid #383241;
+}
+body.darkmode #navbar .kHcMUr:hover {
+  background-color: #353547;
+}
+body.darkmode #navbar .fIBjTC:hover {
+  background-color: #353547;
+}
+body.darkmode #navbar .jkVFUJ {
+  color: #383241;
+}
+body.darkmode .dropup-content {
+  background-color: #27262c;
+  border: 1px solid #383241;
+}
+body.darkmode .dropup-content hr {
+  color: #383241;
+}
+body.darkmode .bYguAj {
   fill: #ffffff;
 }
 body.darkmode #sectionBanner {
@@ -4226,6 +4307,15 @@ body.darkmode #sectionCake .buy-cake-numbers-text p {
 }
 body.darkmode #sectionCake .buy-cake-numbers-value h3 {
   color: #f4eeff;
+}
+body.darkmode .btn-settings {
+  background-color: #353547;
+}
+body.darkmode .language-change-selector {
+  background-color: #27262c;
+}
+body.darkmode .language-change-selector button {
+  color: white;
 }
 
 #bannerSectionSvgStop1 {
