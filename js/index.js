@@ -187,7 +187,8 @@ function checkDarMode(){
     document.getElementById('folder-image').src = "img/folder-dark.png";
   
     document.getElementById('tradeBtc').src = "img/BTC-dark.png";
-    document.getElementById('tradeCake').src = "img/CAKE2.png";
+    document.getElementById('tradeCake').src = "img/CAKE2.png"; 
+    document.getElementById('tradeBnb').src = "img/BNB-dark.png";
   
     document.getElementById('buyCakeCoin').src = "img/coin_pancake-dark.png";
   
@@ -219,7 +220,8 @@ function checkDarMode(){
   
         document.getElementById('tradeBtc').src = "img/BTC.png";
         document.getElementById('tradeCake').src = "img/CAKE.png";
-  
+        document.getElementById('tradeBnb').src = "img/BNB.png";
+
         document.getElementById('buyCakeCoin').src = "/img/coin_pancake.png";
   
         document.querySelectorAll('.toggle-switch').forEach(element =>{
