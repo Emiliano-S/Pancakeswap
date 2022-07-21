@@ -267,13 +267,16 @@ btnArray.forEach(element => {
       dropMenu.classList.remove('visibleMobileMenu');
       menuMobileDisplay = null;
       mobileNavMenuBack.classList.remove('visibleMobileBack');
+      document.body.classList.remove('mobileMenuOpen');
     }else{
       dropMenu.classList.add('visibleMobileMenu');
       if(menuMobileDisplay != null){
         menuMobileDisplay.classList.remove("visibleMobileMenu");
+        document.body.classList.remove('mobileMenuOpen');
       }
       menuMobileDisplay = dropMenu;
       mobileNavMenuBack.classList.add('visibleMobileBack');
+      document.body.classList.add('mobileMenuOpen');
     }
 
   });
@@ -282,6 +285,7 @@ btnArray.forEach(element => {
 mobileNavMenuBack.addEventListener('click', ()=>{
   menuMobileDisplay.classList.remove("visibleMobileMenu");
   mobileNavMenuBack.classList.remove('visibleMobileBack');
+  document.body.classList.remove('mobileMenuOpen');
   menuMobileDisplay = null;
 });
 

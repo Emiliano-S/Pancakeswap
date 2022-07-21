@@ -119,6 +119,10 @@
     position: absolute;
     right: 10px;
   }
+  @include breakpoint("mobile") {
+    position: absolute;
+    right: -10px;
+  }
 }
 
 .navbar {
@@ -693,7 +697,9 @@ nav{
 }
 
 #navMobileBack.visibleMobileBack, .dropup-content.visibleMobileMenu {
-  display: block;
+  @include breakpoint("mobile") {
+    display: block;
+  }
 }
 
 
@@ -746,4 +752,13 @@ nav{
   transform: translate3d(327.2px, 55.2px, 0px);
 }
 
+}
+
+
+body{
+  &.mobileMenuOpen{
+    @include breakpoint("mobile") {
+      overflow: hidden;
+    }
+  }
 }

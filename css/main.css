@@ -1095,6 +1095,12 @@ e poi dentro la classe che dovete fare responsive
     right: 10px;
   }
 }
+@media only screen and (max-width: 570px) {
+  .jodCDD {
+    position: absolute;
+    right: -10px;
+  }
+}
 
 .navbar {
   display: flex;
@@ -1645,8 +1651,10 @@ nav :hover.world-en .language-change-selector, nav .language-change-selector:hov
   z-index: 21;
 }
 
-#navMobileBack.visibleMobileBack, .dropup-content.visibleMobileMenu {
-  display: block;
+@media only screen and (max-width: 570px) {
+  #navMobileBack.visibleMobileBack, .dropup-content.visibleMobileMenu {
+    display: block;
+  }
 }
 
 nav .money-value {
@@ -1697,6 +1705,12 @@ nav .eng-svg-button :nth-child(1) {
 @media only screen and (max-width: 967px) {
   .info-dropdown-translation {
     transform: translate3d(327.2px, 55.2px, 0px);
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  body.mobileMenuOpen {
+    overflow: hidden;
   }
 }
 
